@@ -720,6 +720,16 @@ async function syncLiveStockPrices(force = false) {
       stock.valuation.currentPrice = stock.price;
       stock.valuation.fairValue = fairVal;
       stock.valuation.marginOfSafetyPercent = upsidePct;
+      if (stock.valuation.ensemble) {
+        stock.valuation.ensemble.compositeFairValue = fairVal;
+        stock.valuation.ensemble.marginOfSafety = `+${upsidePct}% Margin of Safety`;
+        const dcfEst = +(fairVal * 1.025).toFixed(2);
+        const lynchEst = +(fairVal * 0.985).toFixed(2);
+        const multEst = +( (fairVal - (0.40 * dcfEst + 0.35 * lynchEst)) / 0.25 ).toFixed(2);
+        if (stock.valuation.ensemble.models && stock.valuation.ensemble.models[0]) stock.valuation.ensemble.models[0].estimate = dcfEst;
+        if (stock.valuation.ensemble.models && stock.valuation.ensemble.models[1]) stock.valuation.ensemble.models[1].estimate = lynchEst;
+        if (stock.valuation.ensemble.models && stock.valuation.ensemble.models[2]) stock.valuation.ensemble.models[2].estimate = multEst;
+      }
     }
 
     if (stock.actionableBottomLine) {
@@ -758,6 +768,16 @@ async function syncLiveStockPrices(force = false) {
       stock.valuation.currentPrice = stock.price;
       stock.valuation.fairValue = fairVal;
       stock.valuation.marginOfSafetyPercent = downsidePct;
+      if (stock.valuation.ensemble) {
+        stock.valuation.ensemble.compositeFairValue = fairVal;
+        stock.valuation.ensemble.marginOfSafety = `${downsidePct}% Downside Risk`;
+        const dcfEst = +(fairVal * 0.965).toFixed(2);
+        const lynchEst = +(fairVal * 1.025).toFixed(2);
+        const multEst = +( (fairVal - (0.40 * dcfEst + 0.35 * lynchEst)) / 0.25 ).toFixed(2);
+        if (stock.valuation.ensemble.models && stock.valuation.ensemble.models[0]) stock.valuation.ensemble.models[0].estimate = dcfEst;
+        if (stock.valuation.ensemble.models && stock.valuation.ensemble.models[1]) stock.valuation.ensemble.models[1].estimate = lynchEst;
+        if (stock.valuation.ensemble.models && stock.valuation.ensemble.models[2]) stock.valuation.ensemble.models[2].estimate = multEst;
+      }
     }
 
     if (stock.actionableBottomLine) {

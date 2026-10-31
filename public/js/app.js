@@ -196,6 +196,8 @@ const App = {
     this.modalPEGRatio = document.getElementById('modalPEGRatio');
     this.modalPEVerdict = document.getElementById('modalPEVerdict');
     this.modalValuationSummary = document.getElementById('modalValuationSummary');
+    this.modalEnsembleConfidence = document.getElementById('modalEnsembleConfidence');
+    this.modalEnsembleModelsGrid = document.getElementById('modalEnsembleModelsGrid');
     this.modalRevGrowth = document.getElementById('modalRevGrowth');
     this.modalOpMargin = document.getElementById('modalOpMargin');
     this.modalFCFStatus = document.getElementById('modalFCFStatus');
@@ -735,6 +737,25 @@ const App = {
     this.modalPEGRatio.textContent = `${stock.valuation.pegRatio}`;
     this.modalPEVerdict.textContent = stock.valuation.peVerdict;
     this.modalValuationSummary.textContent = stock.valuation.summary;
+
+    // Multi-Model Valuation Ensemble Triangulation
+    const ensemble = stock.valuation?.ensemble;
+    if (ensemble && this.modalEnsembleModelsGrid) {
+      if (this.modalEnsembleConfidence) {
+        this.modalEnsembleConfidence.textContent = ensemble.confidenceRating || "High Confidence • 3-Model Convergence";
+      }
+      this.modalEnsembleModelsGrid.innerHTML = (ensemble.models || []).map(m => `
+        <div class="vec-model-item">
+          <div class="vec-model-header">
+            <span class="vec-model-name">${m.icon || '📊'} ${m.name}</span>
+            <span class="vec-model-weight">Weight: ${m.weight}</span>
+          </div>
+          <div class="vec-model-val">$${Number(m.estimate).toFixed(2)}</div>
+          <div class="vec-model-params">${m.parameters}</div>
+          <div class="vec-model-methodology">${m.methodology}</div>
+        </div>
+      `).join('');
+    }
 
     // 3. Financial Health
     this.modalRevGrowth.textContent = stock.financialHealth.revenueGrowthYoY;

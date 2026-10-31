@@ -1251,6 +1251,128 @@ body {
   margin-top: 8px;
 }
 
+/* Multi-Model Valuation Ensemble Card */
+.val-ensemble-card {
+  background: #0D1527;
+  border: 1px solid #1E293B;
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.vec-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.vec-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.vec-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #38BDF8;
+}
+
+.vec-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #F8FAFC;
+  margin: 0;
+}
+
+.vec-confidence {
+  font-size: 0.76rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  background: rgba(16, 185, 129, 0.12);
+  color: #10B981;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.vec-desc {
+  font-size: 0.84rem;
+  color: #94A3B8;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.vec-models-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .vec-models-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.vec-model-item {
+  background: #111A2E;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.vec-model-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vec-model-name {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #CBD5E1;
+}
+
+.vec-model-weight {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #38BDF8;
+  background: rgba(56, 189, 248, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.vec-model-val {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #F8FAFC;
+}
+
+.vec-model-params {
+  font-size: 0.72rem;
+  color: #64748B;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.vec-model-methodology {
+  font-size: 0.75rem;
+  color: #94A3B8;
+  line-height: 1.4;
+}
+
 .valuation-narrative {
   background: rgba(15, 23, 42, 0.5);
   border: 1px dashed var(--border-subtle);

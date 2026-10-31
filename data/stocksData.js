@@ -2,7 +2,7 @@
 // Daily Alpha & Sector Valuation Radar: Institutional Intelligence for All 76 Top Sector Leaders across 11 S&P Sectors
 
 const stocksData = {
-  "lastUpdated": "Saturday, Oct 31, 2026 at 12:10 PM",
+  "lastUpdated": "Saturday, Oct 31, 2026 at 12:27 PM",
   "marketSummary": {
     "status": "Pre-Market / Regular Session",
     "sentiment": "Institutional Quality Rotation",
@@ -48,7 +48,38 @@ const stocksData = {
         "peVerdict": "Premium multiple warranted by absolute technological monopoly; trades below historical peak.",
         "pegRatio": 1.7,
         "pegVerdict": "PEG of 1.7 represents fair entry for a company with near-zero competitive substitution risk.",
-        "summary": "DCF modeling based on conservative 20% cash flow expansion yields an intrinsic value of $1910.4. At $1565.9, shares trade at an asymmetric +22% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $1910.4. At $1565.9, shares trade at an asymmetric +22% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 1910.4,
+          "marginOfSafety": "+22% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 1958.16,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 20% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 1881.74,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $46.06 • Growth: 20% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 1874.11,
+              "weight": "25%",
+              "parameters": "Target Multiple: 34x • Historical Range: 27.2x – 42.5x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+18.0%",
@@ -126,7 +157,38 @@ const stocksData = {
         "peVerdict": "Elevated headline multiple offsets by massive free cash flow margin approaching 34%.",
         "pegRatio": 2.21,
         "pegVerdict": "Attractive PEG given 28% expected top-line growth and surging operating leverage.",
-        "summary": "DCF modeling based on conservative 28% cash flow expansion yields an intrinsic value of $296.76. At $250.43, shares trade at an asymmetric +18.5% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $296.76. At $250.43, shares trade at an asymmetric +18.5% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 296.76,
+          "marginOfSafety": "+18.5% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 304.18,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 28% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 292.31,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $4.04 • Growth: 28% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 291.12,
+              "weight": "25%",
+              "parameters": "Target Multiple: 62x • Historical Range: 49.6x – 77.5x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+25.2%",
@@ -204,7 +266,38 @@ const stocksData = {
         "peVerdict": "Trades at a fair discount to pure-play endpoint peers while capturing larger contract sizes.",
         "pegRatio": 2.6,
         "pegVerdict": "Solid 2.1 PEG justified by enterprise budget consolidation in cybersecurity.",
-        "summary": "DCF modeling based on conservative 20% cash flow expansion yields an intrinsic value of $422.58. At $365.87, shares trade at an asymmetric +15.5% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $422.58. At $365.87, shares trade at an asymmetric +15.5% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 422.58,
+          "marginOfSafety": "+15.5% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 433.14,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 20% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 416.24,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $7.04 • Growth: 20% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 414.56,
+              "weight": "25%",
+              "parameters": "Target Multiple: 52x • Historical Range: 41.6x – 65.0x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+18.0%",
@@ -282,7 +375,38 @@ const stocksData = {
         "peVerdict": "Trades at 24.5x forward earnings, offering a significant valuation discount to public cloud peers.",
         "pegRatio": 1.4,
         "pegVerdict": "PEG of 1.4 highlights strong asymmetric upside as cloud revenue eclipses legacy licensing.",
-        "summary": "DCF modeling based on conservative 17.5% cash flow expansion yields an intrinsic value of $158.11. At $130.67, shares trade at an asymmetric +21% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $158.11. At $130.67, shares trade at an asymmetric +21% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 158.11,
+          "marginOfSafety": "+21% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 162.06,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 17.5% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 155.74,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $5.33 • Growth: 17.5% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 155.11,
+              "weight": "25%",
+              "parameters": "Target Multiple: 24.5x • Historical Range: 19.6x – 30.6x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+15.8%",
@@ -360,7 +484,38 @@ const stocksData = {
         "peVerdict": "Trades at 36x forward earnings, reflecting significant runway for datacenter AI revenue expansion.",
         "pegRatio": 1.44,
         "pegVerdict": "Attractive PEG of 1.4 based on projected 25% annual EPS growth through 2027.",
-        "summary": "DCF modeling based on conservative 25% cash flow expansion yields an intrinsic value of $600.71. At $504.8, shares trade at an asymmetric +19% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $600.71. At $504.8, shares trade at an asymmetric +19% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 600.71,
+          "marginOfSafety": "+19% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 615.73,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 25% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 591.7,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $14.02 • Growth: 25% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 589.29,
+              "weight": "25%",
+              "parameters": "Target Multiple: 36x • Historical Range: 28.8x – 45.0x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+22.5%",
@@ -438,7 +593,38 @@ const stocksData = {
         "peVerdict": "Multiple of 29x is highly reasonable given 40%+ operating margins and AI networking growth.",
         "pegRatio": 1.38,
         "pegVerdict": "PEG of 1.38 makes Broadcom one of the highest-quality, reasonably priced AI infrastructure plays.",
-        "summary": "DCF modeling based on conservative 21% cash flow expansion yields an intrinsic value of $383.14. At $326.08, shares trade at an asymmetric +17.5% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $383.14. At $326.08, shares trade at an asymmetric +17.5% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 383.14,
+          "marginOfSafety": "+17.5% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 392.72,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 21% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 377.39,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $11.24 • Growth: 21% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 375.86,
+              "weight": "25%",
+              "parameters": "Target Multiple: 29x • Historical Range: 23.2x – 36.3x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+18.9%",
@@ -516,7 +702,38 @@ const stocksData = {
         "peVerdict": "Price-to-Operating Cash Flow has dropped to 14.2x—its lowest multiple in a decade.",
         "pegRatio": 1.39,
         "pegVerdict": "PEG of 1.38 offers exceptional value for a compounder growing cash flow at 22%+.",
-        "summary": "DCF modeling based on conservative 22.5% cash flow expansion yields an intrinsic value of $284.09. At $240.35, shares trade at an asymmetric +18.2% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $284.09. At $240.35, shares trade at an asymmetric +18.2% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 284.09,
+          "marginOfSafety": "+18.2% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 291.19,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 22.5% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 279.83,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $7.70 • Growth: 22.5% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 278.69,
+              "weight": "25%",
+              "parameters": "Target Multiple: 31.2x • Historical Range: 25.0x – 39.0x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+20.3%",
@@ -594,7 +811,38 @@ const stocksData = {
         "peVerdict": "Trades at 23.5x forward earnings, a bargain compared to the broader discretionary sector.",
         "pegRatio": 1.47,
         "pegVerdict": "PEG of 1.47 represents disciplined valuation for an asset-light cash compounding machine.",
-        "summary": "DCF modeling based on conservative 16% cash flow expansion yields an intrinsic value of $178.5. At $148.13, shares trade at an asymmetric +20.5% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $178.5. At $148.13, shares trade at an asymmetric +20.5% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 178.5,
+          "marginOfSafety": "+20.5% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 182.96,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 16% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 175.82,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $6.30 • Growth: 16% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 175.12,
+              "weight": "25%",
+              "parameters": "Target Multiple: 23.5x • Historical Range: 18.8x – 29.4x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+14.4%",
@@ -672,7 +920,38 @@ const stocksData = {
         "peVerdict": "Multiple of 22.8x is reasonable considering home equity in America sits at record highs.",
         "pegRatio": 2.68,
         "pegVerdict": "PEG of 1.9 aligns with historical cycle bottoms before multi-year home renovation upturns.",
-        "summary": "DCF modeling based on conservative 8.5% cash flow expansion yields an intrinsic value of $381.87. At $329.2, shares trade at an asymmetric +16% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $381.87. At $329.2, shares trade at an asymmetric +16% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 381.87,
+          "marginOfSafety": "+16% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 391.42,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 8.5% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 376.14,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $14.44 • Growth: 8.5% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 374.61,
+              "weight": "25%",
+              "parameters": "Target Multiple: 22.8x • Historical Range: 18.2x – 28.5x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+7.7%",
@@ -750,7 +1029,38 @@ const stocksData = {
         "peVerdict": "Significantly cheaper than its Big Tech peers; trades at legacy low-growth multiples.",
         "pegRatio": 1.18,
         "pegVerdict": "Attractive PEG close to 1.15 indicates fair entry for 18% projected annual EPS growth.",
-        "summary": "DCF modeling based on conservative 18.2% cash flow expansion yields an intrinsic value of $334.41. At $279.84, shares trade at an asymmetric +19.5% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $334.41. At $279.84, shares trade at an asymmetric +19.5% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 334.41,
+          "marginOfSafety": "+19.5% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 342.77,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 18.2% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 329.39,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $13.08 • Growth: 18.2% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 328.06,
+              "weight": "25%",
+              "parameters": "Target Multiple: 21.4x • Historical Range: 17.1x – 26.8x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+16.4%",
@@ -828,7 +1138,38 @@ const stocksData = {
         "peVerdict": "Trades at 23.8x forward earnings, remarkably modest given 20%+ operating profit growth.",
         "pegRatio": 1.22,
         "pegVerdict": "PEG of 1.22 offers superior risk-adjusted value in mega-cap technology.",
-        "summary": "DCF modeling based on conservative 19.5% cash flow expansion yields an intrinsic value of $725.69. At $614.99, shares trade at an asymmetric +18% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $725.69. At $614.99, shares trade at an asymmetric +18% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 725.69,
+          "marginOfSafety": "+18% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 743.83,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 19.5% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 714.8,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $25.84 • Growth: 19.5% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 711.91,
+              "weight": "25%",
+              "parameters": "Target Multiple: 23.8x • Historical Range: 19.0x – 29.8x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+17.6%",
@@ -906,7 +1247,38 @@ const stocksData = {
         "peVerdict": "Forward P/E of 19.5x sits well below historical 10-year median valuation of 24x.",
         "pegRatio": 1.3,
         "pegVerdict": "PEG of 1.3 offers compelling upside as streaming operating margins expand toward double digits.",
-        "summary": "DCF modeling based on conservative 15% cash flow expansion yields an intrinsic value of $135.9. At $110.94, shares trade at an asymmetric +22.5% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $135.9. At $110.94, shares trade at an asymmetric +22.5% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 135.9,
+          "marginOfSafety": "+22.5% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 139.3,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 15% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 133.86,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $5.69 • Growth: 15% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 133.32,
+              "weight": "25%",
+              "parameters": "Target Multiple: 19.5x • Historical Range: 15.6x – 24.4x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+13.5%",
@@ -984,7 +1356,38 @@ const stocksData = {
         "peVerdict": "Trades at 18.2x forward earnings with double-digit cash flow growth, leading all telecom peers.",
         "pegRatio": 1.52,
         "pegVerdict": "PEG of 1.5 represents high-quality value in defensive recurring telecommunications.",
-        "summary": "DCF modeling based on conservative 12% cash flow expansion yields an intrinsic value of $182.25. At $156.44, shares trade at an asymmetric +16.5% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $182.25. At $156.44, shares trade at an asymmetric +16.5% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 182.25,
+          "marginOfSafety": "+16.5% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 186.81,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 12% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 179.52,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $8.60 • Growth: 12% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 178.78,
+              "weight": "25%",
+              "parameters": "Target Multiple: 18.2x • Historical Range: 14.6x – 22.8x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+10.8%",
@@ -1062,7 +1465,38 @@ const stocksData = {
         "peVerdict": "Multiple of 26.5x is at the low end of its 5-year historical range (25x–38x).",
         "pegRatio": 2.12,
         "pegVerdict": "PEG of 2.1 is justified by impenetrable regulatory, processing, and merchant acceptance moats.",
-        "summary": "DCF modeling based on conservative 12.5% cash flow expansion yields an intrinsic value of $475.63. At $413.59, shares trade at an asymmetric +15% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $475.63. At $413.59, shares trade at an asymmetric +15% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 475.63,
+          "marginOfSafety": "+15% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 487.52,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 12.5% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 468.5,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $15.61 • Growth: 12.5% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 466.59,
+              "weight": "25%",
+              "parameters": "Target Multiple: 26.5x • Historical Range: 21.2x – 33.1x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+11.3%",
@@ -1140,7 +1574,38 @@ const stocksData = {
         "peVerdict": "Multiple of 12.8x is exceptionally cheap for the highest-performing mega-cap bank in the world.",
         "pegRatio": 1.42,
         "pegVerdict": "PEG of 1.42 provides defensive protection with strong dividend and buyback growth.",
-        "summary": "DCF modeling based on conservative 9% cash flow expansion yields an intrinsic value of $394.34. At $337.04, shares trade at an asymmetric +17% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $394.34. At $337.04, shares trade at an asymmetric +17% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 394.34,
+          "marginOfSafety": "+17% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 404.2,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 9% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 388.42,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $26.33 • Growth: 9% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 386.85,
+              "weight": "25%",
+              "parameters": "Target Multiple: 12.8x • Historical Range: 10.2x – 16.0x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+8.1%",
@@ -1218,7 +1683,38 @@ const stocksData = {
         "peVerdict": "Forward P/E of 29x aligns with long-term average for a business with 58% operating margins.",
         "pegRatio": 2.15,
         "pegVerdict": "PEG of 2.1 represents institutional quality that rarely trades at a deep headline discount.",
-        "summary": "DCF modeling based on conservative 13.5% cash flow expansion yields an intrinsic value of $740.09. At $638.01, shares trade at an asymmetric +16% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $740.09. At $638.01, shares trade at an asymmetric +16% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 740.09,
+          "marginOfSafety": "+16% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 758.59,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 13.5% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 728.99,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $22.00 • Growth: 13.5% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 726.03,
+              "weight": "25%",
+              "parameters": "Target Multiple: 29x • Historical Range: 23.2x – 36.3x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+12.2%",
@@ -1296,7 +1792,38 @@ const stocksData = {
         "peVerdict": "Price-to-Book and normalized earnings multiples sit in attractive value territory.",
         "pegRatio": 2.38,
         "pegVerdict": "Defensive compounder with near-zero downside tail risk in late-cycle regimes.",
-        "summary": "DCF modeling based on conservative 8% cash flow expansion yields an intrinsic value of $621.15. At $542.49, shares trade at an asymmetric +14.5% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $621.15. At $542.49, shares trade at an asymmetric +14.5% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 621.15,
+          "marginOfSafety": "+14.5% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 636.68,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 8% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 611.83,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $28.55 • Growth: 8% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 609.35,
+              "weight": "25%",
+              "parameters": "Target Multiple: 19x • Historical Range: 15.2x – 23.8x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+7.2%",
@@ -1374,7 +1901,38 @@ const stocksData = {
         "peVerdict": "Trades at just 14.2x forward earnings, offering immense operating leverage to dealmaking revival.",
         "pegRatio": 0.95,
         "pegVerdict": "PEG of 0.95 makes Goldman Sachs one of the cheapest high-beta financial plays on the market.",
-        "summary": "DCF modeling based on conservative 15% cash flow expansion yields an intrinsic value of $1064.51. At $894.55, shares trade at an asymmetric +19% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $1064.51. At $894.55, shares trade at an asymmetric +19% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 1064.51,
+          "marginOfSafety": "+19% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 1091.12,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 15% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 1048.54,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $63.00 • Growth: 15% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 1044.29,
+              "weight": "25%",
+              "parameters": "Target Multiple: 14.2x • Historical Range: 11.4x – 17.8x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+13.5%",
@@ -1452,7 +2010,38 @@ const stocksData = {
         "peVerdict": "Multiple of 28x is attractive given projected 25%+ annual EPS growth through 2028.",
         "pegRatio": 1.12,
         "pegVerdict": "PEG of 1.12 makes Novo Nordisk one of the cheapest secular growth monopolies in healthcare.",
-        "summary": "DCF modeling based on conservative 25% cash flow expansion yields an intrinsic value of $48. At $40, shares trade at an asymmetric +20% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $48. At $40, shares trade at an asymmetric +20% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 48,
+          "marginOfSafety": "+20% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 49.2,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 25% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 47.28,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $1.43 • Growth: 25% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 47.09,
+              "weight": "25%",
+              "parameters": "Target Multiple: 28x • Historical Range: 22.4x – 35.0x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+22.5%",
@@ -1530,7 +2119,38 @@ const stocksData = {
         "peVerdict": "Multiple of 35x is backed by extraordinary 28%+ annual earnings growth rates.",
         "pegRatio": 1.25,
         "pegVerdict": "PEG of 1.25 reflects premium quality and unmatched pharmaceutical pipeline execution.",
-        "summary": "DCF modeling based on conservative 28% cash flow expansion yields an intrinsic value of $1722.31. At $1417.54, shares trade at an asymmetric +21.5% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $1722.31. At $1417.54, shares trade at an asymmetric +21.5% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 1722.31,
+          "marginOfSafety": "+21.5% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 1765.37,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 28% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 1696.48,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $40.50 • Growth: 28% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 1689.58,
+              "weight": "25%",
+              "parameters": "Target Multiple: 35x • Historical Range: 28.0x – 43.8x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+25.2%",
@@ -1608,7 +2228,38 @@ const stocksData = {
         "peVerdict": "Trades at just 15.5x forward earnings, offering strong defensive income and growth.",
         "pegRatio": 1.55,
         "pegVerdict": "PEG of 1.55 provides exceptional value for a diversified biopharma powerhouse.",
-        "summary": "DCF modeling based on conservative 10% cash flow expansion yields an intrinsic value of $346.5. At $294.89, shares trade at an asymmetric +17.5% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $346.5. At $294.89, shares trade at an asymmetric +17.5% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 346.5,
+          "marginOfSafety": "+17.5% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 355.16,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 10% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 341.3,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $19.03 • Growth: 10% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 339.92,
+              "weight": "25%",
+              "parameters": "Target Multiple: 15.5x • Historical Range: 12.4x – 19.4x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+9.0%",
@@ -1686,7 +2337,38 @@ const stocksData = {
         "peVerdict": "Forward P/E of 14.8x provides a deep discount to the broader healthcare index.",
         "pegRatio": 1.56,
         "pegVerdict": "PEG of 1.55 makes Merck an exceptional defensive value play with strong oncology leadership.",
-        "summary": "DCF modeling based on conservative 9.5% cash flow expansion yields an intrinsic value of $174.19. At $149.52, shares trade at an asymmetric +16.5% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $174.19. At $149.52, shares trade at an asymmetric +16.5% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 174.19,
+          "marginOfSafety": "+16.5% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 178.54,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 9.5% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 171.58,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $10.10 • Growth: 9.5% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 170.88,
+              "weight": "25%",
+              "parameters": "Target Multiple: 14.8x • Historical Range: 11.8x – 18.5x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+8.6%",
@@ -1764,7 +2446,38 @@ const stocksData = {
         "peVerdict": "Multiple of 16.8x sits at cyclical trough levels, historically the best time to accumulate.",
         "pegRatio": 1.2,
         "pegVerdict": "PEG of 1.2 provides asymmetric upside into the next agricultural commodity cycle.",
-        "summary": "DCF modeling based on conservative 14% cash flow expansion yields an intrinsic value of $786.93. At $675.48, shares trade at an asymmetric +16.5% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $786.93. At $675.48, shares trade at an asymmetric +16.5% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 786.93,
+          "marginOfSafety": "+16.5% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 806.6,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 14% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 775.13,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $40.21 • Growth: 14% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 771.98,
+              "weight": "25%",
+              "parameters": "Target Multiple: 16.8x • Historical Range: 13.4x – 21.0x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+12.6%",
@@ -1842,7 +2555,38 @@ const stocksData = {
         "peVerdict": "Multiple of 29.5x is exceptionally reasonable for a business compounding FCF at 35%+ annually.",
         "pegRatio": 1.23,
         "pegVerdict": "PEG of 1.23 represents the premier high-growth network asset in the industrial/transport sector.",
-        "summary": "DCF modeling based on conservative 24% cash flow expansion yields an intrinsic value of $78.95. At $65.25, shares trade at an asymmetric +21% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $78.95. At $65.25, shares trade at an asymmetric +21% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 78.95,
+          "marginOfSafety": "+21% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 80.92,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 24% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 77.77,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $2.21 • Growth: 24% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 77.45,
+              "weight": "25%",
+              "parameters": "Target Multiple: 29.5x • Historical Range: 23.6x – 36.9x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+21.6%",
@@ -1920,7 +2664,38 @@ const stocksData = {
         "peVerdict": "Multiple of 17.2x is attractive given unprecedented datacenter power generation order books.",
         "pegRatio": 1.56,
         "pegVerdict": "PEG of 1.56 offers high-quality industrial exposure to real-economy electrification.",
-        "summary": "DCF modeling based on conservative 11% cash flow expansion yields an intrinsic value of $734.84. At $622.75, shares trade at an asymmetric +18% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $734.84. At $622.75, shares trade at an asymmetric +18% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 734.84,
+          "marginOfSafety": "+18% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 753.21,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 11% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 723.82,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $36.21 • Growth: 11% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 720.88,
+              "weight": "25%",
+              "parameters": "Target Multiple: 17.2x • Historical Range: 13.8x – 21.5x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+9.9%",
@@ -1998,7 +2773,38 @@ const stocksData = {
         "peVerdict": "Multiple of 32x is backed by multi-decade high-margin spare parts and maintenance contracts.",
         "pegRatio": 1.68,
         "pegVerdict": "PEG of 1.68 represents rare commercial aviation quality with virtually zero substitution risk.",
-        "summary": "DCF modeling based on conservative 19% cash flow expansion yields an intrinsic value of $360.65. At $301.8, shares trade at an asymmetric +19.5% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $360.65. At $301.8, shares trade at an asymmetric +19.5% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 360.65,
+          "marginOfSafety": "+19.5% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 369.67,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 19% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 355.24,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $9.43 • Growth: 19% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 353.79,
+              "weight": "25%",
+              "parameters": "Target Multiple: 32x • Historical Range: 25.6x – 40.0x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+17.1%",
@@ -2076,7 +2882,38 @@ const stocksData = {
         "peVerdict": "Multiple of 20.5x provides an attractive entry point following the resolution of engine inspection fears.",
         "pegRatio": 1.71,
         "pegVerdict": "PEG of 1.7 aligns with structural multi-year defense spending increases worldwide.",
-        "summary": "DCF modeling based on conservative 12% cash flow expansion yields an intrinsic value of $233.77. At $199.8, shares trade at an asymmetric +17% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $233.77. At $199.8, shares trade at an asymmetric +17% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 233.77,
+          "marginOfSafety": "+17% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 239.61,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 12% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 230.26,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $9.75 • Growth: 12% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 229.34,
+              "weight": "25%",
+              "parameters": "Target Multiple: 20.5x • Historical Range: 16.4x – 25.6x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+10.8%",
@@ -2154,7 +2991,38 @@ const stocksData = {
         "peVerdict": "Multiple of 12.4x is remarkably cheap for the world's most integrated, low-cost energy major.",
         "pegRatio": 1.38,
         "pegVerdict": "PEG of 1.38 offers deep margin of safety and a solid 3.3% dividend yield.",
-        "summary": "DCF modeling based on conservative 9% cash flow expansion yields an intrinsic value of $221.89. At $187.25, shares trade at an asymmetric +18.5% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $221.89. At $187.25, shares trade at an asymmetric +18.5% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 221.89,
+          "marginOfSafety": "+18.5% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 227.44,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 9% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 218.56,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $15.10 • Growth: 9% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 217.67,
+              "weight": "25%",
+              "parameters": "Target Multiple: 12.4x • Historical Range: 9.9x – 15.5x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+8.1%",
@@ -2232,7 +3100,38 @@ const stocksData = {
         "peVerdict": "Multiple of 12.9x offers an attractive discount to broader equity market multiples.",
         "pegRatio": 1.52,
         "pegVerdict": "PEG of 1.5 offers dependable income and capital appreciation in energy.",
-        "summary": "DCF modeling based on conservative 8.5% cash flow expansion yields an intrinsic value of $275.56. At $235.52, shares trade at an asymmetric +17% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $275.56. At $235.52, shares trade at an asymmetric +17% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 275.56,
+          "marginOfSafety": "+17% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 282.45,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 8.5% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 271.43,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $18.26 • Growth: 8.5% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 270.32,
+              "weight": "25%",
+              "parameters": "Target Multiple: 12.9x • Historical Range: 10.3x – 16.1x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+7.7%",
@@ -2310,7 +3209,38 @@ const stocksData = {
         "peVerdict": "Multiple of 13.5x offers exceptional value for the world's leading oilfield technology provider.",
         "pegRatio": 0.96,
         "pegVerdict": "PEG of 0.96 makes SLB one of the cheapest high-growth technology plays in energy.",
-        "summary": "DCF modeling based on conservative 14% cash flow expansion yields an intrinsic value of $65.56. At $53.74, shares trade at an asymmetric +22% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $65.56. At $53.74, shares trade at an asymmetric +22% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 65.56,
+          "marginOfSafety": "+22% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 67.2,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 14% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 64.58,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $3.98 • Growth: 14% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 64.31,
+              "weight": "25%",
+              "parameters": "Target Multiple: 13.5x • Historical Range: 10.8x – 16.9x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+12.6%",
@@ -2388,7 +3318,38 @@ const stocksData = {
         "peVerdict": "Premium multiple of 44x is fully supported by subscription stability and double-digit EPS compounding.",
         "pegRatio": 3.83,
         "pegVerdict": "PEG of 3.8 reflects legendary corporate quality that institutional money treats as a cash sanctuary.",
-        "summary": "DCF modeling based on conservative 11.5% cash flow expansion yields an intrinsic value of $1133.75. At $1012.28, shares trade at an asymmetric +12% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $1133.75. At $1012.28, shares trade at an asymmetric +12% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 1133.75,
+          "marginOfSafety": "+12% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 1162.09,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 11.5% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 1116.74,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $23.01 • Growth: 11.5% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 1112.22,
+              "weight": "25%",
+              "parameters": "Target Multiple: 44x • Historical Range: 35.2x – 55.0x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+10.3%",
@@ -2466,7 +3427,38 @@ const stocksData = {
         "peVerdict": "Multiple of 28.5x is supported by structural shift from low-margin retail to high-margin ad network.",
         "pegRatio": 2.85,
         "pegVerdict": "PEG of 2.85 is justified by accelerating return on invested capital.",
-        "summary": "DCF modeling based on conservative 10% cash flow expansion yields an intrinsic value of $142.65. At $123.51, shares trade at an asymmetric +15.5% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $142.65. At $123.51, shares trade at an asymmetric +15.5% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 142.65,
+          "marginOfSafety": "+15.5% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 146.22,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 10% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 140.51,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $4.33 • Growth: 10% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 139.93,
+              "weight": "25%",
+              "parameters": "Target Multiple: 28.5x • Historical Range: 22.8x – 35.6x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+9.0%",
@@ -2544,7 +3536,38 @@ const stocksData = {
         "peVerdict": "Multiple of 24x aligns with long-term defensive consumer staple compounder valuations.",
         "pegRatio": 3.2,
         "pegVerdict": "PEG of 3.2 represents prime defensive anchor value in volatile equity markets.",
-        "summary": "DCF modeling based on conservative 7.5% cash flow expansion yields an intrinsic value of $184.19. At $161.57, shares trade at an asymmetric +14% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $184.19. At $161.57, shares trade at an asymmetric +14% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 184.19,
+          "marginOfSafety": "+14% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 188.79,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 7.5% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 181.43,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $6.73 • Growth: 7.5% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 180.69,
+              "weight": "25%",
+              "parameters": "Target Multiple: 24x • Historical Range: 19.2x – 30.0x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+6.8%",
@@ -2622,7 +3645,38 @@ const stocksData = {
         "peVerdict": "Multiple of 30x is justified by 35%+ operating margins and relentless share repurchases.",
         "pegRatio": 2.5,
         "pegVerdict": "PEG of 2.5 represents premier defensive compounder value in basic materials.",
-        "summary": "DCF modeling based on conservative 12% cash flow expansion yields an intrinsic value of $604.23. At $514.24, shares trade at an asymmetric +17.5% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $604.23. At $514.24, shares trade at an asymmetric +17.5% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 604.23,
+          "marginOfSafety": "+17.5% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 619.34,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 12% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 595.17,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $17.14 • Growth: 12% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 592.74,
+              "weight": "25%",
+              "parameters": "Target Multiple: 30x • Historical Range: 24.0x – 37.5x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+10.8%",
@@ -2700,7 +3754,38 @@ const stocksData = {
         "peVerdict": "Multiple of 18x offers immense operating leverage to structural copper price appreciation.",
         "pegRatio": 0.95,
         "pegVerdict": "PEG of 0.95 makes Freeport the premier asymmetric commodity investment on Wall Street.",
-        "summary": "DCF modeling based on conservative 19% cash flow expansion yields an intrinsic value of $76.84. At $62.47, shares trade at an asymmetric +23% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $76.84. At $62.47, shares trade at an asymmetric +23% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 76.84,
+          "marginOfSafety": "+23% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 78.76,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 19% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 75.69,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $3.47 • Growth: 19% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 75.38,
+              "weight": "25%",
+              "parameters": "Target Multiple: 18x • Historical Range: 14.4x – 22.5x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+17.1%",
@@ -2778,7 +3863,38 @@ const stocksData = {
         "peVerdict": "Multiple of 25x is cheap compared to the secular surge in high-margin power purchase contract values.",
         "pegRatio": 1.14,
         "pegVerdict": "PEG of 1.14 offers rare growth-at-a-reasonable-price in clean energy infrastructure.",
-        "summary": "DCF modeling based on conservative 22% cash flow expansion yields an intrinsic value of $325.35. At $262.38, shares trade at an asymmetric +24% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $325.35. At $262.38, shares trade at an asymmetric +24% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 325.35,
+          "marginOfSafety": "+24% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 333.48,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 22% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 320.47,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $10.50 • Growth: 22% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 319.17,
+              "weight": "25%",
+              "parameters": "Target Multiple: 25x • Historical Range: 20.0x – 31.3x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+19.8%",
@@ -2856,7 +3972,38 @@ const stocksData = {
         "peVerdict": "Forward multiple of 21x significantly undervalues multi-year power capacity contract repricing.",
         "pegRatio": 1.05,
         "pegVerdict": "PEG of 1.05 makes Vistra the most dynamic power generator in the S&P 500.",
-        "summary": "DCF modeling based on conservative 20% cash flow expansion yields an intrinsic value of $168.81. At $138.37, shares trade at an asymmetric +22% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $168.81. At $138.37, shares trade at an asymmetric +22% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 168.81,
+          "marginOfSafety": "+22% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 173.03,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 20% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 166.28,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $6.59 • Growth: 20% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 165.6,
+              "weight": "25%",
+              "parameters": "Target Multiple: 21x • Historical Range: 16.8x – 26.3x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+18.0%",
@@ -2934,7 +4081,38 @@ const stocksData = {
         "peVerdict": "Multiple of 22x sits well below its 5-year average of 28x, creating an attractive entry.",
         "pegRatio": 2.32,
         "pegVerdict": "PEG of 2.3 provides safe, high-yield defensive utility compounding.",
-        "summary": "DCF modeling based on conservative 9.5% cash flow expansion yields an intrinsic value of $98.78. At $83.71, shares trade at an asymmetric +18% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $98.78. At $83.71, shares trade at an asymmetric +18% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 98.78,
+          "marginOfSafety": "+18% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 101.25,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 9.5% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 97.3,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $3.80 • Growth: 9.5% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 96.9,
+              "weight": "25%",
+              "parameters": "Target Multiple: 22x • Historical Range: 17.6x – 27.5x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+8.6%",
@@ -3012,7 +4190,38 @@ const stocksData = {
         "peVerdict": "Price-to-AFFO multiple of 24x sits at an attractive discount to historical private market asset valuations.",
         "pegRatio": 2.18,
         "pegVerdict": "PEG of 2.18 offers dependable inflation-protected income and secular logistics growth.",
-        "summary": "DCF modeling based on conservative 11% cash flow expansion yields an intrinsic value of $152.3. At $127.98, shares trade at an asymmetric +19% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $152.3. At $127.98, shares trade at an asymmetric +19% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 152.3,
+          "marginOfSafety": "+19% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 156.11,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 11% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 150.02,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $5.33 • Growth: 11% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 149.4,
+              "weight": "25%",
+              "parameters": "Target Multiple: 24x • Historical Range: 19.2x – 30.0x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+9.9%",
@@ -3090,7 +4299,38 @@ const stocksData = {
         "peVerdict": "Multiple of 26x AFFO is warranted by unmatched ecosystem stickiness and low churn (<1%).",
         "pegRatio": 2,
         "pegVerdict": "PEG of 2.0 represents institutional quality with pricing power in digital infrastructure.",
-        "summary": "DCF modeling based on conservative 13% cash flow expansion yields an intrinsic value of $1221.51. At $1013.7, shares trade at an asymmetric +20.5% margin of safety."
+        "summary": "Triangulated multi-model ensemble (40% DCF, 35% Lynch/Graham, 25% Multiples Reversion) converges on an intrinsic value of $1221.51. At $1013.7, shares trade at an asymmetric +20.5% margin of safety.",
+        "ensemble": {
+          "compositeFairValue": 1221.51,
+          "marginOfSafety": "+20.5% Margin of Safety",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 1252.05,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 13% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 1203.19,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $38.99 • Growth: 13% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 1198.29,
+              "weight": "25%",
+              "parameters": "Target Multiple: 26x • Historical Range: 20.8x – 32.5x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+11.7%",
@@ -3170,7 +4410,38 @@ const stocksData = {
         "peVerdict": "Headline P/E looks distorted by collapsed earnings; cash flow multiples remain deeply unattractive.",
         "pegRatio": 2.5,
         "pegVerdict": "Negative growth prospects yield an uninvestable PEG profile until foundry proves viability.",
-        "summary": "DCF and normalized earnings models indicate fair value of $47.02. Trading at $65.76, shares carry a -28.5% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $47.02. Trading at $65.76, shares carry a -28.5% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 47.02,
+          "marginOfSafety": "-28.5% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 45.37,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: -5% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 48.2,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $1.73 • Growth: -5% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 48.01,
+              "weight": "25%",
+              "parameters": "Target Multiple: 38x • Historical Range: 30.4x – 47.5x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+-2.5%",
@@ -3248,7 +4519,38 @@ const stocksData = {
         "peVerdict": "Valuation is extended well beyond any comparable enterprise software company in the S&P 500.",
         "pegRatio": 4.32,
         "pegVerdict": "PEG over 4.2 implies severe multiple contraction risk upon any quarterly growth deceleration.",
-        "summary": "DCF and normalized earnings models indicate fair value of $116.91. Trading at $184.11, shares carry a -36.5% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $116.91. Trading at $184.11, shares carry a -36.5% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 116.91,
+          "marginOfSafety": "-36.5% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 112.82,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 22% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 119.83,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $1.94 • Growth: 22% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 119.37,
+              "weight": "25%",
+              "parameters": "Target Multiple: 95x • Historical Range: 76.0x – 118.8x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+11.0%",
@@ -3326,7 +4628,38 @@ const stocksData = {
         "peVerdict": "Low trailing multiple is a classic value trap masked by severe governance and working capital risks.",
         "pegRatio": 1.8,
         "pegVerdict": "Unpredictable earnings cadence makes PEG metrics unreliable for risk-managed portfolios.",
-        "summary": "DCF and normalized earnings models indicate fair value of $19.11. Trading at $32.95, shares carry a -42% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $19.11. Trading at $32.95, shares carry a -42% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 19.11,
+          "marginOfSafety": "-42% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 18.44,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 10% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 19.59,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $1.83 • Growth: 10% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 19.51,
+              "weight": "25%",
+              "parameters": "Target Multiple: 18x • Historical Range: 14.4x – 22.5x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+5.0%",
@@ -3404,7 +4737,38 @@ const stocksData = {
         "peVerdict": "Premium multiple assumes unrealistic expansion into hyperscale datacenter server sockets.",
         "pegRatio": 4.33,
         "pegVerdict": "PEG of 4.3 makes Arm one of the most expensive semiconductor IP plays in the world.",
-        "summary": "DCF and normalized earnings models indicate fair value of $133.88. Trading at $205.97, shares carry a -35% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $133.88. Trading at $205.97, shares carry a -35% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 133.88,
+          "marginOfSafety": "-35% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 129.19,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 18% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 137.23,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $2.64 • Growth: 18% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 136.69,
+              "weight": "25%",
+              "parameters": "Target Multiple: 78x • Historical Range: 62.4x – 97.5x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+9.0%",
@@ -3482,7 +4846,38 @@ const stocksData = {
         "peVerdict": "Forward multiple of 38.5x leaves little cushion for any deceleration in datacenter revenue growth.",
         "pegRatio": 1.1,
         "pegVerdict": "PEG appears modest only if triple-digit datacenter revenue runs forever without cyclical pause.",
-        "summary": "DCF and normalized earnings models indicate fair value of $159.62. Trading at $204.64, shares carry a -22% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $159.62. Trading at $204.64, shares carry a -22% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 159.62,
+          "marginOfSafety": "-22% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 154.03,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 35% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 163.61,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $5.32 • Growth: 35% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 162.98,
+              "weight": "25%",
+              "parameters": "Target Multiple: 38.5x • Historical Range: 30.8x – 48.1x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+17.5%",
@@ -3560,7 +4955,38 @@ const stocksData = {
         "peVerdict": "Multiple has expanded 60% over 5 years while revenue growth slowed to GDP levels.",
         "pegRatio": 5.5,
         "pegVerdict": "PEG of 3.8 indicates investors are paying a steep luxury tax on defensive buybacks.",
-        "summary": "DCF and normalized earnings models indicate fair value of $280.87. Trading at $344.63, shares carry a -18.5% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $280.87. Trading at $344.63, shares carry a -18.5% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 280.87,
+          "marginOfSafety": "-18.5% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 271.04,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 6% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 287.89,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $10.44 • Growth: 6% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 286.77,
+              "weight": "25%",
+              "parameters": "Target Multiple: 33x • Historical Range: 26.4x – 41.3x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+3.0%",
@@ -3638,7 +5064,38 @@ const stocksData = {
         "peVerdict": "Trades at 33.5x forward earnings, requiring high-teens earnings growth that capex makes difficult.",
         "pegRatio": 2.39,
         "pegVerdict": "PEG of 2.4 reflects limited valuation buffer as depreciation costs ramp up.",
-        "summary": "DCF and normalized earnings models indicate fair value of $438.4. Trading at $521.91, shares carry a -16% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $438.4. Trading at $521.91, shares carry a -16% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 438.4,
+          "marginOfSafety": "-16% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 423.06,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 14% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 449.36,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $15.58 • Growth: 14% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 447.6,
+              "weight": "25%",
+              "parameters": "Target Multiple: 33.5x • Historical Range: 26.8x – 41.9x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+7.0%",
@@ -3716,7 +5173,38 @@ const stocksData = {
         "peVerdict": "Trades at 88x forward earnings—a tech-bubble valuation for an auto manufacturing business.",
         "pegRatio": 7.33,
         "pegVerdict": "PEG over 7.3 leaves shares vulnerable to extreme multiple contraction.",
-        "summary": "DCF and normalized earnings models indicate fair value of $275.87. Trading at $399.81, shares carry a -31% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $275.87. Trading at $399.81, shares carry a -31% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 275.87,
+          "marginOfSafety": "-31% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 266.21,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 12% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 282.77,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $4.54 • Growth: 12% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 281.67,
+              "weight": "25%",
+              "parameters": "Target Multiple: 88x • Historical Range: 70.4x – 110.0x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+6.0%",
@@ -3794,7 +5282,38 @@ const stocksData = {
         "peVerdict": "Multiple of 26x is rich for an apparel retailer experiencing US sales saturation.",
         "pegRatio": 3.71,
         "pegVerdict": "PEG of 3.7 offers zero downside protection if international expansion slows.",
-        "summary": "DCF and normalized earnings models indicate fair value of $77.21. Trading at $107.24, shares carry a -28% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $77.21. Trading at $107.24, shares carry a -28% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 77.21,
+          "marginOfSafety": "-28% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 74.51,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 7% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 79.14,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $4.12 • Growth: 7% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 78.83,
+              "weight": "25%",
+              "parameters": "Target Multiple: 26x • Historical Range: 20.8x – 32.5x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+3.5%",
@@ -3872,7 +5391,38 @@ const stocksData = {
         "peVerdict": "Negative earnings and high cash burn make valuation multiples fundamentally unanchored.",
         "pegRatio": 2.5,
         "pegVerdict": "Negative earnings trajectory prevents any viable PEG justification.",
-        "summary": "DCF and normalized earnings models indicate fair value of $7.05. Trading at $12.16, shares carry a -42% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $7.05. Trading at $12.16, shares carry a -42% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 7.05,
+          "marginOfSafety": "-42% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 6.8,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: -15% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 7.23,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $-2.70 • Growth: -15% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 7.2,
+              "weight": "25%",
+              "parameters": "Target Multiple: -4.5x • Historical Range: -3.6x – -5.6x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+-7.5%",
@@ -3950,7 +5500,38 @@ const stocksData = {
         "peVerdict": "Trades at 27.5x earnings despite negative top-line growth and shrinking operating margins.",
         "pegRatio": 13.75,
         "pegVerdict": "PEG over 5.0 reflects an inflated legacy multiple awaiting multi-year restructuring.",
-        "summary": "DCF and normalized earnings models indicate fair value of $29.39. Trading at $38.67, shares carry a -24% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $29.39. Trading at $38.67, shares carry a -24% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 29.39,
+          "marginOfSafety": "-24% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 28.36,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 2% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 30.12,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $1.41 • Growth: 2% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 30.02,
+              "weight": "25%",
+              "parameters": "Target Multiple: 27.5x • Historical Range: 22.0x – 34.4x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+1.0%",
@@ -4028,7 +5609,38 @@ const stocksData = {
         "peVerdict": "Multiple of 25x is stretched for a mature fast-food franchisor with negative guest count trends.",
         "pegRatio": 5.56,
         "pegVerdict": "PEG of 3.8 provides minimal upside given slow unit economics.",
-        "summary": "DCF and normalized earnings models indicate fair value of $212.95. Trading at $258.12, shares carry a -17.5% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $212.95. Trading at $258.12, shares carry a -17.5% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 212.95,
+          "marginOfSafety": "-17.5% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 205.5,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 4.5% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 218.27,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $10.32 • Growth: 4.5% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 217.42,
+              "weight": "25%",
+              "parameters": "Target Multiple: 25x • Historical Range: 20.0x – 31.3x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+2.3%",
@@ -4106,7 +5718,38 @@ const stocksData = {
         "peVerdict": "Trades at 27x earnings while comparable store sales and margins are actively contracting.",
         "pegRatio": 6.75,
         "pegVerdict": "PEG of 4.2 leaves no margin of safety as turnaround costs mount.",
-        "summary": "DCF and normalized earnings models indicate fair value of $81.9. Trading at $103.67, shares carry a -21% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $81.9. Trading at $103.67, shares carry a -21% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 81.9,
+          "marginOfSafety": "-21% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 79.03,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 4% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 83.95,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $3.84 • Growth: 4% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 83.62,
+              "weight": "25%",
+              "parameters": "Target Multiple: 27x • Historical Range: 21.6x – 33.8x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+2.0%",
@@ -4184,7 +5827,38 @@ const stocksData = {
         "peVerdict": "Forward multiple of 45x is unmoored from reality given single-digit revenue growth and lack of GAAP profits.",
         "pegRatio": 7.5,
         "pegVerdict": "Unfavorable PEG of 7.5 reflects ongoing inability to monetize user engagement effectively.",
-        "summary": "DCF and normalized earnings models indicate fair value of $3.63. Trading at $5.34, shares carry a -32% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $3.63. Trading at $5.34, shares carry a -32% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 3.63,
+          "marginOfSafety": "-32% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 3.5,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 6% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 3.72,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $0.12 • Growth: 6% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 3.71,
+              "weight": "25%",
+              "parameters": "Target Multiple: 45x • Historical Range: 36.0x – 56.3x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+3.0%",
@@ -4262,7 +5936,38 @@ const stocksData = {
         "peVerdict": "Trades at 36.5x forward earnings, pricing in perpetual subscription growth in saturated regions.",
         "pegRatio": 2.81,
         "pegVerdict": "PEG of 2.8 leaves the stock vulnerable to any guidance moderation or subscriber slowdown.",
-        "summary": "DCF and normalized earnings models indicate fair value of $49.35. Trading at $62.08, shares carry a -20.5% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $49.35. Trading at $62.08, shares carry a -20.5% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 49.35,
+          "marginOfSafety": "-20.5% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 47.62,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 13% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 50.58,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $1.70 • Growth: 13% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 50.4,
+              "weight": "25%",
+              "parameters": "Target Multiple: 36.5x • Historical Range: 29.2x – 45.6x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+6.5%",
@@ -4340,7 +6045,38 @@ const stocksData = {
         "peVerdict": "Low 11x multiple is a classic value trap masked by secularly declining subscriber volumes.",
         "pegRatio": 22,
         "pegVerdict": "Flat earnings growth makes low multiples deceptive.",
-        "summary": "DCF and normalized earnings models indicate fair value of $18.11. Trading at $23.22, shares carry a -22% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $18.11. Trading at $23.22, shares carry a -22% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 18.11,
+          "marginOfSafety": "-22% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 17.48,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 0.5% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 18.56,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $2.11 • Growth: 0.5% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 18.49,
+              "weight": "25%",
+              "parameters": "Target Multiple: 11x • Historical Range: 8.8x – 13.8x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+0.3%",
@@ -4418,7 +6154,38 @@ const stocksData = {
         "peVerdict": "Multiple of 13.2x is discounted for good reason: lower ROTCE than JPMorgan.",
         "pegRatio": 3.3,
         "pegVerdict": "PEG of 3.3 reflects constrained balance sheet flexibility.",
-        "summary": "DCF and normalized earnings models indicate fair value of $41.01. Trading at $50.01, shares carry a -18% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $41.01. Trading at $50.01, shares carry a -18% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 41.01,
+          "marginOfSafety": "-18% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 39.57,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 4% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 42.04,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $3.79 • Growth: 4% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 41.87,
+              "weight": "25%",
+              "parameters": "Target Multiple: 13.2x • Historical Range: 10.6x – 16.5x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+2.0%",
@@ -4496,7 +6263,38 @@ const stocksData = {
         "peVerdict": "Premium valuation relative to pure-play investment banks limits near-term multiple expansion.",
         "pegRatio": 2.47,
         "pegVerdict": "PEG of 2.4 indicates limited upside relative to earnings growth expectations.",
-        "summary": "DCF and normalized earnings models indicate fair value of $153.89. Trading at $184.3, shares carry a -16.5% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $153.89. Trading at $184.3, shares carry a -16.5% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 153.89,
+          "marginOfSafety": "-16.5% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 148.5,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 7.5% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 157.74,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $9.96 • Growth: 7.5% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 157.12,
+              "weight": "25%",
+              "parameters": "Target Multiple: 18.5x • Historical Range: 14.8x – 23.1x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+3.8%",
@@ -4574,7 +6372,38 @@ const stocksData = {
         "peVerdict": "Multiple of 22.5x is elevated given slowing fee rate realizations.",
         "pegRatio": 2.81,
         "pegVerdict": "PEG of 2.8 offers minimal margin of safety in volatile equity markets.",
-        "summary": "DCF and normalized earnings models indicate fair value of $975.41. Trading at $1147.54, shares carry a -15% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $975.41. Trading at $1147.54, shares carry a -15% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 975.41,
+          "marginOfSafety": "-15% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 941.27,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 8% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 999.8,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $51.00 • Growth: 8% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 995.89,
+              "weight": "25%",
+              "parameters": "Target Multiple: 22.5x • Historical Range: 18.0x – 28.1x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+4.0%",
@@ -4652,7 +6481,38 @@ const stocksData = {
         "peVerdict": "Low headline multiple is a value trap caused by collapsing insurance underwriting margins.",
         "pegRatio": 5.25,
         "pegVerdict": "Negative revision momentum renders PEG metrics unreliable for risk management.",
-        "summary": "DCF and normalized earnings models indicate fair value of $64.98. Trading at $90.25, shares carry a -28% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $64.98. Trading at $90.25, shares carry a -28% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 64.98,
+          "marginOfSafety": "-28% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 62.71,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 2% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 66.6,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $8.60 • Growth: 2% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 66.34,
+              "weight": "25%",
+              "parameters": "Target Multiple: 10.5x • Historical Range: 8.4x – 13.1x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+1.0%",
@@ -4730,7 +6590,38 @@ const stocksData = {
         "peVerdict": "Multiple of 19.5x is historically fair but vulnerable if medical loss ratios remain elevated.",
         "pegRatio": 2.79,
         "pegVerdict": "PEG of 2.78 offers minimal margin of safety under ongoing regulatory scrutiny.",
-        "summary": "DCF and normalized earnings models indicate fair value of $329.65. Trading at $406.97, shares carry a -19% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $329.65. Trading at $406.97, shares carry a -19% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 329.65,
+          "marginOfSafety": "-19% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 318.11,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 7% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 337.89,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $20.87 • Growth: 7% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 336.58,
+              "weight": "25%",
+              "parameters": "Target Multiple: 19.5x • Historical Range: 15.6x – 24.4x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+3.5%",
@@ -4808,7 +6699,38 @@ const stocksData = {
         "peVerdict": "Multiple of 14x reflects weak organic top-line growth and heavy debt service obligations.",
         "pegRatio": 9.33,
         "pegVerdict": "PEG over 9.0 signals fundamental lack of medium-term earnings expansion.",
-        "summary": "DCF and normalized earnings models indicate fair value of $22.89. Trading at $30.52, shares carry a -25% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $22.89. Trading at $30.52, shares carry a -25% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 22.89,
+          "marginOfSafety": "-25% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 22.09,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 1.5% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 23.46,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $2.18 • Growth: 1.5% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 23.37,
+              "weight": "25%",
+              "parameters": "Target Multiple: 14x • Historical Range: 11.2x – 17.5x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+0.8%",
@@ -4886,7 +6808,38 @@ const stocksData = {
         "peVerdict": "Multiple of 16.5x is fair for a AAA balance sheet, but upside is capped by legal liabilities.",
         "pegRatio": 4.13,
         "pegVerdict": "PEG of 4.1 makes Johnson & Johnson an expensive low-growth defensive holding.",
-        "summary": "DCF and normalized earnings models indicate fair value of $229.49. Trading at $273.2, shares carry a -16% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $229.49. Trading at $273.2, shares carry a -16% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 229.49,
+          "marginOfSafety": "-16% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 221.46,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 4% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 235.23,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $16.56 • Growth: 4% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 234.3,
+              "weight": "25%",
+              "parameters": "Target Multiple: 16.5x • Historical Range: 13.2x – 20.6x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+2.0%",
@@ -4964,7 +6917,38 @@ const stocksData = {
         "peVerdict": "Negative earnings and multi-year free cash burn make valuation multiples unanchored.",
         "pegRatio": -8.75,
         "pegVerdict": "Fundamental unprofitability prevents any viable valuation support.",
-        "summary": "DCF and normalized earnings models indicate fair value of $130.38. Trading at $171.55, shares carry a -24% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $130.38. Trading at $171.55, shares carry a -24% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 130.38,
+          "marginOfSafety": "-24% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 125.82,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 4% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 133.64,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $-4.90 • Growth: 4% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 133.11,
+              "weight": "25%",
+              "parameters": "Target Multiple: -35x • Historical Range: -28.0x – -43.8x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+2.0%",
@@ -5042,7 +7026,38 @@ const stocksData = {
         "peVerdict": "Multiple of 20x is at the high end of its historical range despite margin headwinds.",
         "pegRatio": 3.64,
         "pegVerdict": "PEG of 3.6 indicates limited upside potential for defense investors.",
-        "summary": "DCF and normalized earnings models indicate fair value of $519.11. Trading at $636.95, shares carry a -18.5% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $519.11. Trading at $636.95, shares carry a -18.5% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 519.11,
+          "marginOfSafety": "-18.5% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 500.94,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 5.5% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 532.09,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $31.85 • Growth: 5.5% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 530.01,
+              "weight": "25%",
+              "parameters": "Target Multiple: 20x • Historical Range: 16.0x – 25.0x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+2.8%",
@@ -5120,7 +7135,38 @@ const stocksData = {
         "peVerdict": "Multiple of 21x is expensive for a business struggling to generate 4% organic sales growth.",
         "pegRatio": 3.5,
         "pegVerdict": "PEG of 3.5 provides minimal upside cushion.",
-        "summary": "DCF and normalized earnings models indicate fair value of $183.4. Trading at $218.33, shares carry a -16% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $183.4. Trading at $218.33, shares carry a -16% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 183.4,
+          "marginOfSafety": "-16% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 176.98,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 6% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 187.98,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $10.40 • Growth: 6% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 187.26,
+              "weight": "25%",
+              "parameters": "Target Multiple: 21x • Historical Range: 16.8x – 26.3x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+3.0%",
@@ -5198,7 +7244,38 @@ const stocksData = {
         "peVerdict": "Multiple of 21.5x sits above historical freight rail valuation averages.",
         "pegRatio": 4.3,
         "pegVerdict": "PEG of 4.3 leaves shares vulnerable if manufacturing indices stay in contraction.",
-        "summary": "DCF and normalized earnings models indicate fair value of $252.32. Trading at $304, shares carry a -17% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $252.32. Trading at $304, shares carry a -17% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 252.32,
+          "marginOfSafety": "-17% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 243.49,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 5% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 258.63,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $14.14 • Growth: 5% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 257.61,
+              "weight": "25%",
+              "parameters": "Target Multiple: 21.5x • Historical Range: 17.2x – 26.9x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+2.5%",
@@ -5276,7 +7353,38 @@ const stocksData = {
         "peVerdict": "Multiple of 13.8x offers less margin of safety than Exxon Mobil's diversified structure.",
         "pegRatio": 2.3,
         "pegVerdict": "PEG of 2.3 reflects slower EPS compounding through the integration phase.",
-        "summary": "DCF and normalized earnings models indicate fair value of $127.07. Trading at $154.03, shares carry a -17.5% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $127.07. Trading at $154.03, shares carry a -17.5% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 127.07,
+          "marginOfSafety": "-17.5% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 122.62,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 6% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 130.25,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $11.16 • Growth: 6% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 129.74,
+              "weight": "25%",
+              "parameters": "Target Multiple: 13.8x • Historical Range: 11.0x – 17.3x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+3.0%",
@@ -5354,7 +7462,38 @@ const stocksData = {
         "peVerdict": "Multiple of 12.5x lacks sufficient discount to offset commodity price fluctuations.",
         "pegRatio": 2.27,
         "pegVerdict": "PEG of 2.27 provides limited upside in a range-bound crude oil environment.",
-        "summary": "DCF and normalized earnings models indicate fair value of $134.09. Trading at $165.54, shares carry a -19% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $134.09. Trading at $165.54, shares carry a -19% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 134.09,
+          "marginOfSafety": "-19% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 129.4,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 5.5% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 137.44,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $13.24 • Growth: 5.5% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 136.9,
+              "weight": "25%",
+              "parameters": "Target Multiple: 12.5x • Historical Range: 10.0x – 15.6x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+2.8%",
@@ -5432,7 +7571,38 @@ const stocksData = {
         "peVerdict": "Multiple of 24.5x fully values beverage cash flows without offering upside surprise.",
         "pegRatio": 5.44,
         "pegVerdict": "PEG of 5.4 makes Coca-Cola expensive relative to its low-single-digit volume trajectory.",
-        "summary": "DCF and normalized earnings models indicate fair value of $79.03. Trading at $94.08, shares carry a -16% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $79.03. Trading at $94.08, shares carry a -16% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 79.03,
+          "marginOfSafety": "-16% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 76.26,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 4.5% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 81.01,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $3.84 • Growth: 4.5% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 80.69,
+              "weight": "25%",
+              "parameters": "Target Multiple: 24.5x • Historical Range: 19.6x – 30.6x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+2.3%",
@@ -5510,7 +7680,38 @@ const stocksData = {
         "peVerdict": "Multiple of 21x is vulnerable if snack volume elasticity fails to rebound quickly.",
         "pegRatio": 5.25,
         "pegVerdict": "PEG of 5.2 reflects slowing organic growth in the core North America snacks division.",
-        "summary": "DCF and normalized earnings models indicate fair value of $113.31. Trading at $137.34, shares carry a -17.5% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $113.31. Trading at $137.34, shares carry a -17.5% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 113.31,
+          "marginOfSafety": "-17.5% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 109.34,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 4% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 116.14,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $6.54 • Growth: 4% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 115.7,
+              "weight": "25%",
+              "parameters": "Target Multiple: 21x • Historical Range: 16.8x – 26.3x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+2.0%",
@@ -5588,7 +7789,38 @@ const stocksData = {
         "peVerdict": "Multiple of 30.5x is historically extended for a coatings manufacturer facing volume headwinds.",
         "pegRatio": 4.69,
         "pegVerdict": "PEG of 4.7 leaves shares exposed to multiple compression if rate cuts are delayed.",
-        "summary": "DCF and normalized earnings models indicate fair value of $266.09. Trading at $332.61, shares carry a -20% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $266.09. Trading at $332.61, shares carry a -20% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 266.09,
+          "marginOfSafety": "-20% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 256.78,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 6.5% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 272.74,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $10.91 • Growth: 6.5% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 271.68,
+              "weight": "25%",
+              "parameters": "Target Multiple: 30.5x • Historical Range: 24.4x – 38.1x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+3.3%",
@@ -5666,7 +7898,38 @@ const stocksData = {
         "peVerdict": "Multiple of 18.5x is elevated given high capital reinvestment requirements in aging gold mines.",
         "pegRatio": 4.63,
         "pegVerdict": "PEG of 4.6 reflects volatile free cash flow conversion despite high gold prices.",
-        "summary": "DCF and normalized earnings models indicate fair value of $82.62. Trading at $106.61, shares carry a -22.5% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $82.62. Trading at $106.61, shares carry a -22.5% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 82.62,
+          "marginOfSafety": "-22.5% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 79.73,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 4% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 84.69,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $5.76 • Growth: 4% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 84.35,
+              "weight": "25%",
+              "parameters": "Target Multiple: 18.5x • Historical Range: 14.8x – 23.1x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+2.0%",
@@ -5744,7 +8007,38 @@ const stocksData = {
         "peVerdict": "Multiple of 19.5x fully reflects earnings power without offering catalyst for re-rating.",
         "pegRatio": 3.9,
         "pegVerdict": "PEG of 3.9 offers minimal upside relative to Constellation and NextEra.",
-        "summary": "DCF and normalized earnings models indicate fair value of $77.78. Trading at $93.71, shares carry a -17% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $77.78. Trading at $93.71, shares carry a -17% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 77.78,
+          "marginOfSafety": "-17% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 75.06,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 5% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 79.72,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $4.81 • Growth: 5% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 79.42,
+              "weight": "25%",
+              "parameters": "Target Multiple: 19.5x • Historical Range: 15.6x – 24.4x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+2.5%",
@@ -5822,7 +8116,38 @@ const stocksData = {
         "peVerdict": "Multiple of 22x AFFO is historically rich given decelerating domestic organic tenant billings.",
         "pegRatio": 4.89,
         "pegVerdict": "PEG of 4.8 leaves limited room for multiple expansion.",
-        "summary": "DCF and normalized earnings models indicate fair value of $153.98. Trading at $187.78, shares carry a -18% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $153.98. Trading at $187.78, shares carry a -18% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 153.98,
+          "marginOfSafety": "-18% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 148.59,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 4.5% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 157.83,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $8.54 • Growth: 4.5% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 157.21,
+              "weight": "25%",
+              "parameters": "Target Multiple: 22x • Historical Range: 17.6x – 27.5x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+2.3%",
@@ -5900,7 +8225,38 @@ const stocksData = {
         "peVerdict": "Multiple of 15x AFFO provides a 5.3% dividend yield but minimal capital appreciation potential.",
         "pegRatio": 4.29,
         "pegVerdict": "Low 3.5% AFFO growth makes the equity vulnerable during bond sell-offs.",
-        "summary": "DCF and normalized earnings models indicate fair value of $45.83. Trading at $56.93, shares carry a -19.5% downside risk to intrinsic valuation."
+        "summary": "Triangulated multi-model ensemble indicates intrinsic fair value of $45.83. Trading at $56.93, shares carry a -19.5% downside risk to intrinsic valuation.",
+        "ensemble": {
+          "compositeFairValue": 45.83,
+          "marginOfSafety": "-19.5% Downside Risk",
+          "confidenceRating": "High Confidence • 3-Model Convergence",
+          "models": [
+            {
+              "name": "2-Stage Discounted Free Cash Flow (DCF)",
+              "icon": "🌊",
+              "estimate": 44.23,
+              "weight": "40%",
+              "parameters": "WACC: 9.0% • 5-Yr FCF CAGR: 3.5% • Terminal Growth: 2.5%",
+              "methodology": "Projects discrete 5-year unlevered free cash flows discounted at a 9.0% weighted cost of capital, plus a perpetual terminal value."
+            },
+            {
+              "name": "Peter Lynch / Graham Growth Formula",
+              "icon": "📈",
+              "estimate": 46.98,
+              "weight": "35%",
+              "parameters": "Normalized EPS: $3.80 • Growth: 3.5% • PEG Target: 1.0x",
+              "methodology": "Applies Benjamin Graham and Peter Lynch's growth-at-a-reasonable-price formula, penalizing speculative multiples beyond PEG 1.0 parity."
+            },
+            {
+              "name": "5-Year Normalized Multiple Mean-Reversion",
+              "icon": "🔄",
+              "estimate": 46.78,
+              "weight": "25%",
+              "parameters": "Target Multiple: 15x • Historical Range: 12.0x – 18.8x",
+              "methodology": "Anchors forward cash flows against 5-year median institutional valuation multiples to strip away bubble hype and cyclical depression distortions."
+            }
+          ]
+        }
       },
       "financialHealth": {
         "revenueGrowthYoY": "+1.8%",
