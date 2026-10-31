@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investment App — Follow the Smart Money, Market Cycle & Daily Stock Intelligence</title>
+  <meta name="description" content="Follow the smart money across asset classes and stock sectors with live Fed liquidity, interest rates, market cycle clock, geopolitics, and 10 daily Buy/Sell deep dives.">
+  
+  <!-- Modern Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Top Glassmorphism Navigation Bar -->
+  <header class="app-header" id="appHeader">
+    <div class="header-container">
+      <div class="brand-group">
+        <div class="logo-mark">
+          <div class="pulse-dot"></div>
+          <span class="logo-icon">⚡</span>
+        </div>
+        <div class="brand-text">
+          <h1 class="brand-title">INVESTMENT APP</h1>
+          <span class="brand-tagline">Follow the Smart Money • Cycle, Flows & Daily Stock Intelligence</span>
+        </div>
+      </div>
+
+      <!-- Live Market Status Pill -->
+      <div class="market-status-badge" id="marketStatusBadge">
+        <span class="status-indicator"></span>
+        <span class="status-text" id="marketStatusText">PRE-MARKET 6:00 AM EST</span>
+        <span class="edition-date" id="editionDate">—</span>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="header-actions">
+        <button class="btn btn-audio" id="globalAudioBtn" title="Listen to 2-minute market briefing">
+          <span class="btn-icon">🔊</span>
+          <span class="btn-label">Audio Brief</span>
+        </button>
+        <button class="btn btn-secondary" id="refreshBtn" title="Re-evaluate quant models">
+          <span class="btn-icon">🔄</span>
+          <span class="btn-label">Refresh</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="main-content">
+    
+    <!-- Market Edge Banner -->
+    <section class="banner-section">
+      <!-- Market Regime Bar -->
+      <div class="market-edge-card">
+        <div class="edge-icon-wrap">💡</div>
+        <div class="edge-content">
+          <div class="edge-label">TODAY'S MARKET EDGE</div>
+          <div class="edge-text" id="marketEdgeText">
+            Analyzing macro capital rotation into high-FCF compounders and away from overextended hardware multiples.
+          </div>
+        </div>
+        <div class="edge-stats">
+          <div class="edge-stat-item">
+            <span class="stat-name">Avg Buy Upside</span>
+            <span class="stat-value color-buy" id="avgBuyUpside">+17.8%</span>
+          </div>
+          <div class="edge-stat-item">
+            <span class="stat-name">Avg Sell Downside</span>
+            <span class="stat-value color-sell" id="avgSellDownside">-34.5%</span>
+          </div>
+          <div class="edge-stat-item">
+            <span class="stat-name">Market Vibe</span>
+            <span class="stat-value" id="marketVibe">Selective Quality</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Strategy Segmented Control Switcher -->
+    <section class="control-panel-section">
+      <div class="segmented-control">
+        <button class="segment-btn active dashboard-segment" id="dashboardTabBtn" data-tab="dashboard">
+          <span class="segment-dot color-accent-bg"></span>
+          <span class="segment-text">🧭 SMART MONEY DASHBOARD</span>
+          <span class="segment-count" id="dashboardBadge">LIVE</span>
+        </button>
+        <button class="segment-btn sector-segment" id="sectorTabBtn" data-tab="sectors">
+          <span class="segment-dot" style="background-color: #10B981;"></span>
+          <span class="segment-text">🏢 SECTOR STOCKS &amp; VALUATION</span>
+          <span class="segment-count" id="sectorStocksCount">20 STOCKS</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- NEW HOME TAB: Macro, Cycle, Liquidity & Smart Money Flow Dashboard -->
+    <section class="macro-dashboard-section" id="macroDashboardSection">
+      <div class="loading-state">
+        <div class="spinner"></div>
+        <p>Pulling live Federal Reserve (FRED), cross-asset ETF flows & geopolitical news...</p>
+      </div>
+    </section>
+
+    <!-- SECTOR STOCKS & VALUATION VIEW (Unified Sector Tiles: Undervalued vs Overvalued) -->
+    <div id="stocksViewWrapper" style="display: none;">
+      <!-- Quick Search, Valuation Filters & Sort Row -->
+      <div class="filters-row" style="margin-bottom: 14px;">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" placeholder="Search by ticker, company, or thesis..." autocomplete="off">
+          <button class="clear-search-btn" id="clearSearchBtn" style="display: none;">✕</button>
+        </div>
+
+        <!-- Valuation Mode Filter Pills -->
+        <div class="valuation-toggle-pills" id="valuationTogglePills">
+          <button class="val-pill active" data-val="all">All Stocks (20)</button>
+          <button class="val-pill val-buy-pill" data-val="undervalued">🟢 Undervalued / Buys (10)</button>
+          <button class="val-pill val-sell-pill" data-val="overvalued">🔴 Overvalued / Sells (10)</button>
+        </div>
+
+        <div class="view-sort">
+          <span class="sort-label">Sort:</span>
+          <select id="sortSelect" class="sort-select">
+            <option value="conviction">Conviction Score (High to Low)</option>
+            <option value="upside">Valuation Disconnect (%)</option>
+            <option value="marketCap">Market Cap</option>
+            <option value="change">Daily Change</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Sector Filter Navigation Pills -->
+      <div class="sector-pills-row" style="margin-bottom: 20px;">
+        <div class="sector-pills" id="sectorPills">
+          <button class="sector-pill active" data-sector="all">All Sectors (7)</button>
+          <button class="sector-pill" data-sector="Technology">💻 Tech (XLK)</button>
+          <button class="sector-pill" data-sector="Consumer Discretionary">🛍️ Consumer Disc (XLY)</button>
+          <button class="sector-pill" data-sector="Communication Services">📱 Comm Services (XLC)</button>
+          <button class="sector-pill" data-sector="Healthcare">🏥 Healthcare (XLV)</button>
+          <button class="sector-pill" data-sector="Financials">🏦 Financials (XLF)</button>
+          <button class="sector-pill" data-sector="Industrials">🏭 Industrials (XLI)</button>
+          <button class="sector-pill" data-sector="Consumer Staples">🛒 Staples (XLP)</button>
+        </div>
+      </div>
+
+      <!-- Active Watchlist View Title & Description -->
+      <div class="view-header" style="margin-bottom: 20px;">
+        <div class="view-title-group">
+          <h2 class="view-title" id="viewTitle">Sector &amp; Stock Valuation Radar</h2>
+          <p class="view-subtitle" id="viewSubtitle">
+            Screen top stocks grouped by sector. Compare sector-level cycle health alongside stock-by-stock valuation to easily spot undervalued bargains and overvalued risks.
+          </p>
+        </div>
+        <div class="sector-quick-legend">
+          <span class="legend-badge leg-buy">🟢 Undervalued (Upside Discount)</span>
+          <span class="legend-badge leg-sell">🔴 Overvalued (Downside Premium)</span>
+        </div>
+      </div>
+
+      <!-- Stock Cards Grid (Organized by Sector Blocks) -->
+      <section class="sector-blocks-container" id="stocksGrid">
+        <!-- Injected via JavaScript -->
+        <div class="loading-state">
+          <div class="spinner"></div>
+          <p>Loading Sector Valuation Intelligence &amp; Stock Screener...</p>
+        </div>
+      </section>
+    </div>
+          <div class="spinner"></div>
+          <p>Loading Investment App Stock Intelligence Models...</p>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- 5-Minute Deep Dive Modal Drawer -->
+  <div class="modal-overlay" id="deepDiveModal" style="display: none;">
+    <div class="modal-container">
+      
+      <!-- Modal Header (Sticky) -->
+      <div class="modal-header">
+        <div class="modal-header-left">
+          <div class="modal-badges">
+            <span class="modal-action-pill" id="modalActionPill">BUY</span>
+            <span class="modal-verdict-pill" id="modalVerdictPill">Deep Value</span>
+          </div>
+          <div class="modal-ticker-row">
+            <h2 class="modal-ticker" id="modalTicker">GOOGL</h2>
+            <span class="modal-name" id="modalName">Alphabet Inc.</span>
+            <span class="modal-sector" id="modalSector">Communication Services</span>
+          </div>
+        </div>
+
+        <div class="modal-header-right">
+          <div class="modal-price-box">
+            <div class="modal-current-price" id="modalPrice">$182.40</div>
+            <div class="modal-change" id="modalChange">+1.19% (+$2.15)</div>
+          </div>
+          
+          <div class="modal-cta-group">
+            <button class="btn btn-audio-sm" id="modalAudioBtn" title="Listen to 90s audio summary">
+              <span class="audio-icon">🔊</span>
+              <span id="modalAudioBtnText">Listen</span>
+            </button>
+            <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Modal">✕</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Body (The 6 Standardized Sections) -->
+      <div class="modal-body" id="modalBody">
+        
+        <!-- Reading Time Bar -->
+        <div class="read-indicator-bar">
+          <span class="read-clock">⏱️</span>
+          <span class="read-time-text" id="modalReadTime">4-minute plain-English read</span>
+          <span class="read-rule">• Institutional depth without Wall Street jargon</span>
+        </div>
+
+        <!-- Section 1: Executive Thesis (15-second read) -->
+        <div class="analysis-section" id="sectionThesis">
+          <div class="section-title-row">
+            <span class="section-number">1</span>
+            <h3 class="section-title">The Executive Thesis (15-Second Read)</h3>
+            <span class="section-subtitle">Why is this stock on today's list?</span>
+          </div>
+          <div class="thesis-card">
+            <ul class="thesis-list" id="modalThesisList">
+              <!-- Injected via JS -->
+            </ul>
+          </div>
+        </div>
+
+        <!-- Section 2: Valuation & Fair Value Reality Check -->
+        <div class="analysis-section" id="sectionValuation">
+          <div class="section-title-row">
+            <span class="section-number">2</span>
+            <h3 class="section-title">Valuation & Fair Value Reality Check</h3>
+            <span class="section-subtitle">Are you paying a fair price or buying an overhyped bubble?</span>
+          </div>
+
+          <div class="valuation-visual-grid">
+            <!-- Fair Value Meter -->
+            <div class="val-card">
+              <div class="val-card-header">
+                <span class="val-label">Intrinsic Fair Value Estimate</span>
+                <span class="tooltip-trigger" data-tip="Calculated using conservative Discounted Cash Flow (DCF) and peer normalized multiples.">ℹ️</span>
+              </div>
+              <div class="fair-value-display">
+                <div class="val-numbers">
+                  <div class="val-estimate" id="modalFairValue">$218.00</div>
+                  <div class="val-margin-pill" id="modalMarginPill">+19.5% Upside</div>
+                </div>
+                <div class="val-bar-track">
+                  <div class="val-bar-fill" id="modalFairValueBar"></div>
+                </div>
+                <div class="val-bar-labels">
+                  <span>Current: <strong id="modalBarCurrentPrice">$182.40</strong></span>
+                  <span>Target: <strong id="modalBarTargetPrice">$220.00</strong></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- P/E Comparison -->
+            <div class="val-card">
+              <div class="val-card-header">
+                <span class="val-label">P/E Ratio vs Industry</span>
+                <span class="tooltip-trigger" data-tip="Price-to-Earnings: How much you pay for every $1 of company profit. Lower is generally cheaper.">ℹ️</span>
+              </div>
+              <div class="pe-comparison-box">
+                <div class="pe-stat-duo">
+                  <div class="pe-stat">
+                    <span class="pe-sub">Forward P/E</span>
+                    <span class="pe-val" id="modalForwardPE">21.4x</span>
+                  </div>
+                  <div class="pe-stat">
+                    <span class="pe-sub">Industry Median</span>
+                    <span class="pe-val muted" id="modalIndustryPE">30.5x</span>
+                  </div>
+                  <div class="pe-stat">
+                    <span class="pe-sub">PEG Ratio</span>
+                    <span class="pe-val" id="modalPEGRatio">1.15</span>
+                  </div>
+                </div>
+                <p class="pe-verdict-note" id="modalPEVerdict">
+                  Trades at a 30% discount to mega-cap peers.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="valuation-narrative" id="modalValuationSummary">
+            <!-- Narrative summary injected via JS -->
+          </div>
+        </div>
+
+        <!-- Section 3: Financial Health & Profitability -->
+        <div class="analysis-section" id="sectionFinancials">
+          <div class="section-title-row">
+            <span class="section-number">3</span>
+            <h3 class="section-title">Financial Health & Profitability</h3>
+            <span class="section-subtitle">Is this business generating real cash or burning shareholder money?</span>
+          </div>
+
+          <div class="metrics-quad">
+            <div class="metric-tile">
+              <span class="metric-tile-label">Revenue Growth (YoY)</span>
+              <span class="metric-tile-value" id="modalRevGrowth">+15.2%</span>
+            </div>
+            <div class="metric-tile">
+              <span class="metric-tile-label">Operating Margin</span>
+              <span class="metric-tile-value" id="modalOpMargin">32.1%</span>
+            </div>
+            <div class="metric-tile">
+              <span class="metric-tile-label">Free Cash Flow Status</span>
+              <span class="metric-tile-value" id="modalFCFStatus">Cash Machine ($69B)</span>
+            </div>
+            <div class="metric-tile">
+              <span class="metric-tile-label">Balance Sheet Debt Ratio</span>
+              <span class="metric-tile-value" id="modalDebtRatio">0.11 (Fortress)</span>
+            </div>
+          </div>
+
+          <div class="health-breakdown-card">
+            <div class="health-item">
+              <span class="health-icon">🛡️</span>
+              <div class="health-text">
+                <strong>Cash vs. Debt Reserves:</strong>
+                <span id="modalCashVsDebt">Holds $4.50 in cash for every $1.00 of total debt.</span>
+              </div>
+            </div>
+            <div class="health-item">
+              <span class="health-icon">📈</span>
+              <div class="health-text">
+                <strong>Profitability Verdict:</strong>
+                <span id="modalFinancialSummary">One of the most ironclad balance sheets in corporate history.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 4: Market Expectations & Catalysts -->
+        <div class="analysis-section" id="sectionCatalysts">
+          <div class="section-title-row">
+            <span class="section-number">4</span>
+            <h3 class="section-title">Market Expectations & Catalysts</h3>
+            <span class="section-subtitle">What does Wall Street expect next, and what could move the stock?</span>
+          </div>
+
+          <div class="consensus-box">
+            <div class="consensus-header">
+              <div class="consensus-rating-badge" id="modalConsensusRating">Strong Buy</div>
+              <div class="consensus-counts" id="modalConsensusCounts">44 Buy / 8 Hold / 1 Sell</div>
+            </div>
+            
+            <div class="price-targets-bar">
+              <div class="pt-item">
+                <span class="pt-sub">Low Target</span>
+                <span class="pt-val" id="modalLowTarget">$175.00</span>
+              </div>
+              <div class="pt-item pt-avg">
+                <span class="pt-sub">Wall St Average Target</span>
+                <span class="pt-val highlight" id="modalAvgTarget">$206.50</span>
+              </div>
+              <div class="pt-item">
+                <span class="pt-sub">High Target</span>
+                <span class="pt-val" id="modalHighTarget">$240.00</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="catalysts-card">
+            <h4 class="card-inner-heading">Upcoming Catalysts & Events</h4>
+            <ul class="catalysts-list" id="modalCatalystsList">
+              <!-- Injected via JS -->
+            </ul>
+          </div>
+        </div>
+
+        <!-- Section 5: Key Risks & Downside Triggers -->
+        <div class="analysis-section" id="sectionRisks">
+          <div class="section-title-row">
+            <span class="section-number">5</span>
+            <h3 class="section-title">Key Risks & Downside Triggers</h3>
+            <span class="section-subtitle">What could go wrong? Direct bear catalysts to monitor.</span>
+          </div>
+
+          <div class="risks-card">
+            <ul class="risks-list" id="modalRisksList">
+              <!-- Injected via JS -->
+            </ul>
+          </div>
+        </div>
+
+        <!-- Section 6: Actionable Bottom Line -->
+        <div class="analysis-section" id="sectionBottomLine">
+          <div class="section-title-row">
+            <span class="section-number">6</span>
+            <h3 class="section-title">Actionable Bottom Line</h3>
+            <span class="section-subtitle">Execution gameplan and exact price zones</span>
+          </div>
+
+          <div class="bottom-line-card">
+            <div class="action-grid">
+              <div class="action-zone-box">
+                <span class="zone-label" id="modalZoneLabel">Recommended Accumulation Zone</span>
+                <span class="zone-val" id="modalZoneVal">$176.00 – $184.00</span>
+              </div>
+              <div class="action-zone-box">
+                <span class="zone-label">Stop-Loss / Risk Level</span>
+                <span class="zone-val color-sell" id="modalStopLoss">$164.50</span>
+              </div>
+              <div class="action-zone-box">
+                <span class="zone-label">Conviction Score</span>
+                <span class="zone-val color-buy" id="modalBottomConviction">9.4 / 10</span>
+              </div>
+            </div>
+
+            <div class="verdict-banner">
+              <span class="verdict-icon">🏁</span>
+              <p class="verdict-text" id="modalPlainEnglishTakeaway">
+                Alphabet is the cheapest mega-cap tech compounder on Wall Street today. Buying here provides asymmetric upside backed by dominant market monopolies.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer">
+        <div class="footer-note">
+          ⚠️ For educational research and decision-support only. Not individualized financial advice.
+        </div>
+        <button class="btn btn-secondary" id="modalCloseFooterBtn">Done Reading</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Floating Audio Bar (Active during Web Speech playback) -->
+  <div class="floating-audio-bar" id="floatingAudioBar" style="display: none;">
+    <div class="fab-content">
+      <span class="fab-speaker">🔊</span>
+      <div class="fab-meta">
+        <span class="fab-title" id="fabTitle">Listening to Market Briefing</span>
+        <span class="fab-time">Investment App Voice Engine</span>
+      </div>
+    </div>
+    <div class="fab-controls">
+      <button class="fab-btn" id="fabStopBtn" title="Stop speech">⏹️ Stop</button>
+    </div>
+  </div>
+
+  <!-- Tooltip Floating Element -->
+  <div class="app-tooltip" id="appTooltip"></div>
+
+  <!-- Scripts -->
+  <script src="js/charts.js"></script>
+  <script src="js/speech.js"></script>
+  <script src="js/macro.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
