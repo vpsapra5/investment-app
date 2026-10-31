@@ -122,15 +122,15 @@ const MacroDashboard = {
               <stop offset="100%" stop-color="#10B981" />
             </linearGradient>
           </defs>
-          <path d="M 45 130 A 105 105 0 0 1 255 130" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="16" stroke-linecap="round"/>
+          <path d="M 45 130 A 105 105 0 0 1 255 130" fill="none" stroke="#E2E8F0" stroke-width="16" stroke-linecap="round"/>
           <path d="M 45 130 A 105 105 0 0 1 255 130" fill="none" stroke="url(#trendGrad)" stroke-width="12" stroke-linecap="round" opacity="0.95"/>
-          <line x1="150" y1="130" x2="${nx.toFixed(1)}" y2="${ny.toFixed(1)}" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" />
-          <circle cx="150" cy="130" r="7" fill="${toneColor}" stroke="#080C14" stroke-width="2.5" />
+          <line x1="150" y1="130" x2="${nx.toFixed(1)}" y2="${ny.toFixed(1)}" stroke="#0F172A" stroke-width="3.5" stroke-linecap="round" />
+          <circle cx="150" cy="130" r="7" fill="${toneColor}" stroke="#FFFFFF" stroke-width="2.5" />
           <text x="150" y="105" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="28" font-weight="800" fill="${toneColor}">${scoreText}</text>
-          <text x="150" y="124" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="11" font-weight="700" letter-spacing="1.2" fill="#94A3B8">${label.toUpperCase()}</text>
-          <text x="45" y="150" text-anchor="middle" font-size="10" font-weight="700" fill="#F43F5E">BEARISH</text>
+          <text x="150" y="124" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="11" font-weight="700" letter-spacing="1.2" fill="#475569">${label.toUpperCase()}</text>
+          <text x="45" y="150" text-anchor="middle" font-size="10" font-weight="700" fill="#DC2626">BEARISH</text>
           <text x="150" y="65" text-anchor="middle" font-size="9" font-weight="600" fill="#64748B">NEUTRAL (0)</text>
-          <text x="255" y="150" text-anchor="middle" font-size="10" font-weight="700" fill="#10B981">BULLISH</text>
+          <text x="255" y="150" text-anchor="middle" font-size="10" font-weight="700" fill="#15803D">BULLISH</text>
         </svg>
       </div>
     `;
