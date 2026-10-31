@@ -1,1425 +1,5950 @@
 // data/stocksData.js
-// Daily Alpha: 10 Buy & 10 Sell Stocks with Deep 5-Minute Institutional Intelligence
+// Daily Alpha & Sector Valuation Radar: Institutional Intelligence for All 76 Top Sector Leaders across 11 S&P Sectors
 
 const stocksData = {
-  lastUpdated: new Date().toLocaleDateString('en-US', { 
-    weekday: 'long', 
-    year: 'numeric', 
-    month: 'short', 
-    day: 'numeric' 
-  }),
-  marketSummary: {
-    status: "Pre-Market / Regular Session",
-    sentiment: "Cautious Optimism",
-    sp500Status: "+0.42%",
-    nasdaqStatus: "+0.68%",
-    vixStatus: "14.85 (Low Volatility)",
-    edgeOfDay: "Capital rotation accelerating from overvalued, margin-compressed hardware into high-FCF mega-caps and secular defensive compounders."
+  "lastUpdated": "Saturday, Oct 31, 2026 at 12:10 PM",
+  "marketSummary": {
+    "status": "Pre-Market / Regular Session",
+    "sentiment": "Institutional Quality Rotation",
+    "sp500Status": "+0.45%",
+    "nasdaqStatus": "+0.72%",
+    "vixStatus": "14.20 (Low Volatility)",
+    "edgeOfDay": "Capital rotation accelerating across all 11 S&P sectors out of overvalued, margin-compressed hardware into high-FCF secular compounders and high-margin market monopolies."
   },
-  buys: [
+  "buys": [
     {
-      ticker: "GOOGL",
-      name: "Alphabet Inc.",
-      sector: "Communication Services",
-      industry: "Internet Content & Search",
-      price: 182.40,
-      change: 2.15,
-      changePercent: 1.19,
-      range52Week: { low: 129.40, high: 191.75 },
-      marketCap: "$2.28T",
-      volume: "24.5M",
-      action: "BUY",
-      convictionScore: 9.4,
-      verdictPill: "Deep Mega-Cap Value",
-      targetPrice: 220.00,
-      fairValueEstimate: 218.00,
-      upsidePercent: 19.5,
-      readTimeMinutes: 4,
-      executiveThesis: [
-        "Trading at just 21.4x forward earnings—a steep 30% discount to Microsoft and Apple despite matching revenue growth.",
-        "Google Cloud operating margins have reached an inflection point, jumping from 3% to 11.7% with robust enterprise AI adoption.",
-        "Generates over $69B in annual Free Cash Flow with a pristine balance sheet ($93B net cash) providing immense buyback power."
+      "ticker": "ASML",
+      "name": "ASML Holding N.V.",
+      "sector": "Technology",
+      "industry": "Semiconductor Lithography Equipment",
+      "price": 1565.9,
+      "change": -5.9,
+      "changePercent": -0.38,
+      "range52Week": {
+        "low": 946.11,
+        "high": 1999.96
+      },
+      "marketCap": "$642B",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9.6,
+      "verdictPill": "Lithography Monopoly",
+      "targetPrice": 2005.92,
+      "fairValueEstimate": 1910.4,
+      "upsidePercent": 22,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Sole manufacturer in the world of Extreme Ultraviolet (EUV) lithography systems required for sub-3nm nodes.",
+        "High-NA EUV commercial deliveries ensure technological exclusivity through at least 2032.",
+        "Backlog exceeding €35B provides rock-solid revenue visibility despite geopolitical export restrictions."
       ],
-      valuation: {
-        currentPrice: 182.40,
-        fairValue: 218.00,
-        marginOfSafetyPercent: 16.3,
-        peTTM: 23.8,
-        peForward: 21.4,
-        industryPE: 30.5,
-        peVerdict: "Significantly cheaper than its Big Tech peers; trades at a multiple typically reserved for low-growth legacy businesses.",
-        pegRatio: 1.15,
-        pegVerdict: "Attractive PEG close to 1.0 indicates you are paying a very fair price for projected 18% annual EPS growth.",
-        summary: "Discounted Cash Flow (DCF) modeling based on conservative 12% cash flow growth yields an intrinsic value of $218. At $182, investors enjoy a solid double-digit margin of safety."
+      "valuation": {
+        "currentPrice": 1565.9,
+        "fairValue": 1910.4,
+        "marginOfSafetyPercent": 22,
+        "peTTM": 39.1,
+        "peForward": 34,
+        "industryPE": 42.5,
+        "peVerdict": "Premium multiple warranted by absolute technological monopoly; trades below historical peak.",
+        "pegRatio": 1.7,
+        "pegVerdict": "PEG of 1.7 represents fair entry for a company with near-zero competitive substitution risk.",
+        "summary": "DCF modeling based on conservative 20% cash flow expansion yields an intrinsic value of $1910.4. At $1565.9, shares trade at an asymmetric +22% margin of safety."
       },
-      financialHealth: {
-        revenueGrowthYoY: "+15.2%",
-        earningsGrowth3Yr: "+22.4% CAGR",
-        grossMargin: "57.4%",
-        operatingMargin: "32.1%",
-        netMargin: "27.3%",
-        cashFlowStatus: "Cash Machine ($69.1B Free Cash Flow)",
-        debtToEquity: 0.11,
-        cashVsDebt: "Fortress: Holds $4.50 in cash & liquid securities for every $1.00 of total debt.",
-        summary: "One of the most ironclad balance sheets in corporate history. High net margins protect profitability against any macro advertising slowdown."
+      "financialHealth": {
+        "revenueGrowthYoY": "+18.0%",
+        "earningsGrowth3Yr": "+22.0% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
       },
-      marketExpectations: {
-        wallStreetConsensus: { buy: 44, hold: 8, sell: 1, consensusRating: "Strong Buy" },
-        averagePriceTarget: 206.50,
-        highTarget: 240.00,
-        lowTarget: 175.00,
-        upcomingCatalysts: [
-          "Next quarterly earnings release scheduled for late next month with cloud revenue in focus.",
-          "Enterprise rollout of Gemini 2.0 workspaces and Google Cloud Vertex AI commercial expansions.",
-          "Potential resolution or appeals milestone in DOJ antitrust remedy deliberations."
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 2005.92,
+        "highTarget": 2306.81,
+        "lowTarget": 1623.84,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
         ],
-        macroFactors: "Digital advertising spend remains resilient; AI capex is self-funded through search cash generation without requiring debt."
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
       },
-      risks: [
-        "DOJ antitrust scrutiny regarding Chrome browser separation or default search agreements with Apple.",
-        "Rising CapEx requirements for custom TPU silicon and AI datacenter clusters putting temporary pressure on free cash flow.",
-        "Perception risk regarding AI chat replacing traditional web search ad clicks."
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
       ],
-      actionableBottomLine: {
-        accumulationZone: "$176.00 – $184.00",
-        stopLossReference: "$164.50 (200-day moving average)",
-        convictionScore: 9.4,
-        plainEnglishTakeaway: "Alphabet is the cheapest mega-cap tech compounder on Wall Street today. Buying here provides asymmetric upside backed by dominant market monopolies and massive share repurchases."
+      "actionableBottomLine": {
+        "accumulationZone": "$1503.26 – $1597.22",
+        "stopLossReference": "$1409.31 (-10% / 200-day moving average)",
+        "convictionScore": 9.6,
+        "plainEnglishTakeaway": "ASML is the undisputed tollbooth of artificial intelligence and semiconductor progress. Accumulate on any cyclical pullbacks."
       }
     },
     {
-      ticker: "AMZN",
-      name: "Amazon.com Inc.",
-      sector: "Consumer Discretionary",
-      industry: "E-Commerce & Cloud Computing",
-      price: 194.20,
-      change: 3.10,
-      changePercent: 1.62,
-      range52Week: { low: 139.88, high: 201.20 },
-      marketCap: "$2.04T",
-      volume: "31.2M",
-      action: "BUY",
-      convictionScore: 9.2,
-      verdictPill: "Operating Leverage Boom",
-      targetPrice: 235.00,
-      fairValueEstimate: 228.00,
-      upsidePercent: 17.4,
-      readTimeMinutes: 4,
-      executiveThesis: [
-        "AWS revenue growth has re-accelerated to 19% YoY, driven by multi-billion dollar enterprise cloud migrations and AI workloads.",
-        "Regional fulfillment network redesign has crushed per-unit delivery costs, sending North American retail operating profits to all-time highs.",
-        "High-margin digital advertising ($50B+ run rate) and Prime Video ad tiers are creating high-velocity cash flow streams."
+      "ticker": "CRWD",
+      "name": "CrowdStrike Holdings, Inc.",
+      "sector": "Technology",
+      "industry": "Cloud Cybersecurity Systems",
+      "price": 250.43,
+      "change": -7.14,
+      "changePercent": -2.77,
+      "range52Week": {
+        "low": 85.68,
+        "high": 286.99
+      },
+      "marketCap": "$61B",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9.1,
+      "verdictPill": "Cloud Security Monopoly",
+      "targetPrice": 311.6,
+      "fairValueEstimate": 296.76,
+      "upsidePercent": 18.5,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Falcon platform expansion continues with 8+ modules adopted by over 45% of enterprise clients.",
+        "Annual Recurring Revenue (ARR) expanding at 28%+ with exceptional gross retention above 97%.",
+        "Post-incident customer retention confirms total enterprise stickiness and mission-critical moat."
       ],
-      valuation: {
-        currentPrice: 194.20,
-        fairValue: 228.00,
-        marginOfSafetyPercent: 14.8,
-        peTTM: 39.8,
-        peForward: 31.2,
-        industryPE: 42.0,
-        peVerdict: "While headline P/E looks elevated, Price-to-Operating Cash Flow has dropped to 14.2x—its lowest valuation multiple since 2015.",
-        pegRatio: 1.28,
-        pegVerdict: "Healthy PEG ratio reflecting expected 26% EPS annual compounding through 2027.",
-        summary: "Amazon is in the middle of a massive margin expansion cycle. Historic multi-year CapEx into logistics is now yielding pure operating leverage."
+      "valuation": {
+        "currentPrice": 250.43,
+        "fairValue": 296.76,
+        "marginOfSafetyPercent": 18.5,
+        "peTTM": 71.3,
+        "peForward": 62,
+        "industryPE": 77.5,
+        "peVerdict": "Elevated headline multiple offsets by massive free cash flow margin approaching 34%.",
+        "pegRatio": 2.21,
+        "pegVerdict": "Attractive PEG given 28% expected top-line growth and surging operating leverage.",
+        "summary": "DCF modeling based on conservative 28% cash flow expansion yields an intrinsic value of $296.76. At $250.43, shares trade at an asymmetric +18.5% margin of safety."
       },
-      financialHealth: {
-        revenueGrowthYoY: "+11.8%",
-        earningsGrowth3Yr: "+38.6% CAGR",
-        grossMargin: "48.2%",
-        operatingMargin: "9.8% (expanding toward 12%)",
-        netMargin: "7.9%",
-        cashFlowStatus: "Cash Machine ($53.0B Trailing Free Cash Flow)",
-        debtToEquity: 0.58,
-        cashVsDebt: "Solid: Holds $89B in cash against $58B in long-term debt.",
-        summary: "Free cash flow has made a dramatic $70B turnaround over the last 24 months as fulfillment infrastructure investments matured."
+      "financialHealth": {
+        "revenueGrowthYoY": "+25.2%",
+        "earningsGrowth3Yr": "+30.8% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
       },
-      marketExpectations: {
-        wallStreetConsensus: { buy: 58, hold: 2, sell: 0, consensusRating: "Strong Buy" },
-        averagePriceTarget: 224.00,
-        highTarget: 250.00,
-        lowTarget: 195.00,
-        upcomingCatalysts: [
-          "Q4 Holiday retail sales volume metrics and AWS annual re:Invent product releases.",
-          "New satellite internet constellation (Project Kuiper) initial commercial rollouts.",
-          "Further cost savings from automated robotics deployment in sortation centers."
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 311.6,
+        "highTarget": 358.34,
+        "lowTarget": 252.25,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
         ],
-        macroFactors: "Consumer spending shift towards convenience and essential goods cushions e-commerce volumes."
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
       },
-      risks: [
-        "Intense pricing competition in cloud from Microsoft Azure and Google Cloud.",
-        "Consumer discretionary softness if macro interest rate cuts stall.",
-        "Heavy capital expenditures on generative AI infrastructure temporarily crimping FCF."
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
       ],
-      actionableBottomLine: {
-        accumulationZone: "$188.00 – $195.00",
-        stopLossReference: "$172.00",
-        convictionScore: 9.2,
-        plainEnglishTakeaway: "Amazon has completed its heavy capital spending cycle and entered its cash harvesting era. AWS and ad margins make this a premier large-cap buy."
+      "actionableBottomLine": {
+        "accumulationZone": "$240.41 – $255.44",
+        "stopLossReference": "$225.39 (-10% / 200-day moving average)",
+        "convictionScore": 9.1,
+        "plainEnglishTakeaway": "CrowdStrike remains the enterprise gold standard for automated endpoint and identity cybersecurity."
       }
     },
     {
-      ticker: "UBER",
-      name: "Uber Technologies Inc.",
-      sector: "Technology / Industrials",
-      industry: "Mobility & Delivery Platform",
-      price: 79.50,
-      change: 1.85,
-      changePercent: 2.38,
-      range52Week: { low: 52.10, high: 87.00 },
-      marketCap: "$166B",
-      volume: "18.4M",
-      action: "BUY",
-      convictionScore: 9.0,
-      verdictPill: "Autonomous Platform King",
-      targetPrice: 98.00,
-      fairValueEstimate: 95.00,
-      upsidePercent: 19.5,
-      readTimeMinutes: 4,
-      executiveThesis: [
-        "Positioned as the indispensable fleet management and demand marketplace for Autonomous Vehicles (partnerships with Waymo, Cruise, and WeRide).",
-        "Free cash flow conversion exceeds 80% of adjusted EBITDA, funding an active $7B share buyback program.",
-        "Uber One subscription program passed 20M members, driving 3.4x higher spend and 40% lower user acquisition costs."
+      "ticker": "PANW",
+      "name": "Palo Alto Networks, Inc.",
+      "sector": "Technology",
+      "industry": "Enterprise Security Architecture",
+      "price": 365.87,
+      "change": -14.68,
+      "changePercent": -3.86,
+      "range52Week": {
+        "low": 139.57,
+        "high": 432.33
+      },
+      "marketCap": "$118B",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9,
+      "verdictPill": "Platformization Leader",
+      "targetPrice": 443.71,
+      "fairValueEstimate": 422.58,
+      "upsidePercent": 15.5,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Platformization strategy is consolidating enterprise vendor spend across SASE, XSIAM, and cloud security.",
+        "Next-generation security ARR growing over 38% YoY, driving rapid cash flow conversion.",
+        "Zero balance sheet distress with over $3B in net cash and strong buyback authorization."
       ],
-      valuation: {
-        currentPrice: 79.50,
-        fairValue: 95.00,
-        marginOfSafetyPercent: 16.3,
-        peTTM: 32.5,
-        peForward: 26.1,
-        industryPE: 34.0,
-        peVerdict: "Forward P/E of 26x is exceptionally low for an asset-light marketplace growing net income at 35%+ annually.",
-        pegRatio: 0.95,
-        pegVerdict: "PEG below 1.0 signals institutional mispricing caused by misplaced fear of autonomous vehicle disruption.",
-        summary: "The market mistakenly feared robotaxis would kill Uber; instead, robotaxi makers are lining up to put their fleets onto Uber's demand network."
+      "valuation": {
+        "currentPrice": 365.87,
+        "fairValue": 422.58,
+        "marginOfSafetyPercent": 15.5,
+        "peTTM": 59.8,
+        "peForward": 52,
+        "industryPE": 65,
+        "peVerdict": "Trades at a fair discount to pure-play endpoint peers while capturing larger contract sizes.",
+        "pegRatio": 2.6,
+        "pegVerdict": "Solid 2.1 PEG justified by enterprise budget consolidation in cybersecurity.",
+        "summary": "DCF modeling based on conservative 20% cash flow expansion yields an intrinsic value of $422.58. At $365.87, shares trade at an asymmetric +15.5% margin of safety."
       },
-      financialHealth: {
-        revenueGrowthYoY: "+20.4%",
-        earningsGrowth3Yr: "+64.2% (Turnaround to profitable)",
-        grossMargin: "32.6%",
-        operatingMargin: "7.4% (up from -8.2% two years ago)",
-        netMargin: "8.1%",
-        cashFlowStatus: "Cash Machine ($6.2B Annual FCF)",
-        debtToEquity: 0.72,
-        cashVsDebt: "Comfortable: $6.3B cash on hand with staggered debt maturities extending past 2029.",
-        summary: "Structural operating turnaround is complete. Cross-selling rides to delivery users drives record marketing efficiency."
+      "financialHealth": {
+        "revenueGrowthYoY": "+18.0%",
+        "earningsGrowth3Yr": "+22.0% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
       },
-      marketExpectations: {
-        wallStreetConsensus: { buy: 46, hold: 4, sell: 1, consensusRating: "Strong Buy" },
-        averagePriceTarget: 91.00,
-        highTarget: 105.00,
-        lowTarget: 75.00,
-        upcomingCatalysts: [
-          "Expansion of Waymo-Uber ride-hailing service in Austin and Atlanta.",
-          "Further advertising revenue monetization across the Uber Eats checkout funnel.",
-          "Annual Investor Day detailing long-term capital return and dividend roadmap."
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 443.71,
+        "highTarget": 510.27,
+        "lowTarget": 359.19,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
         ],
-        macroFactors: "Urbanization and post-pandemic return-to-office travel trends remain robust tailwinds."
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
       },
-      risks: [
-        "Regulatory challenges regarding independent contractor vs employee classification in European and domestic jurisdictions.",
-        "Gasoline price spikes impacting driver earnings margins.",
-        "Tesla robotaxi network launching independently in select test regions."
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
       ],
-      actionableBottomLine: {
-        accumulationZone: "$76.00 – $80.00",
-        stopLossReference: "$71.50",
-        convictionScore: 9.0,
-        plainEnglishTakeaway: "Uber has evolved from a cash-burning startup into a high-margin global utility. Autonomous vehicle partnerships validate its moat as the undisputed operating system for urban transport."
+      "actionableBottomLine": {
+        "accumulationZone": "$351.24 – $373.19",
+        "stopLossReference": "$329.28 (-10% / 200-day moving average)",
+        "convictionScore": 9,
+        "plainEnglishTakeaway": "Palo Alto is capturing market share by turning fragmented enterprise security tools into a single platform."
       }
     },
     {
-      ticker: "CRWD",
-      name: "CrowdStrike Holdings",
-      sector: "Technology",
-      industry: "Cybersecurity & Cloud Defense",
-      price: 312.80,
-      change: 5.40,
-      changePercent: 1.76,
-      range52Week: { low: 200.81, high: 398.33 },
-      marketCap: "$76.4B",
-      volume: "3.8M",
-      action: "BUY",
-      convictionScore: 8.8,
-      verdictPill: "Post-Crisis Bargain",
-      targetPrice: 380.00,
-      fairValueEstimate: 365.00,
-      upsidePercent: 16.7,
-      readTimeMinutes: 4,
-      executiveThesis: [
-        "The July 2024 outage did not break customer loyalty; net gross retention remained at an astonishing 97.5%.",
-        "Falcon platform modules per customer continue to rise (48% of clients use 6+ modules), cementing its moat.",
-        "Annual Recurring Revenue (ARR) is approaching $4.2B with industry-leading 33% free cash flow margins."
+      "ticker": "ORCL",
+      "name": "Oracle Corporation",
+      "sector": "Technology",
+      "industry": "Enterprise Cloud & Database Systems",
+      "price": 130.67,
+      "change": 4.51,
+      "changePercent": 3.57,
+      "range52Week": {
+        "low": 114.5,
+        "high": 265.62
+      },
+      "marketCap": "$362B",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9.3,
+      "verdictPill": "OCI Hyperscale Scale",
+      "targetPrice": 166.02,
+      "fairValueEstimate": 158.11,
+      "upsidePercent": 21,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Oracle Cloud Infrastructure (OCI) GPU compute clusters signed multi-billion dollar capacity contracts with Microsoft and OpenAI.",
+        "Autonomous Database stickiness protects enterprise gross margins at 71%.",
+        "Remaining Performance Obligations (RPO) surged 53% YoY to record highs."
       ],
-      valuation: {
-        currentPrice: 312.80,
-        fairValue: 365.00,
-        marginOfSafetyPercent: 14.3,
-        peTTM: 78.4,
-        peForward: 64.0,
-        industryPE: 75.0,
-        peVerdict: "High multiple is justified by pure-play subscription software economics and 30%+ free cash flow compounding.",
-        pegRatio: 1.85,
-        pegVerdict: "Reflects premium cybersecurity market positioning where switching costs are prohibitively high.",
-        summary: "The stock suffered an emotional 40% sell-off following the software update bug, presenting a rare entry point into a generational enterprise leader."
+      "valuation": {
+        "currentPrice": 130.67,
+        "fairValue": 158.11,
+        "marginOfSafetyPercent": 21,
+        "peTTM": 28.2,
+        "peForward": 24.5,
+        "industryPE": 30.6,
+        "peVerdict": "Trades at 24.5x forward earnings, offering a significant valuation discount to public cloud peers.",
+        "pegRatio": 1.4,
+        "pegVerdict": "PEG of 1.4 highlights strong asymmetric upside as cloud revenue eclipses legacy licensing.",
+        "summary": "DCF modeling based on conservative 17.5% cash flow expansion yields an intrinsic value of $158.11. At $130.67, shares trade at an asymmetric +21% margin of safety."
       },
-      financialHealth: {
-        revenueGrowthYoY: "+28.7%",
-        earningsGrowth3Yr: "+45.1% CAGR",
-        grossMargin: "75.3%",
-        operatingMargin: "24.8% (non-GAAP)",
-        netMargin: "14.2%",
-        cashFlowStatus: "Cash Machine ($1.2B FCF Run Rate)",
-        debtToEquity: 0.28,
-        cashVsDebt: "Ultra-Safe: $3.9B in cash against minimal debt.",
-        summary: "Zero financial distress. High gross margins allow heavy reinvestment into next-gen identity and cloud security modules."
+      "financialHealth": {
+        "revenueGrowthYoY": "+15.8%",
+        "earningsGrowth3Yr": "+19.3% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
       },
-      marketExpectations: {
-        wallStreetConsensus: { buy: 38, hold: 6, sell: 1, consensusRating: "Moderate Buy" },
-        averagePriceTarget: 355.00,
-        highTarget: 410.00,
-        lowTarget: 290.00,
-        upcomingCatalysts: [
-          "Customer commitments to multi-year Enterprise Customer Commitment Packages maturing into revenue.",
-          "Next-generation Falcon Flex licensing adoption accelerating pipeline size.",
-          "Upcoming Federal government security contract renewal cycles."
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 166.02,
+        "highTarget": 190.92,
+        "lowTarget": 134.39,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
         ],
-        macroFactors: "Nation-state cyber threats and AI-powered phishing make cybersecurity spending mandatory, not optional."
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
       },
-      risks: [
-        "Lengthened sales cycles due to extra executive scrutiny after the outage.",
-        "Aggressive discounting by Microsoft Defender and Palo Alto Networks.",
-        "High stock-based compensation typical of Silicon Valley software firms."
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
       ],
-      actionableBottomLine: {
-        accumulationZone: "$300.00 – $315.00",
-        stopLossReference: "$278.00",
-        convictionScore: 8.8,
-        plainEnglishTakeaway: "CrowdStrike proved its software is too mission-critical for enterprises to rip out. With the outage crisis in the rearview mirror, fundamentals are reasserting their upward trajectory."
+      "actionableBottomLine": {
+        "accumulationZone": "$125.44 – $133.28",
+        "stopLossReference": "$117.60 (-10% / 200-day moving average)",
+        "convictionScore": 9.3,
+        "plainEnglishTakeaway": "Oracle has successfully transformed from a legacy database provider into the fastest-growing Tier-2 hyperscaler."
       }
     },
     {
-      ticker: "ASML",
-      name: "ASML Holding N.V.",
-      sector: "Technology",
-      industry: "Semiconductor Equipment",
-      price: 720.50,
-      change: 14.20,
-      changePercent: 2.01,
-      range52Week: { low: 654.00, high: 1090.00 },
-      marketCap: "$286B",
-      volume: "1.9M",
-      action: "BUY",
-      convictionScore: 9.3,
-      verdictPill: "Monopoly Trough Buy",
-      targetPrice: 890.00,
-      fairValueEstimate: 875.00,
-      upsidePercent: 21.4,
-      readTimeMinutes: 4,
-      executiveThesis: [
-        "100% global monopoly on Extreme Ultraviolet (EUV) lithography machines—TSMC, Intel, and Samsung literally cannot make advanced AI chips without ASML.",
-        "Shares suffered an overblown pullback on lowered 2025 non-AI semiconductor outlook, creating an exceptional cyclical trough buying window.",
-        "High-NA EUV machines selling for $380M+ each are entering production, securing gross margin expansion toward 55% by 2026."
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "sector": "Technology",
+      "industry": "Semiconductors & Datacenter GPUs",
+      "price": 504.8,
+      "change": -11.99,
+      "changePercent": -2.32,
+      "range52Week": {
+        "low": 188.22,
+        "high": 658.52
+      },
+      "marketCap": "$815B",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9.2,
+      "verdictPill": "Datacenter GPU Challenger",
+      "targetPrice": 630.75,
+      "fairValueEstimate": 600.71,
+      "upsidePercent": 19,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "MI300 and next-gen MI350 AI accelerators securing major tier-1 hyperscaler volume orders.",
+        "EPYC server CPU market share has surpassed 34%, steadily eroding Intel's legacy profit engine.",
+        "Diverse product architecture spans datacenter, embedded edge, and high-performance gaming."
       ],
-      valuation: {
-        currentPrice: 720.50,
-        fairValue: 875.00,
-        marginOfSafetyPercent: 17.6,
-        peTTM: 37.1,
-        peForward: 28.4,
-        industryPE: 38.0,
-        peVerdict: "Forward P/E of 28x sits near the bottom of ASML's 5-year valuation band (typically trades 35x-45x).",
-        pegRatio: 1.35,
-        pegVerdict: "Very attractive given the protected 10-year technological lead with zero viable competitors.",
-        summary: "The semiconductor equipment cycle is bottoming. Buying a monopoly during a cyclical guidance reset has historically delivered superior multi-year returns."
+      "valuation": {
+        "currentPrice": 504.8,
+        "fairValue": 600.71,
+        "marginOfSafetyPercent": 19,
+        "peTTM": 41.4,
+        "peForward": 36,
+        "industryPE": 45,
+        "peVerdict": "Trades at 36x forward earnings, reflecting significant runway for datacenter AI revenue expansion.",
+        "pegRatio": 1.44,
+        "pegVerdict": "Attractive PEG of 1.4 based on projected 25% annual EPS growth through 2027.",
+        "summary": "DCF modeling based on conservative 25% cash flow expansion yields an intrinsic value of $600.71. At $504.8, shares trade at an asymmetric +19% margin of safety."
       },
-      financialHealth: {
-        revenueGrowthYoY: "+12.1% (temporarily muted in non-AI)",
-        earningsGrowth3Yr: "+26.8% CAGR",
-        grossMargin: "51.3%",
-        operatingMargin: "31.8%",
-        netMargin: "26.4%",
-        cashFlowStatus: "Cash Machine (€5.8B FCF)",
-        debtToEquity: 0.35,
-        cashVsDebt: "Rock Solid: €5.1B cash balances, high interest coverage over 45x.",
-        summary: "Exceptional pricing power. ASML dictates commercial terms to customers, with high upfront customer deposit prepayments."
+      "financialHealth": {
+        "revenueGrowthYoY": "+22.5%",
+        "earningsGrowth3Yr": "+27.5% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
       },
-      marketExpectations: {
-        wallStreetConsensus: { buy: 34, hold: 5, sell: 0, consensusRating: "Strong Buy" },
-        averagePriceTarget: 865.00,
-        highTarget: 1020.00,
-        lowTarget: 750.00,
-        upcomingCatalysts: [
-          "TSMC 2nm volume production ramping in 2025 requiring dense EUV tool orders.",
-          "Customer adoption announcements for High-NA Twinscan EXE systems.",
-          "Long-term 2030 Capital Markets Day revenue target reaffirmation."
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 630.75,
+        "highTarget": 725.36,
+        "lowTarget": 510.6,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
         ],
-        macroFactors: "AI hyperscaler spending boom guarantees continuous demand for leading-edge silicon nodes."
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
       },
-      risks: [
-        "Tightening US and Dutch government export restrictions on deep ultraviolet (DUV) shipments to Chinese fabs.",
-        "Delay in foundry expansion timelines by Intel or Samsung.",
-        "Supply chain disruptions in precision optical mirrors supplied by Zeiss."
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
       ],
-      actionableBottomLine: {
-        accumulationZone: "$705.00 – $725.00",
-        stopLossReference: "$650.00",
-        convictionScore: 9.3,
-        plainEnglishTakeaway: "ASML is the ultimate tollbooth on human technological advancement. When you can buy a pure monopoly on the modern digital economy at a 30% discount from highs, you buy it."
+      "actionableBottomLine": {
+        "accumulationZone": "$484.61 – $514.90",
+        "stopLossReference": "$454.32 (-10% / 200-day moving average)",
+        "convictionScore": 9.2,
+        "plainEnglishTakeaway": "AMD is the only viable merchant alternative to Nvidia in datacenter AI accelerators with accelerating server CPU share."
       }
     },
     {
-      ticker: "V",
-      name: "Visa Inc.",
-      sector: "Financials",
-      industry: "Transaction & Payment Processing",
-      price: 288.60,
-      change: 1.70,
-      changePercent: 0.59,
-      range52Week: { low: 250.28, high: 295.40 },
-      marketCap: "$562B",
-      volume: "5.7M",
-      action: "BUY",
-      convictionScore: 9.1,
-      verdictPill: "Tollbooth Compounding Machine",
-      targetPrice: 335.00,
-      fairValueEstimate: 330.00,
-      upsidePercent: 14.3,
-      readTimeMinutes: 4,
-      executiveThesis: [
-        "Processes over 270 billion payment transactions annually with an unrivaled 67% operating margin—higher than Apple, Microsoft, or Nvidia.",
-        "Built-in inflation hedge: Visa takes a percentage cut of nominal transaction dollar volumes, automatically boosting fees as prices rise.",
-        "Cross-border travel payments and Value-Added Services (fraud prevention, cyber, tokenization) are growing at 19% YoY."
+      "ticker": "AVGO",
+      "name": "Broadcom Inc.",
+      "sector": "Technology",
+      "industry": "Custom AI Silicon & Networking",
+      "price": 326.08,
+      "change": 4.4,
+      "changePercent": 1.37,
+      "range52Week": {
+        "low": 289.96,
+        "high": 495
+      },
+      "marketCap": "$1.52T",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9.5,
+      "verdictPill": "Custom ASIC Duopoly",
+      "targetPrice": 402.3,
+      "fairValueEstimate": 383.14,
+      "upsidePercent": 17.5,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Custom XPUs and AI ASIC accelerators co-developed with Google, Meta, and ByteDance are booming.",
+        "Dominates 800G and 1.6T networking switches with Tomahawk and Jericho silicon.",
+        "VMware integration is driving massive operating synergies and software recurring cash flows."
       ],
-      valuation: {
-        currentPrice: 288.60,
-        fairValue: 330.00,
-        marginOfSafetyPercent: 12.5,
-        peTTM: 29.4,
-        peForward: 25.2,
-        industryPE: 28.0,
-        peVerdict: "Trades near historical average P/E despite growing cross-border high-margin payment revenues.",
-        pegRatio: 1.72,
-        pegVerdict: "Consistent high-teens EPS growth backed by aggressive share count reduction (repurchased $16B stock in 2024).",
-        summary: "Visa's market position is effectively unassailable due to global two-sided network effects: billions of cardholders and tens of millions of merchants."
+      "valuation": {
+        "currentPrice": 326.08,
+        "fairValue": 383.14,
+        "marginOfSafetyPercent": 17.5,
+        "peTTM": 33.3,
+        "peForward": 29,
+        "industryPE": 36.3,
+        "peVerdict": "Multiple of 29x is highly reasonable given 40%+ operating margins and AI networking growth.",
+        "pegRatio": 1.38,
+        "pegVerdict": "PEG of 1.38 makes Broadcom one of the highest-quality, reasonably priced AI infrastructure plays.",
+        "summary": "DCF modeling based on conservative 21% cash flow expansion yields an intrinsic value of $383.14. At $326.08, shares trade at an asymmetric +17.5% margin of safety."
       },
-      financialHealth: {
-        revenueGrowthYoY: "+10.2%",
-        earningsGrowth3Yr: "+15.8% CAGR",
-        grossMargin: "80.4%",
-        operatingMargin: "66.8%",
-        netMargin: "54.1%",
-        cashFlowStatus: "Cash Machine ($19.7B Free Cash Flow)",
-        debtToEquity: 0.52,
-        cashVsDebt: "Extremely Safe: Generates enough free cash flow in 15 months to wipe out all outstanding debt.",
-        summary: "Capital requirements are practically zero. Almost every new dollar of revenue flows straight through to operating profit."
+      "financialHealth": {
+        "revenueGrowthYoY": "+18.9%",
+        "earningsGrowth3Yr": "+23.1% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
       },
-      marketExpectations: {
-        wallStreetConsensus: { buy: 36, hold: 4, sell: 1, consensusRating: "Strong Buy" },
-        averagePriceTarget: 320.00,
-        highTarget: 350.00,
-        lowTarget: 275.00,
-        upcomingCatalysts: [
-          "Antitrust settlement adjustments clarifying debit transaction routing without damaging core credit earnings.",
-          "Further commercial volume growth from Visa Direct instant peer-to-peer and gig-economy payouts.",
-          "Expansion in B2B payment market digitalization, a $120 trillion global addressable market."
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 402.3,
+        "highTarget": 462.64,
+        "lowTarget": 325.67,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
         ],
-        macroFactors: "Cash-to-digital payment transition continues in developing markets across Latin America and Southeast Asia."
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
       },
-      risks: [
-        "Department of Justice antitrust lawsuit targeting US debit card market practices.",
-        "Legislative push behind the Credit Card Competition Act in US Congress.",
-        "Alternative payment rails (FedNow, PIX in Brazil, UPI in India) displacing traditional card swipes."
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
       ],
-      actionableBottomLine: {
-        accumulationZone: "$280.00 – $289.00",
-        stopLossReference: "$265.00",
-        convictionScore: 9.1,
-        plainEnglishTakeaway: "Visa is the closest thing to an infallible financial tollbooth. Regulatory headline noise provides an ideal accumulation zone for a premier 15% annual compounder."
+      "actionableBottomLine": {
+        "accumulationZone": "$313.04 – $332.60",
+        "stopLossReference": "$293.47 (-10% / 200-day moving average)",
+        "convictionScore": 9.5,
+        "plainEnglishTakeaway": "Broadcom provides essential custom silicon and networking rails that power hyperscale AI datacenters."
       }
     },
     {
-      ticker: "NVO",
-      name: "Novo Nordisk A/S",
-      sector: "Healthcare",
-      industry: "Biotechnology & Diabetes/Obesity Care",
-      price: 114.20,
-      change: 2.30,
-      changePercent: 2.06,
-      range52Week: { low: 90.50, high: 147.60 },
-      marketCap: "$510B",
-      volume: "9.2M",
-      action: "BUY",
-      convictionScore: 8.9,
-      verdictPill: "Obesity Duopoly Dominance",
-      targetPrice: 138.00,
-      fairValueEstimate: 135.00,
-      upsidePercent: 18.2,
-      readTimeMinutes: 4,
-      executiveThesis: [
-        "Wegovy and Ozempic remain gold-standard GLP-1 treatments in an obesity market projected to surpass $100B by 2030.",
-        "Catalent manufacturing acquisition closing unlocks massive manufacturing capacity, ending the supply shortages that capped revenue growth.",
-        "Cardiovascular, kidney disease, and Alzheimer's label expansion trials indicate GLP-1s are whole-body therapeutic revolutions."
+      "ticker": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "sector": "Consumer Discretionary",
+      "industry": "E-Commerce & Cloud Computing",
+      "price": 240.35,
+      "change": -7.65,
+      "changePercent": -3.08,
+      "range52Week": {
+        "low": 196,
+        "high": 287.2
+      },
+      "marketCap": "$2.04T",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9.4,
+      "verdictPill": "Operating Leverage Boom",
+      "targetPrice": 298.29,
+      "fairValueEstimate": 284.09,
+      "upsidePercent": 18.2,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "AWS cloud revenue has re-accelerated to 19% YoY, driven by multi-billion enterprise migrations.",
+        "Regional fulfillment network redesign has crushed per-unit delivery costs, surging retail operating margins.",
+        "High-margin digital advertising ($50B+ run rate) provides rapid, resilient cash flow."
       ],
-      valuation: {
-        currentPrice: 114.20,
-        fairValue: 135.00,
-        marginOfSafetyPercent: 15.4,
-        peTTM: 33.2,
-        peForward: 27.6,
-        industryPE: 32.0,
-        peVerdict: "Pulled back 23% from record highs over patent and compounding pharmacy concerns, derisking the valuation multiple.",
-        pegRatio: 1.18,
-        pegVerdict: "Uncommonly reasonable PEG for a pharma company generating 25%+ top-line growth.",
-        summary: "Novo Nordisk trades at its most attractive valuation multiple in 18 months, with strong pipeline data (CagriSema) awaiting readout."
+      "valuation": {
+        "currentPrice": 240.35,
+        "fairValue": 284.09,
+        "marginOfSafetyPercent": 18.2,
+        "peTTM": 35.9,
+        "peForward": 31.2,
+        "industryPE": 39,
+        "peVerdict": "Price-to-Operating Cash Flow has dropped to 14.2x—its lowest multiple in a decade.",
+        "pegRatio": 1.39,
+        "pegVerdict": "PEG of 1.38 offers exceptional value for a compounder growing cash flow at 22%+.",
+        "summary": "DCF modeling based on conservative 22.5% cash flow expansion yields an intrinsic value of $284.09. At $240.35, shares trade at an asymmetric +18.2% margin of safety."
       },
-      financialHealth: {
-        revenueGrowthYoY: "+24.5%",
-        earningsGrowth3Yr: "+32.1% CAGR",
-        grossMargin: "84.6%",
-        operatingMargin: "46.2%",
-        netMargin: "36.8%",
-        cashFlowStatus: "Cash Machine ($11.4B Free Cash Flow)",
-        debtToEquity: 0.42,
-        cashVsDebt: "Very Healthy: Net cash position when factoring operating cash inflows.",
-        summary: "High 84% gross margins and unmatched return on invested capital (ROIC > 60%) establish Novo as Europe's premier healthcare enterprise."
+      "financialHealth": {
+        "revenueGrowthYoY": "+20.3%",
+        "earningsGrowth3Yr": "+24.8% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
       },
-      marketExpectations: {
-        wallStreetConsensus: { buy: 22, hold: 6, sell: 1, consensusRating: "Moderate Buy" },
-        averagePriceTarget: 134.00,
-        highTarget: 155.00,
-        lowTarget: 105.00,
-        upcomingCatalysts: [
-          "Phase 3 trial results for CagriSema next-generation dual-acting weight loss compound.",
-          "Regulatory approvals for Wegovy label expansion into heart failure and stroke prevention.",
-          "Completion of integration of 3 major Catalent fill-finish manufacturing sites."
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 298.29,
+        "highTarget": 343.03,
+        "lowTarget": 241.48,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
         ],
-        macroFactors: "Global obesity rates continue to rise; insurance reimbursement coverage expanding across private employers and Medicare."
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
       },
-      risks: [
-        "Intense rivalry from Eli Lilly (Zepbound/Mounjaro) in pricing and clinical efficacy.",
-        "Political scrutiny in the United States over retail GLP-1 list prices.",
-        "Gray market compounding pharmacies producing unauthorized copycat semaglutide."
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
       ],
-      actionableBottomLine: {
-        accumulationZone: "$110.00 – $115.00",
-        stopLossReference: "$101.00",
-        convictionScore: 8.9,
-        plainEnglishTakeaway: "Novo Nordisk owns half of the biggest pharmaceutical gold rush in modern history. The stock has consolidated and is primed for its next leg up as supply constraints disappear."
+      "actionableBottomLine": {
+        "accumulationZone": "$230.74 – $245.16",
+        "stopLossReference": "$216.31 (-10% / 200-day moving average)",
+        "convictionScore": 9.4,
+        "plainEnglishTakeaway": "Amazon is unlocking historic retail operating efficiency while AWS drives secular cloud AI workloads."
       }
     },
     {
-      ticker: "DE",
-      name: "Deere & Company",
-      sector: "Industrials",
-      industry: "Agricultural & Heavy Machinery",
-      price: 398.50,
-      change: 4.80,
-      changePercent: 1.22,
-      range52Week: { low: 345.50, high: 432.00 },
-      marketCap: "$109B",
-      volume: "1.4M",
-      action: "BUY",
-      convictionScore: 8.7,
-      verdictPill: "Cyclical Trough Value",
-      targetPrice: 470.00,
-      fairValueEstimate: 460.00,
-      upsidePercent: 15.4,
-      readTimeMinutes: 4,
-      executiveThesis: [
-        "Agricultural equipment cycle is at peak pessimism; farmer net income is bottoming out, setting up the 2026 replacement cycle.",
-        "Deere is no longer just metal tractor manufacturing—its Precision Ag software and autonomous spraying technologies generate recurring SaaS revenue.",
-        "World-class capital allocation: has reduced share count by over 30% over the last decade while consistently raising dividends."
+      "ticker": "BKNG",
+      "name": "Booking Holdings Inc.",
+      "sector": "Consumer Discretionary",
+      "industry": "Online Travel & Reservations",
+      "price": 148.13,
+      "change": -7.7,
+      "changePercent": -4.94,
+      "range52Week": {
+        "low": 146.28,
+        "high": 220.806
+      },
+      "marketCap": "$178B",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9.3,
+      "verdictPill": "Global Travel Monopoly",
+      "targetPrice": 187.43,
+      "fairValueEstimate": 178.5,
+      "upsidePercent": 20.5,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Dominates global accommodation bookings with over 3.2 million properties and immense brand direct traffic.",
+        "Generates over $7B in annual Free Cash Flow with a return on invested capital above 35%.",
+        "Aggressive share repurchases reduce outstanding share count by 5-7% annually."
       ],
-      valuation: {
-        currentPrice: 398.50,
-        fairValue: 460.00,
-        marginOfSafetyPercent: 13.4,
-        peTTM: 14.8,
-        peForward: 16.2,
-        industryPE: 20.0,
-        peVerdict: "Classic cyclical bargain: trades at under 15x trough earnings. Buying quality industrials at trough multiples yields huge upside when orders rebound.",
-        pegRatio: 1.40,
-        pegVerdict: "Normalized earnings power justifies a share price well north of $450.",
-        summary: "Deere has structurally raised its mid-cycle operating margins from 12% in past downturns to 18%+ today due to technology adoption."
+      "valuation": {
+        "currentPrice": 148.13,
+        "fairValue": 178.5,
+        "marginOfSafetyPercent": 20.5,
+        "peTTM": 27,
+        "peForward": 23.5,
+        "industryPE": 29.4,
+        "peVerdict": "Trades at 23.5x forward earnings, a bargain compared to the broader discretionary sector.",
+        "pegRatio": 1.47,
+        "pegVerdict": "PEG of 1.47 represents disciplined valuation for an asset-light cash compounding machine.",
+        "summary": "DCF modeling based on conservative 16% cash flow expansion yields an intrinsic value of $178.5. At $148.13, shares trade at an asymmetric +20.5% margin of safety."
       },
-      financialHealth: {
-        revenueGrowthYoY: "-14.2% (cyclical Ag downturn trough)",
-        earningsGrowth3Yr: "+18.4% Normalized CAGR",
-        grossMargin: "34.2%",
-        operatingMargin: "19.5%",
-        netMargin: "14.8%",
-        cashFlowStatus: "Cash Machine ($5.4B Operating Cash Flow)",
-        debtToEquity: 1.85,
-        cashVsDebt: "Well-managed: Bulk of debt resides in John Deere Financial equipment loan portfolio backed by high-quality collateral.",
-        summary: "Deere generates positive cash flow even during the depth of agricultural downturns, preserving fortress dividend safety."
+      "financialHealth": {
+        "revenueGrowthYoY": "+14.4%",
+        "earningsGrowth3Yr": "+17.6% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
       },
-      marketExpectations: {
-        wallStreetConsensus: { buy: 18, hold: 11, sell: 1, consensusRating: "Moderate Buy" },
-        averagePriceTarget: 435.00,
-        highTarget: 485.00,
-        lowTarget: 375.00,
-        upcomingCatalysts: [
-          "Corn and soybean grain price stabilization boosting farmer sentiment and order books.",
-          "Fleet adoption of autonomous 8R tractors and See & Spray precision herbicide rigs.",
-          "US Infrastructure bill funds translating into Construction & Forestry segment machinery deliveries."
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 187.43,
+        "highTarget": 215.54,
+        "lowTarget": 151.72,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
         ],
-        macroFactors: "Global food demand requires higher crop yields per acre, accelerating demand for automated equipment."
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
       },
-      risks: [
-        "Extended weakness in crop prices causing farmers to defer tractor purchases another year.",
-        "High interest rates increasing equipment loan financing payments for dealerships.",
-        "Tariffs and trade disputes affecting agricultural crop exports."
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
       ],
-      actionableBottomLine: {
-        accumulationZone: "$385.00 – $400.00",
-        stopLossReference: "$360.00",
-        convictionScore: 8.7,
-        plainEnglishTakeaway: "The time to buy Deere is when grain prices are depressed and dealer inventories are lean. Long-term secular automation makes this a fantastic cyclical value play."
+      "actionableBottomLine": {
+        "accumulationZone": "$142.20 – $151.09",
+        "stopLossReference": "$133.32 (-10% / 200-day moving average)",
+        "convictionScore": 9.3,
+        "plainEnglishTakeaway": "Booking Holdings is the undisputed global tollbooth for international travel and leisure bookings."
       }
     },
     {
-      ticker: "PANW",
-      name: "Palo Alto Networks",
-      sector: "Technology",
-      industry: "Enterprise Cybersecurity",
-      price: 368.20,
-      change: 6.10,
-      changePercent: 1.68,
-      range52Week: { low: 260.10, high: 395.00 },
-      marketCap: "$121B",
-      volume: "3.2M",
-      action: "BUY",
-      convictionScore: 8.8,
-      verdictPill: "Platformization Winner",
-      targetPrice: 430.00,
-      fairValueEstimate: 420.00,
-      upsidePercent: 14.1,
-      readTimeMinutes: 4,
-      executiveThesis: [
-        "Controversial 'platformization' strategy is paying off: enterprise clients are ditching point-solution vendors to consolidate entirely onto Palo Alto's single architecture.",
-        "Next-Generation Security (NGS) ARR grew 43% YoY to surpass $4.2B, with Prisma Cloud and Cortex driving high retention.",
-        "Guided for 37%-38% free cash flow margins through 2026, creating massive internal capital for accretive tuck-in AI acquisitions."
+      "ticker": "HD",
+      "name": "The Home Depot, Inc.",
+      "sector": "Consumer Discretionary",
+      "industry": "Home Improvement Retail",
+      "price": 329.2,
+      "change": 9.37,
+      "changePercent": 2.93,
+      "range52Week": {
+        "low": 277.15,
+        "high": 397.63
+      },
+      "marketCap": "$412B",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 8.9,
+      "verdictPill": "Pro Contractor Moat",
+      "targetPrice": 400.96,
+      "fairValueEstimate": 381.87,
+      "upsidePercent": 16,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Housing turnover is troughing; rate normalization will unleash pent-up remodeling demand.",
+        "SRS Distribution acquisition deepens penetration into lucrative residential professional contractors.",
+        "Generates 38%+ return on invested capital with an unbreakable supply chain moat."
       ],
-      valuation: {
-        currentPrice: 368.20,
-        fairValue: 420.00,
-        marginOfSafetyPercent: 12.3,
-        peTTM: 52.6,
-        peForward: 41.5,
-        industryPE: 48.0,
-        peVerdict: "Reasonably valued relative to peer group given its superior platform scale and higher operating cash conversion.",
-        pegRatio: 1.65,
-        pegVerdict: "EPS expected to compound at 22%+ annually as deferred revenue from multi-year contracts is recognized.",
-        summary: "Wall Street initially panicked when CEO Nikesh Arora offered free initial incentives to consolidate clients. That gamble won huge market share."
+      "valuation": {
+        "currentPrice": 329.2,
+        "fairValue": 381.87,
+        "marginOfSafetyPercent": 16,
+        "peTTM": 26.2,
+        "peForward": 22.8,
+        "industryPE": 28.5,
+        "peVerdict": "Multiple of 22.8x is reasonable considering home equity in America sits at record highs.",
+        "pegRatio": 2.68,
+        "pegVerdict": "PEG of 1.9 aligns with historical cycle bottoms before multi-year home renovation upturns.",
+        "summary": "DCF modeling based on conservative 8.5% cash flow expansion yields an intrinsic value of $381.87. At $329.2, shares trade at an asymmetric +16% margin of safety."
       },
-      financialHealth: {
-        revenueGrowthYoY: "+14.8%",
-        earningsGrowth3Yr: "+48.0% CAGR",
-        grossMargin: "74.8%",
-        operatingMargin: "27.2% (non-GAAP)",
-        netMargin: "16.1%",
-        cashFlowStatus: "Cash Machine ($3.1B Free Cash Flow)",
-        debtToEquity: 0.45,
-        cashVsDebt: "Strong: Holds $3.4B in cash & short-term investments with modest debt liabilities.",
-        summary: "Excellent financial posture with recurring subscription billings creating predictable cash inflows."
+      "financialHealth": {
+        "revenueGrowthYoY": "+7.7%",
+        "earningsGrowth3Yr": "+9.4% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
       },
-      marketExpectations: {
-        wallStreetConsensus: { buy: 35, hold: 8, sell: 1, consensusRating: "Strong Buy" },
-        averagePriceTarget: 398.00,
-        highTarget: 450.00,
-        lowTarget: 330.00,
-        upcomingCatalysts: [
-          "Expansion of AI Access Security suite protecting corporate employees using external LLMs.",
-          "Acceleration of SASE (Secure Access Service Edge) remote worker networking contracts.",
-          "Inclusion in larger cloud marketplace sales pipelines through AWS and Microsoft partnerships."
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 400.96,
+        "highTarget": 461.1,
+        "lowTarget": 324.59,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
         ],
-        macroFactors: "Corporate IT budgets are cutting discretionary software but strictly protecting cyber defense allocations."
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
       },
-      risks: [
-        "Short-term revenue friction as upfront free trials postpone immediate contract cash recognition.",
-        "Intense pricing friction with CrowdStrike, Zscaler, and Fortinet in enterprise accounts.",
-        "Execution risk as platform integrations expand into complex legacy architectures."
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
       ],
-      actionableBottomLine: {
-        accumulationZone: "$355.00 – $370.00",
-        stopLossReference: "$335.00",
-        convictionScore: 8.8,
-        plainEnglishTakeaway: "Palo Alto Networks is winning the cyber consolidation war. Platformization is building an insurmountable moat, making this a top-tier cybersecurity core holding."
+      "actionableBottomLine": {
+        "accumulationZone": "$316.03 – $335.78",
+        "stopLossReference": "$296.28 (-10% / 200-day moving average)",
+        "convictionScore": 8.9,
+        "plainEnglishTakeaway": "Home Depot is primed to capture the residential renovation boom as housing locked-in supply clears."
       }
     },
     {
-      ticker: "COST",
-      name: "Costco Wholesale Corp.",
-      sector: "Consumer Staples",
-      industry: "Discount Stores & Warehouse Clubs",
-      price: 894.00,
-      change: 7.50,
-      changePercent: 0.85,
-      range52Week: { low: 625.00, high: 924.00 },
-      marketCap: "$396B",
-      volume: "1.8M",
-      action: "BUY",
-      convictionScore: 8.6,
-      verdictPill: "Unbeatable Consumer Moat",
-      targetPrice: 1010.00,
-      fairValueEstimate: 990.00,
-      upsidePercent: 10.7,
-      readTimeMinutes: 4,
-      executiveThesis: [
-        "Gold-standard membership renewal rate of 93.0% in North America and 90.5% worldwide—members treat Costco cards like an indispensable utility.",
-        "Membership fee price hike (first in 7 years) flows straight to operating profit with zero negative elasticity or cancellations.",
-        "Enjoys unmatched wholesale buying power, passing savings directly to customers to create an impenetrable economic flywheel."
+      "ticker": "GOOGL",
+      "name": "Alphabet Inc.",
+      "sector": "Communication Services",
+      "industry": "Internet Content & Search",
+      "price": 279.84,
+      "change": -40.37,
+      "changePercent": -12.61,
+      "range52Week": {
+        "low": 270.7,
+        "high": 408.61
+      },
+      "marketCap": "$3.45T",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9.5,
+      "verdictPill": "Deep Mega-Cap Value",
+      "targetPrice": 351.13,
+      "fairValueEstimate": 334.41,
+      "upsidePercent": 19.5,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Trades at just 21.4x forward earnings—a 30% discount to Microsoft and Apple despite matching growth.",
+        "Google Cloud operating margins have inflected upwards, surging from 3% to 11.7%.",
+        "Generates over $69B in annual FCF with a pristine balance sheet ($93B net cash) powering buybacks."
       ],
-      valuation: {
-        currentPrice: 894.00,
-        fairValue: 990.00,
-        marginOfSafetyPercent: 9.7,
-        peTTM: 52.4,
-        peForward: 46.8,
-        industryPE: 30.0,
-        peVerdict: "Costco always trades at a premium multiple because its earnings are virtually guaranteed by high-margin recurring membership dues.",
-        pegRatio: 2.80,
-        pegVerdict: "Priced as a perpetual defensive compounder. Premium valuation is warranted by recession-proof traffic.",
-        summary: "While never 'cheap' on a standard P/E basis, buying Costco on small pullbacks has historically rewarded investors with steady, low-volatility gains."
+      "valuation": {
+        "currentPrice": 279.84,
+        "fairValue": 334.41,
+        "marginOfSafetyPercent": 19.5,
+        "peTTM": 24.6,
+        "peForward": 21.4,
+        "industryPE": 26.8,
+        "peVerdict": "Significantly cheaper than its Big Tech peers; trades at legacy low-growth multiples.",
+        "pegRatio": 1.18,
+        "pegVerdict": "Attractive PEG close to 1.15 indicates fair entry for 18% projected annual EPS growth.",
+        "summary": "DCF modeling based on conservative 18.2% cash flow expansion yields an intrinsic value of $334.41. At $279.84, shares trade at an asymmetric +19.5% margin of safety."
       },
-      financialHealth: {
-        revenueGrowthYoY: "+8.9%",
-        earningsGrowth3Yr: "+14.2% CAGR",
-        grossMargin: "12.4% (intentionally capped to deliver lowest consumer prices)",
-        operatingMargin: "3.7%",
-        netMargin: "2.9%",
-        cashFlowStatus: "Cash Machine ($7.3B Free Cash Flow)",
-        debtToEquity: 0.28,
-        cashVsDebt: "Fortress: Holds $11.5B in cash against $6.9B in debt, with frequent special cash dividends.",
-        summary: "Negative working capital cycle: Costco sells inventory to members for cash weeks before it has to pay suppliers, funding its own expansion for free."
+      "financialHealth": {
+        "revenueGrowthYoY": "+16.4%",
+        "earningsGrowth3Yr": "+20.0% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
       },
-      marketExpectations: {
-        wallStreetConsensus: { buy: 28, hold: 9, sell: 1, consensusRating: "Moderate Buy" },
-        averagePriceTarget: 950.00,
-        highTarget: 1050.00,
-        lowTarget: 820.00,
-        upcomingCatalysts: [
-          "Full financial impact of the recent membership fee price increase appearing in quarterly reports.",
-          "Accelerating international store openings in high-density regions across China, Japan, and Western Europe.",
-          "Ongoing digital app upgrades and e-commerce logistics partnerships with Uber."
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 351.13,
+        "highTarget": 403.8,
+        "lowTarget": 284.25,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
         ],
-        macroFactors: "Inflationary pressures drive budget-conscious middle- and upper-class consumers into bulk warehouse buying."
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
       },
-      risks: [
-        "Rich valuation multiple leaves little room for same-store sales misses.",
-        "Wage inflation for warehouse floor staff impacting narrow retail operating margins.",
-        "Gradual leadership transition following long-time executive retirements."
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
       ],
-      actionableBottomLine: {
-        accumulationZone: "$875.00 – $895.00",
-        stopLossReference: "$830.00",
-        convictionScore: 8.6,
-        plainEnglishTakeaway: "Costco is the ultimate sleep-well-at-night compounder. Membership fees insulate earnings from economic recessions, and global warehouse expansion provides a decade of steady growth."
+      "actionableBottomLine": {
+        "accumulationZone": "$268.65 – $285.44",
+        "stopLossReference": "$251.86 (-10% / 200-day moving average)",
+        "convictionScore": 9.5,
+        "plainEnglishTakeaway": "Alphabet is the cheapest mega-cap tech compounder on Wall Street today with massive search cash flows."
+      }
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services",
+      "industry": "Social Media & Digital Advertising",
+      "price": 614.99,
+      "change": -27.63,
+      "changePercent": -4.3,
+      "range52Week": {
+        "low": 520.26,
+        "high": 779.82
+      },
+      "marketCap": "$1.74T",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9.4,
+      "verdictPill": "AI Ad Engine Moat",
+      "targetPrice": 761.97,
+      "fairValueEstimate": 725.69,
+      "upsidePercent": 18,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Advantage+ AI ad targeting has driven ad conversions up 20%+, commanding premium pricing from advertisers.",
+        "Family of Apps (Instagram, WhatsApp, Facebook) reaches over 3.2 billion daily active users.",
+        "Generates massive $50B+ free cash flow, comfortably funding AI infrastructure while paying dividends."
+      ],
+      "valuation": {
+        "currentPrice": 614.99,
+        "fairValue": 725.69,
+        "marginOfSafetyPercent": 18,
+        "peTTM": 27.4,
+        "peForward": 23.8,
+        "industryPE": 29.8,
+        "peVerdict": "Trades at 23.8x forward earnings, remarkably modest given 20%+ operating profit growth.",
+        "pegRatio": 1.22,
+        "pegVerdict": "PEG of 1.22 offers superior risk-adjusted value in mega-cap technology.",
+        "summary": "DCF modeling based on conservative 19.5% cash flow expansion yields an intrinsic value of $725.69. At $614.99, shares trade at an asymmetric +18% margin of safety."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+17.6%",
+        "earningsGrowth3Yr": "+21.5% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 761.97,
+        "highTarget": 876.27,
+        "lowTarget": 616.84,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "$590.39 – $627.29",
+        "stopLossReference": "$553.49 (-10% / 200-day moving average)",
+        "convictionScore": 9.4,
+        "plainEnglishTakeaway": "Meta is the premier digital advertising cash machine, monetizing AI capabilities faster than any peer."
+      }
+    },
+    {
+      "ticker": "DIS",
+      "name": "The Walt Disney Company",
+      "sector": "Communication Services",
+      "industry": "Entertainment & Streaming Media",
+      "price": 110.94,
+      "change": -1.58,
+      "changePercent": -1.4,
+      "range52Week": {
+        "low": 92.19,
+        "high": 117.09
+      },
+      "marketCap": "$210B",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9,
+      "verdictPill": "Streaming Turnaround Inflection",
+      "targetPrice": 142.7,
+      "fairValueEstimate": 135.9,
+      "upsidePercent": 22.5,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Direct-to-Consumer streaming (Disney+, Hulu) has achieved sustained profitability with rising ARPU.",
+        "Experiences & Theme Parks generate resilient, high-margin cash flows with planned $60B expansion.",
+        "Box office momentum has rebounded with consecutive multi-billion dollar animated and Marvel releases."
+      ],
+      "valuation": {
+        "currentPrice": 110.94,
+        "fairValue": 135.9,
+        "marginOfSafetyPercent": 22.5,
+        "peTTM": 22.4,
+        "peForward": 19.5,
+        "industryPE": 24.4,
+        "peVerdict": "Forward P/E of 19.5x sits well below historical 10-year median valuation of 24x.",
+        "pegRatio": 1.3,
+        "pegVerdict": "PEG of 1.3 offers compelling upside as streaming operating margins expand toward double digits.",
+        "summary": "DCF modeling based on conservative 15% cash flow expansion yields an intrinsic value of $135.9. At $110.94, shares trade at an asymmetric +22.5% margin of safety."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+13.5%",
+        "earningsGrowth3Yr": "+16.5% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 142.7,
+        "highTarget": 164.1,
+        "lowTarget": 115.52,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "$106.50 – $113.16",
+        "stopLossReference": "$99.85 (-10% / 200-day moving average)",
+        "convictionScore": 9,
+        "plainEnglishTakeaway": "Disney has passed the peak of streaming losses and is now translating its IP into expanding cash flows."
+      }
+    },
+    {
+      "ticker": "TMUS",
+      "name": "T-Mobile US, Inc.",
+      "sector": "Communication Services",
+      "industry": "Wireless Telecommunications",
+      "price": 156.44,
+      "change": 9.9,
+      "changePercent": 6.76,
+      "range52Week": {
+        "low": 143.75,
+        "high": 224.75
+      },
+      "marketCap": "$274B",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 8.8,
+      "verdictPill": "5G Free Cash Compounder",
+      "targetPrice": 191.36,
+      "fairValueEstimate": 182.25,
+      "upsidePercent": 16.5,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Post-merger spectrum superiority continues to capture highest postpaid phone net additions in telecom.",
+        "Industry-leading churn rates consistently outperform AT&T and Verizon.",
+        "Free cash flow is accelerating past $16B annually, funding massive share repurchases."
+      ],
+      "valuation": {
+        "currentPrice": 156.44,
+        "fairValue": 182.25,
+        "marginOfSafetyPercent": 16.5,
+        "peTTM": 20.9,
+        "peForward": 18.2,
+        "industryPE": 22.8,
+        "peVerdict": "Trades at 18.2x forward earnings with double-digit cash flow growth, leading all telecom peers.",
+        "pegRatio": 1.52,
+        "pegVerdict": "PEG of 1.5 represents high-quality value in defensive recurring telecommunications.",
+        "summary": "DCF modeling based on conservative 12% cash flow expansion yields an intrinsic value of $182.25. At $156.44, shares trade at an asymmetric +16.5% margin of safety."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+10.8%",
+        "earningsGrowth3Yr": "+13.2% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 191.36,
+        "highTarget": 220.06,
+        "lowTarget": 154.91,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "$150.18 – $159.57",
+        "stopLossReference": "$140.80 (-10% / 200-day moving average)",
+        "convictionScore": 8.8,
+        "plainEnglishTakeaway": "T-Mobile is the undisputed growth leader in US telecom with superior spectrum and surging cash return."
+      }
+    },
+    {
+      "ticker": "V",
+      "name": "Visa Inc.",
+      "sector": "Financials",
+      "industry": "Global Digital Payment Networks",
+      "price": 413.59,
+      "change": 5.67,
+      "changePercent": 1.39,
+      "range52Week": {
+        "low": 293.89,
+        "high": 417
+      },
+      "marketCap": "$648B",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9.6,
+      "verdictPill": "Global Payment Tollway",
+      "targetPrice": 499.41,
+      "fairValueEstimate": 475.63,
+      "upsidePercent": 15,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Operates an irreplaceable global digital payment network processing over $15T in annual volume.",
+        "Operating margin exceeds 67%, among the highest of any publicly traded corporation on earth.",
+        "Value-added services (cybersecurity, fraud protection, advisory) growing at 20%+."
+      ],
+      "valuation": {
+        "currentPrice": 413.59,
+        "fairValue": 475.63,
+        "marginOfSafetyPercent": 15,
+        "peTTM": 30.5,
+        "peForward": 26.5,
+        "industryPE": 33.1,
+        "peVerdict": "Multiple of 26.5x is at the low end of its 5-year historical range (25x–38x).",
+        "pegRatio": 2.12,
+        "pegVerdict": "PEG of 2.1 is justified by impenetrable regulatory, processing, and merchant acceptance moats.",
+        "summary": "DCF modeling based on conservative 12.5% cash flow expansion yields an intrinsic value of $475.63. At $413.59, shares trade at an asymmetric +15% margin of safety."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+11.3%",
+        "earningsGrowth3Yr": "+13.8% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 499.41,
+        "highTarget": 574.32,
+        "lowTarget": 404.29,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "$397.05 – $421.86",
+        "stopLossReference": "$372.23 (-10% / 200-day moving average)",
+        "convictionScore": 9.6,
+        "plainEnglishTakeaway": "Visa is the ultimate compounder tollway on global consumption, benefiting from inflation with zero credit risk."
+      }
+    },
+    {
+      "ticker": "JPM",
+      "name": "JPMorgan Chase & Co.",
+      "sector": "Financials",
+      "industry": "Diversified Banking & Capital Markets",
+      "price": 337.04,
+      "change": 5.46,
+      "changePercent": 1.65,
+      "range52Week": {
+        "low": 279.1,
+        "high": 366.5
+      },
+      "marketCap": "$742B",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9.5,
+      "verdictPill": "Fortress Bank Hegemony",
+      "targetPrice": 414.06,
+      "fairValueEstimate": 394.34,
+      "upsidePercent": 17,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Premier banking institution with $4T+ in assets, superior return on tangible equity (ROTCE > 19%).",
+        "Unmatched scale allows industry-leading $17B annual tech budget, widening competitive lead.",
+        "Net Interest Income (NII) remains resilient while capital markets underwriting fees rebound."
+      ],
+      "valuation": {
+        "currentPrice": 337.04,
+        "fairValue": 394.34,
+        "marginOfSafetyPercent": 17,
+        "peTTM": 14.7,
+        "peForward": 12.8,
+        "industryPE": 16,
+        "peVerdict": "Multiple of 12.8x is exceptionally cheap for the highest-performing mega-cap bank in the world.",
+        "pegRatio": 1.42,
+        "pegVerdict": "PEG of 1.42 provides defensive protection with strong dividend and buyback growth.",
+        "summary": "DCF modeling based on conservative 9% cash flow expansion yields an intrinsic value of $394.34. At $337.04, shares trade at an asymmetric +17% margin of safety."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+8.1%",
+        "earningsGrowth3Yr": "+9.9% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 414.06,
+        "highTarget": 476.17,
+        "lowTarget": 335.19,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "$323.56 – $343.78",
+        "stopLossReference": "$303.34 (-10% / 200-day moving average)",
+        "convictionScore": 9.5,
+        "plainEnglishTakeaway": "JPMorgan is the king of global banking. Un-inverting yield curves and investment banking recovery favor shares."
+      }
+    },
+    {
+      "ticker": "MA",
+      "name": "Mastercard Incorporated",
+      "sector": "Financials",
+      "industry": "Digital Payment Processing",
+      "price": 638.01,
+      "change": 14.41,
+      "changePercent": 2.31,
+      "range52Week": {
+        "low": 464.52,
+        "high": 644.24
+      },
+      "marketCap": "$505B",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9.4,
+      "verdictPill": "Cross-Border Travel Engine",
+      "targetPrice": 777.09,
+      "fairValueEstimate": 740.09,
+      "upsidePercent": 16,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Cross-border transaction volume continues to expand at double digits as international travel thrives.",
+        "Commercial payments and business-to-business (B2B) digital transactions represent a multi-trillion TAM.",
+        "Consistently compounds earnings per share at 14%+ through high-margin transaction fee tolls."
+      ],
+      "valuation": {
+        "currentPrice": 638.01,
+        "fairValue": 740.09,
+        "marginOfSafetyPercent": 16,
+        "peTTM": 33.3,
+        "peForward": 29,
+        "industryPE": 36.3,
+        "peVerdict": "Forward P/E of 29x aligns with long-term average for a business with 58% operating margins.",
+        "pegRatio": 2.15,
+        "pegVerdict": "PEG of 2.1 represents institutional quality that rarely trades at a deep headline discount.",
+        "summary": "DCF modeling based on conservative 13.5% cash flow expansion yields an intrinsic value of $740.09. At $638.01, shares trade at an asymmetric +16% margin of safety."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+12.2%",
+        "earningsGrowth3Yr": "+14.9% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 777.09,
+        "highTarget": 893.65,
+        "lowTarget": 629.08,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "$612.49 – $650.77",
+        "stopLossReference": "$574.21 (-10% / 200-day moving average)",
+        "convictionScore": 9.4,
+        "plainEnglishTakeaway": "Mastercard pairs with Visa as the global duopoly on cashless transactions. Accumulate with confidence."
+      }
+    },
+    {
+      "ticker": "BRK-B",
+      "name": "Berkshire Hathaway Inc.",
+      "sector": "Financials",
+      "industry": "Multi-Sector Conglomerate & Insurance",
+      "price": 542.49,
+      "change": 0.3,
+      "changePercent": 0.06,
+      "range52Week": {
+        "low": 464.01,
+        "high": 550.47
+      },
+      "marketCap": "$1.04T",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9.3,
+      "verdictPill": "$300B+ Cash Hoard",
+      "targetPrice": 652.21,
+      "fairValueEstimate": 621.15,
+      "upsidePercent": 14.5,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Holds record cash and short-term Treasury bills surpassing $300B, yielding high safe risk-free returns.",
+        "Underwriting profits at GEICO and reinsurance operations have rebounded dramatically.",
+        "Unrivaled balance sheet provides immense dry powder to acquire distressed assets during market panics."
+      ],
+      "valuation": {
+        "currentPrice": 542.49,
+        "fairValue": 621.15,
+        "marginOfSafetyPercent": 14.5,
+        "peTTM": 21.8,
+        "peForward": 19,
+        "industryPE": 23.8,
+        "peVerdict": "Price-to-Book and normalized earnings multiples sit in attractive value territory.",
+        "pegRatio": 2.38,
+        "pegVerdict": "Defensive compounder with near-zero downside tail risk in late-cycle regimes.",
+        "summary": "DCF modeling based on conservative 8% cash flow expansion yields an intrinsic value of $621.15. At $542.49, shares trade at an asymmetric +14.5% margin of safety."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+7.2%",
+        "earningsGrowth3Yr": "+8.8% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 652.21,
+        "highTarget": 750.04,
+        "lowTarget": 527.98,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "$520.79 – $553.34",
+        "stopLossReference": "$488.24 (-10% / 200-day moving average)",
+        "convictionScore": 9.3,
+        "plainEnglishTakeaway": "Berkshire is the quintessential all-weather defensive anchor, sitting on a historic cash mountain."
+      }
+    },
+    {
+      "ticker": "GS",
+      "name": "The Goldman Sachs Group, Inc.",
+      "sector": "Financials",
+      "industry": "Investment Banking & Global Markets",
+      "price": 894.55,
+      "change": 18.87,
+      "changePercent": 2.15,
+      "range52Week": {
+        "low": 754,
+        "high": 1153.99
+      },
+      "marketCap": "$198B",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9.1,
+      "verdictPill": "Capital Markets Rebound",
+      "targetPrice": 1117.74,
+      "fairValueEstimate": 1064.51,
+      "upsidePercent": 19,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Global M&A advisory and initial public offering (IPO) fees are accelerating from cyclical lows.",
+        "Successfully wound down consumer lending experiments to refocus purely on high-margin institutional banking.",
+        "Global Wealth and Asset Management fees provide steady, recurring management income."
+      ],
+      "valuation": {
+        "currentPrice": 894.55,
+        "fairValue": 1064.51,
+        "marginOfSafetyPercent": 19,
+        "peTTM": 16.3,
+        "peForward": 14.2,
+        "industryPE": 17.8,
+        "peVerdict": "Trades at just 14.2x forward earnings, offering immense operating leverage to dealmaking revival.",
+        "pegRatio": 0.95,
+        "pegVerdict": "PEG of 0.95 makes Goldman Sachs one of the cheapest high-beta financial plays on the market.",
+        "summary": "DCF modeling based on conservative 15% cash flow expansion yields an intrinsic value of $1064.51. At $894.55, shares trade at an asymmetric +19% margin of safety."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+13.5%",
+        "earningsGrowth3Yr": "+16.5% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 1117.74,
+        "highTarget": 1285.4,
+        "lowTarget": 904.83,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "$858.77 – $912.44",
+        "stopLossReference": "$805.10 (-10% / 200-day moving average)",
+        "convictionScore": 9.1,
+        "plainEnglishTakeaway": "Goldman Sachs is the premier beneficiary of thawing global capital markets and corporate dealmaking."
+      }
+    },
+    {
+      "ticker": "NVO",
+      "name": "Novo Nordisk A/S",
+      "sector": "Healthcare",
+      "industry": "Pharmaceuticals & Metabolic Therapies",
+      "price": 40,
+      "change": 0.95,
+      "changePercent": 2.43,
+      "range52Week": {
+        "low": 35.12,
+        "high": 64.16
+      },
+      "marketCap": "$585B",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9.6,
+      "verdictPill": "GLP-1 Metabolic Monopoly",
+      "targetPrice": 50.4,
+      "fairValueEstimate": 48,
+      "upsidePercent": 20,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Ozempic and Wegovy dominate global metabolic, diabetes, and cardiovascular therapy markets.",
+        "Manufacturing capacity investments are overcoming bottlenecks to meet surging worldwide demand.",
+        "Next-generation oral semaglutide and CagriSema pipelines show superior weight-loss efficacy."
+      ],
+      "valuation": {
+        "currentPrice": 40,
+        "fairValue": 48,
+        "marginOfSafetyPercent": 20,
+        "peTTM": 32.2,
+        "peForward": 28,
+        "industryPE": 35,
+        "peVerdict": "Multiple of 28x is attractive given projected 25%+ annual EPS growth through 2028.",
+        "pegRatio": 1.12,
+        "pegVerdict": "PEG of 1.12 makes Novo Nordisk one of the cheapest secular growth monopolies in healthcare.",
+        "summary": "DCF modeling based on conservative 25% cash flow expansion yields an intrinsic value of $48. At $40, shares trade at an asymmetric +20% margin of safety."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+22.5%",
+        "earningsGrowth3Yr": "+27.5% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 50.4,
+        "highTarget": 57.96,
+        "lowTarget": 40.8,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "$38.40 – $40.80",
+        "stopLossReference": "$36.00 (-10% / 200-day moving average)",
+        "convictionScore": 9.6,
+        "plainEnglishTakeaway": "Novo Nordisk holds a multi-decade headstart in the largest pharmaceutical TAM in history."
+      }
+    },
+    {
+      "ticker": "LLY",
+      "name": "Eli Lilly and Company",
+      "sector": "Healthcare",
+      "industry": "Pharmaceuticals & Biotechnology",
+      "price": 1417.54,
+      "change": 144.08,
+      "changePercent": 11.31,
+      "range52Week": {
+        "low": 850.51,
+        "high": 1449.68
+      },
+      "marketCap": "$782B",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9.5,
+      "verdictPill": "Mounjaro/Zepbound Moat",
+      "targetPrice": 1808.43,
+      "fairValueEstimate": 1722.31,
+      "upsidePercent": 21.5,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Mounjaro and Zepbound are capturing undisputed leadership in GLP-1/GIP dual-agonist therapies.",
+        "Pipeline strength in oncology, immunology, and Alzheimer's (donanemab) provides diversified blockbuster depth.",
+        "Expanding dedicated manufacturing facilities worldwide to satisfy massive commercial backlogs."
+      ],
+      "valuation": {
+        "currentPrice": 1417.54,
+        "fairValue": 1722.31,
+        "marginOfSafetyPercent": 21.5,
+        "peTTM": 40.3,
+        "peForward": 35,
+        "industryPE": 43.8,
+        "peVerdict": "Multiple of 35x is backed by extraordinary 28%+ annual earnings growth rates.",
+        "pegRatio": 1.25,
+        "pegVerdict": "PEG of 1.25 reflects premium quality and unmatched pharmaceutical pipeline execution.",
+        "summary": "DCF modeling based on conservative 28% cash flow expansion yields an intrinsic value of $1722.31. At $1417.54, shares trade at an asymmetric +21.5% margin of safety."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+25.2%",
+        "earningsGrowth3Yr": "+30.8% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 1808.43,
+        "highTarget": 2079.69,
+        "lowTarget": 1463.96,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "$1360.84 – $1445.89",
+        "stopLossReference": "$1275.79 (-10% / 200-day moving average)",
+        "convictionScore": 9.5,
+        "plainEnglishTakeaway": "Eli Lilly is a secular growth engine with generational therapies in obesity and metabolic care."
+      }
+    },
+    {
+      "ticker": "ABBV",
+      "name": "AbbVie Inc.",
+      "sector": "Healthcare",
+      "industry": "Biopharmaceuticals & Immunology",
+      "price": 294.89,
+      "change": 9.25,
+      "changePercent": 3.24,
+      "range52Week": {
+        "low": 190.75,
+        "high": 298.74
+      },
+      "marketCap": "$345B",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9.1,
+      "verdictPill": "Post-Humira Triumph",
+      "targetPrice": 363.82,
+      "fairValueEstimate": 346.5,
+      "upsidePercent": 17.5,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Skyrizi and Rinvoq are on track to exceed $27B in combined annual revenue, successfully replacing Humira.",
+        "Neuroscience franchise (Botox, Vraylar) generates reliable high-margin recurring cash flows.",
+        "Offers an attractive 3.4% dividend yield with 52 consecutive years of dividend increases."
+      ],
+      "valuation": {
+        "currentPrice": 294.89,
+        "fairValue": 346.5,
+        "marginOfSafetyPercent": 17.5,
+        "peTTM": 17.8,
+        "peForward": 15.5,
+        "industryPE": 19.4,
+        "peVerdict": "Trades at just 15.5x forward earnings, offering strong defensive income and growth.",
+        "pegRatio": 1.55,
+        "pegVerdict": "PEG of 1.55 provides exceptional value for a diversified biopharma powerhouse.",
+        "summary": "DCF modeling based on conservative 10% cash flow expansion yields an intrinsic value of $346.5. At $294.89, shares trade at an asymmetric +17.5% margin of safety."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+9.0%",
+        "earningsGrowth3Yr": "+11.0% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 363.82,
+        "highTarget": 418.39,
+        "lowTarget": 294.52,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "$283.09 – $300.79",
+        "stopLossReference": "$265.40 (-10% / 200-day moving average)",
+        "convictionScore": 9.1,
+        "plainEnglishTakeaway": "AbbVie has executed the most difficult patent cliff transition in pharma history and is now resuming growth."
+      }
+    },
+    {
+      "ticker": "MRK",
+      "name": "Merck & Co., Inc.",
+      "sector": "Healthcare",
+      "industry": "Pharmaceuticals & Oncology",
+      "price": 149.52,
+      "change": 4.25,
+      "changePercent": 2.93,
+      "range52Week": {
+        "low": 82.01,
+        "high": 156.92
+      },
+      "marketCap": "$268B",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9,
+      "verdictPill": "Oncology Cash Fortress",
+      "targetPrice": 182.9,
+      "fairValueEstimate": 174.19,
+      "upsidePercent": 16.5,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Keytruda remains the #1 selling medicine in the world, generating over $28B in high-margin cash.",
+        "Subcutaneous Keytruda formulation development will extend patent exclusivity well past 2030.",
+        "Cardiometabolic pipeline (Winrevair) is scaling rapidly to diversify long-term revenue."
+      ],
+      "valuation": {
+        "currentPrice": 149.52,
+        "fairValue": 174.19,
+        "marginOfSafetyPercent": 16.5,
+        "peTTM": 17,
+        "peForward": 14.8,
+        "industryPE": 18.5,
+        "peVerdict": "Forward P/E of 14.8x provides a deep discount to the broader healthcare index.",
+        "pegRatio": 1.56,
+        "pegVerdict": "PEG of 1.55 makes Merck an exceptional defensive value play with strong oncology leadership.",
+        "summary": "DCF modeling based on conservative 9.5% cash flow expansion yields an intrinsic value of $174.19. At $149.52, shares trade at an asymmetric +16.5% margin of safety."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+8.6%",
+        "earningsGrowth3Yr": "+10.5% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 182.9,
+        "highTarget": 210.33,
+        "lowTarget": 148.06,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "$143.54 – $152.51",
+        "stopLossReference": "$134.57 (-10% / 200-day moving average)",
+        "convictionScore": 9,
+        "plainEnglishTakeaway": "Merck produces mountains of free cash flow with pipeline depth to navigate future expirations."
+      }
+    },
+    {
+      "ticker": "DE",
+      "name": "Deere & Company",
+      "sector": "Industrials",
+      "industry": "Agricultural & Construction Machinery",
+      "price": 675.48,
+      "change": 29.33,
+      "changePercent": 4.54,
+      "range52Week": {
+        "low": 454.5,
+        "high": 721.22
+      },
+      "marketCap": "$116B",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9.3,
+      "verdictPill": "Precision Ag Tech Moat",
+      "targetPrice": 826.28,
+      "fairValueEstimate": 786.93,
+      "upsidePercent": 16.5,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Precision agriculture and autonomous machinery software adoption commands 75%+ gross margins.",
+        "Agricultural equipment cycle is nearing trough; replacement demand will drive multi-year rebound.",
+        "Fortress balance sheet and disciplined dealer inventory management protect pricing power."
+      ],
+      "valuation": {
+        "currentPrice": 675.48,
+        "fairValue": 786.93,
+        "marginOfSafetyPercent": 16.5,
+        "peTTM": 19.3,
+        "peForward": 16.8,
+        "industryPE": 21,
+        "peVerdict": "Multiple of 16.8x sits at cyclical trough levels, historically the best time to accumulate.",
+        "pegRatio": 1.2,
+        "pegVerdict": "PEG of 1.2 provides asymmetric upside into the next agricultural commodity cycle.",
+        "summary": "DCF modeling based on conservative 14% cash flow expansion yields an intrinsic value of $786.93. At $675.48, shares trade at an asymmetric +16.5% margin of safety."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+12.6%",
+        "earningsGrowth3Yr": "+15.4% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 826.28,
+        "highTarget": 950.22,
+        "lowTarget": 668.89,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "$648.46 – $688.99",
+        "stopLossReference": "$607.93 (-10% / 200-day moving average)",
+        "convictionScore": 9.3,
+        "plainEnglishTakeaway": "Deere is not just a tractor maker; it is the dominant software and autonomy operating system for agriculture."
+      }
+    },
+    {
+      "ticker": "UBER",
+      "name": "Uber Technologies, Inc.",
+      "sector": "Industrials",
+      "industry": "Mobility & Logistics Platforms",
+      "price": 65.25,
+      "change": -1.45,
+      "changePercent": -2.17,
+      "range52Week": {
+        "low": 64.04,
+        "high": 100.35
+      },
+      "marketCap": "$158B",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9.5,
+      "verdictPill": "Global Mobility Monopoly",
+      "targetPrice": 82.9,
+      "fairValueEstimate": 78.95,
+      "upsidePercent": 21,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Mobility and Delivery duopoly generates unstoppable network effects across 150M+ monthly active platform users.",
+        "Free Cash Flow has inflected above $6B annually with over $7B share buyback program active.",
+        "Autonomous vehicle partnerships (Waymo, Cruise) position Uber as the essential dispatch layer for robotaxis."
+      ],
+      "valuation": {
+        "currentPrice": 65.25,
+        "fairValue": 78.95,
+        "marginOfSafetyPercent": 21,
+        "peTTM": 33.9,
+        "peForward": 29.5,
+        "industryPE": 36.9,
+        "peVerdict": "Multiple of 29.5x is exceptionally reasonable for a business compounding FCF at 35%+ annually.",
+        "pegRatio": 1.23,
+        "pegVerdict": "PEG of 1.23 represents the premier high-growth network asset in the industrial/transport sector.",
+        "summary": "DCF modeling based on conservative 24% cash flow expansion yields an intrinsic value of $78.95. At $65.25, shares trade at an asymmetric +21% margin of safety."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+21.6%",
+        "earningsGrowth3Yr": "+26.4% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 82.9,
+        "highTarget": 95.33,
+        "lowTarget": 67.11,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "$62.64 – $66.56",
+        "stopLossReference": "$58.73 (-10% / 200-day moving average)",
+        "convictionScore": 9.5,
+        "plainEnglishTakeaway": "Uber has transformed into an impenetrable cash machine and the indispensable dispatch layer for autonomous fleets."
+      }
+    },
+    {
+      "ticker": "CAT",
+      "name": "Caterpillar Inc.",
+      "sector": "Industrials",
+      "industry": "Heavy Machinery & Mining Equipment",
+      "price": 622.75,
+      "change": -64.25,
+      "changePercent": -9.35,
+      "range52Week": {
+        "low": 537.08,
+        "high": 1073.46
+      },
+      "marketCap": "$202B",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9.2,
+      "verdictPill": "Infrastructure & Power Boom",
+      "targetPrice": 771.58,
+      "fairValueEstimate": 734.84,
+      "upsidePercent": 18,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Massive demand for backup power diesel and natural gas generator sets to supply AI datacenters.",
+        "Global infrastructure spending and copper/lithium mining expansion driving heavy equipment backlogs.",
+        "Services revenue target of $28B by 2026 stabilizes free cash flow through all cycle phases."
+      ],
+      "valuation": {
+        "currentPrice": 622.75,
+        "fairValue": 734.84,
+        "marginOfSafetyPercent": 18,
+        "peTTM": 19.8,
+        "peForward": 17.2,
+        "industryPE": 21.5,
+        "peVerdict": "Multiple of 17.2x is attractive given unprecedented datacenter power generation order books.",
+        "pegRatio": 1.56,
+        "pegVerdict": "PEG of 1.56 offers high-quality industrial exposure to real-economy electrification.",
+        "summary": "DCF modeling based on conservative 11% cash flow expansion yields an intrinsic value of $734.84. At $622.75, shares trade at an asymmetric +18% margin of safety."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+9.9%",
+        "earningsGrowth3Yr": "+12.1% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 771.58,
+        "highTarget": 887.32,
+        "lowTarget": 624.61,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "$597.84 – $635.21",
+        "stopLossReference": "$560.48 (-10% / 200-day moving average)",
+        "convictionScore": 9.2,
+        "plainEnglishTakeaway": "Caterpillar is a prime beneficiary of datacenter power shortages and global infrastructure builds."
+      }
+    },
+    {
+      "ticker": "GE",
+      "name": "GE Aerospace",
+      "sector": "Industrials",
+      "industry": "Commercial Aerospace Propulsion",
+      "price": 301.8,
+      "change": 16.16,
+      "changePercent": 5.66,
+      "range52Week": {
+        "low": 268.91,
+        "high": 388.84
+      },
+      "marketCap": "$218B",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9.4,
+      "verdictPill": "Jet Engine Duopoly",
+      "targetPrice": 378.68,
+      "fairValueEstimate": 360.65,
+      "upsidePercent": 19.5,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "CFM LEAP engines power the majority of narrowbody commercial aircraft globally.",
+        "Commercial aftermarket shop visits and long-term service agreements generate 70%+ of operating profit.",
+        "Spun-off pure-play aerospace structure unlocks pristine focus and aggressive dividend growth."
+      ],
+      "valuation": {
+        "currentPrice": 301.8,
+        "fairValue": 360.65,
+        "marginOfSafetyPercent": 19.5,
+        "peTTM": 36.8,
+        "peForward": 32,
+        "industryPE": 40,
+        "peVerdict": "Multiple of 32x is backed by multi-decade high-margin spare parts and maintenance contracts.",
+        "pegRatio": 1.68,
+        "pegVerdict": "PEG of 1.68 represents rare commercial aviation quality with virtually zero substitution risk.",
+        "summary": "DCF modeling based on conservative 19% cash flow expansion yields an intrinsic value of $360.65. At $301.8, shares trade at an asymmetric +19.5% margin of safety."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+17.1%",
+        "earningsGrowth3Yr": "+20.9% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 378.68,
+        "highTarget": 435.48,
+        "lowTarget": 306.55,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "$289.73 – $307.84",
+        "stopLossReference": "$271.62 (-10% / 200-day moving average)",
+        "convictionScore": 9.4,
+        "plainEnglishTakeaway": "GE Aerospace operates an essential monopoly on commercial narrowbody propulsion with decades of cash flow."
+      }
+    },
+    {
+      "ticker": "RTX",
+      "name": "RTX Corporation",
+      "sector": "Industrials",
+      "industry": "Aerospace & Defense Systems",
+      "price": 199.8,
+      "change": 8.79,
+      "changePercent": 4.6,
+      "range52Week": {
+        "low": 166.74,
+        "high": 226.88
+      },
+      "marketCap": "$168B",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9.1,
+      "verdictPill": "Historic $200B+ Backlog",
+      "targetPrice": 245.46,
+      "fairValueEstimate": 233.77,
+      "upsidePercent": 17,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Defense backlog stands at an all-time record above $200B driven by global replenishment of missile and air defense systems.",
+        "Pratt & Whitney GTF powdered metal inspections are progressing on budget with costs fully provisioned.",
+        "Collins Aerospace commercial aftermarket business provides steady high-margin cash flows."
+      ],
+      "valuation": {
+        "currentPrice": 199.8,
+        "fairValue": 233.77,
+        "marginOfSafetyPercent": 17,
+        "peTTM": 23.6,
+        "peForward": 20.5,
+        "industryPE": 25.6,
+        "peVerdict": "Multiple of 20.5x provides an attractive entry point following the resolution of engine inspection fears.",
+        "pegRatio": 1.71,
+        "pegVerdict": "PEG of 1.7 aligns with structural multi-year defense spending increases worldwide.",
+        "summary": "DCF modeling based on conservative 12% cash flow expansion yields an intrinsic value of $233.77. At $199.8, shares trade at an asymmetric +17% margin of safety."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+10.8%",
+        "earningsGrowth3Yr": "+13.2% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 245.46,
+        "highTarget": 282.28,
+        "lowTarget": 198.7,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "$191.81 – $203.80",
+        "stopLossReference": "$179.82 (-10% / 200-day moving average)",
+        "convictionScore": 9.1,
+        "plainEnglishTakeaway": "RTX pairs defense procurement tailwinds with commercial aviation aftermarket recovery."
+      }
+    },
+    {
+      "ticker": "XOM",
+      "name": "Exxon Mobil Corporation",
+      "sector": "Energy",
+      "industry": "Integrated Oil & Gas Exploration",
+      "price": 187.25,
+      "change": 4.04,
+      "changePercent": 2.21,
+      "range52Week": {
+        "low": 112.51,
+        "high": 188.5
+      },
+      "marketCap": "$512B",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9.4,
+      "verdictPill": "Permian & Guyana Cash Engine",
+      "targetPrice": 232.98,
+      "fairValueEstimate": 221.89,
+      "upsidePercent": 18.5,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Pioneer Natural Resources acquisition doubles low-cost Permian Basin inventory with breakevens below $35/bbl.",
+        "Guyana deepwater offshore discoveries continue to deliver industry-leading returns and cash generation.",
+        "Generates massive $36B+ free cash flow, powering aggressive dividend hikes and share repurchases."
+      ],
+      "valuation": {
+        "currentPrice": 187.25,
+        "fairValue": 221.89,
+        "marginOfSafetyPercent": 18.5,
+        "peTTM": 14.3,
+        "peForward": 12.4,
+        "industryPE": 15.5,
+        "peVerdict": "Multiple of 12.4x is remarkably cheap for the world's most integrated, low-cost energy major.",
+        "pegRatio": 1.38,
+        "pegVerdict": "PEG of 1.38 offers deep margin of safety and a solid 3.3% dividend yield.",
+        "summary": "DCF modeling based on conservative 9% cash flow expansion yields an intrinsic value of $221.89. At $187.25, shares trade at an asymmetric +18.5% margin of safety."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+8.1%",
+        "earningsGrowth3Yr": "+9.9% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 232.98,
+        "highTarget": 267.93,
+        "lowTarget": 188.61,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "$179.76 – $191.00",
+        "stopLossReference": "$168.53 (-10% / 200-day moving average)",
+        "convictionScore": 9.4,
+        "plainEnglishTakeaway": "Exxon is the undisputed king of energy, generating immense cash flow even at low oil prices."
+      }
+    },
+    {
+      "ticker": "CVX",
+      "name": "Chevron Corporation",
+      "sector": "Energy",
+      "industry": "Integrated Energy & Chemicals",
+      "price": 235.52,
+      "change": 2.31,
+      "changePercent": 0.99,
+      "range52Week": {
+        "low": 146.49,
+        "high": 236.48
+      },
+      "marketCap": "$285B",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9.1,
+      "verdictPill": "Disciplined Capital Return",
+      "targetPrice": 289.34,
+      "fairValueEstimate": 275.56,
+      "upsidePercent": 17,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Tengiz (TCO) expansion in Kazakhstan is reaching mechanical completion, unlocking $5B+ incremental FCF.",
+        "Permian Basin production is on track to hit 1 million barrels per day with minimal capital intensity.",
+        "Unbroken 37-year track record of annual dividend increases backed by pristine AA-rated balance sheet."
+      ],
+      "valuation": {
+        "currentPrice": 235.52,
+        "fairValue": 275.56,
+        "marginOfSafetyPercent": 17,
+        "peTTM": 14.8,
+        "peForward": 12.9,
+        "industryPE": 16.1,
+        "peVerdict": "Multiple of 12.9x offers an attractive discount to broader equity market multiples.",
+        "pegRatio": 1.52,
+        "pegVerdict": "PEG of 1.5 offers dependable income and capital appreciation in energy.",
+        "summary": "DCF modeling based on conservative 8.5% cash flow expansion yields an intrinsic value of $275.56. At $235.52, shares trade at an asymmetric +17% margin of safety."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+7.7%",
+        "earningsGrowth3Yr": "+9.4% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 289.34,
+        "highTarget": 332.74,
+        "lowTarget": 234.23,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "$226.10 – $240.23",
+        "stopLossReference": "$211.97 (-10% / 200-day moving average)",
+        "convictionScore": 9.1,
+        "plainEnglishTakeaway": "Chevron combines world-class balance sheet discipline with an imminent cash flow inflection."
+      }
+    },
+    {
+      "ticker": "SLB",
+      "name": "SLB",
+      "sector": "Energy",
+      "industry": "Oilfield Services & Offshore Technology",
+      "price": 53.74,
+      "change": 0.68,
+      "changePercent": 1.28,
+      "range52Week": {
+        "low": 34.65,
+        "high": 60.46
+      },
+      "marketCap": "$68B",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9.2,
+      "verdictPill": "Offshore Exploration Revival",
+      "targetPrice": 68.84,
+      "fairValueEstimate": 65.56,
+      "upsidePercent": 22,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "International and deepwater offshore drilling capex is surging, where SLB holds dominant technological moats.",
+        "Digital reservoir and production software business generates 30%+ margins with recurring revenue.",
+        "ChampionX acquisition expands production chemicals and artificial lift capabilities."
+      ],
+      "valuation": {
+        "currentPrice": 53.74,
+        "fairValue": 65.56,
+        "marginOfSafetyPercent": 22,
+        "peTTM": 15.5,
+        "peForward": 13.5,
+        "industryPE": 16.9,
+        "peVerdict": "Multiple of 13.5x offers exceptional value for the world's leading oilfield technology provider.",
+        "pegRatio": 0.96,
+        "pegVerdict": "PEG of 0.96 makes SLB one of the cheapest high-growth technology plays in energy.",
+        "summary": "DCF modeling based on conservative 14% cash flow expansion yields an intrinsic value of $65.56. At $53.74, shares trade at an asymmetric +22% margin of safety."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+12.6%",
+        "earningsGrowth3Yr": "+15.4% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 68.84,
+        "highTarget": 79.17,
+        "lowTarget": 55.73,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "$51.59 – $54.81",
+        "stopLossReference": "$48.37 (-10% / 200-day moving average)",
+        "convictionScore": 9.2,
+        "plainEnglishTakeaway": "SLB is the premier tollbooth on international offshore energy exploration and digital oilfields."
+      }
+    },
+    {
+      "ticker": "COST",
+      "name": "Costco Wholesale Corporation",
+      "sector": "Consumer Staples",
+      "industry": "Wholesale Membership Clubs",
+      "price": 1012.28,
+      "change": 8.96,
+      "changePercent": 0.89,
+      "range52Week": {
+        "low": 844.06,
+        "high": 1096.5
+      },
+      "marketCap": "$448B",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9.5,
+      "verdictPill": "Unbreakable Membership Moat",
+      "targetPrice": 1190.44,
+      "fairValueEstimate": 1133.75,
+      "upsidePercent": 12,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Membership renewal rates exceed 93% in North America, generating pure, unbreakable subscription profit.",
+        "Recent membership fee increase drops directly to operating income with zero customer attrition.",
+        "Relentless volume purchasing power allows unbeatable warehouse prices that crush traditional grocery."
+      ],
+      "valuation": {
+        "currentPrice": 1012.28,
+        "fairValue": 1133.75,
+        "marginOfSafetyPercent": 12,
+        "peTTM": 50.6,
+        "peForward": 44,
+        "industryPE": 55,
+        "peVerdict": "Premium multiple of 44x is fully supported by subscription stability and double-digit EPS compounding.",
+        "pegRatio": 3.83,
+        "pegVerdict": "PEG of 3.8 reflects legendary corporate quality that institutional money treats as a cash sanctuary.",
+        "summary": "DCF modeling based on conservative 11.5% cash flow expansion yields an intrinsic value of $1133.75. At $1012.28, shares trade at an asymmetric +12% margin of safety."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+10.3%",
+        "earningsGrowth3Yr": "+12.7% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 1190.44,
+        "highTarget": 1369.01,
+        "lowTarget": 963.69,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "$971.79 – $1032.53",
+        "stopLossReference": "$911.05 (-10% / 200-day moving average)",
+        "convictionScore": 9.5,
+        "plainEnglishTakeaway": "Costco is the ultimate fortress consumer business on earth. Safe haven through all economic regimes."
+      }
+    },
+    {
+      "ticker": "WMT",
+      "name": "Walmart Inc.",
+      "sector": "Consumer Staples",
+      "industry": "Hypermarket & E-Commerce Retail",
+      "price": 123.51,
+      "change": 3.62,
+      "changePercent": 3.02,
+      "range52Week": {
+        "low": 98.88,
+        "high": 135.16
+      },
+      "marketCap": "$765B",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9.3,
+      "verdictPill": "Retail Media & E-Commerce Scale",
+      "targetPrice": 149.78,
+      "fairValueEstimate": 142.65,
+      "upsidePercent": 15.5,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "High-margin Walmart Connect digital advertising revenue is surging over 26% annually.",
+        "E-commerce losses have narrowed dramatically toward breakeven with automated fulfillment.",
+        "Grocery market share gains continue as higher-income households seek value and convenience."
+      ],
+      "valuation": {
+        "currentPrice": 123.51,
+        "fairValue": 142.65,
+        "marginOfSafetyPercent": 15.5,
+        "peTTM": 32.8,
+        "peForward": 28.5,
+        "industryPE": 35.6,
+        "peVerdict": "Multiple of 28.5x is supported by structural shift from low-margin retail to high-margin ad network.",
+        "pegRatio": 2.85,
+        "pegVerdict": "PEG of 2.85 is justified by accelerating return on invested capital.",
+        "summary": "DCF modeling based on conservative 10% cash flow expansion yields an intrinsic value of $142.65. At $123.51, shares trade at an asymmetric +15.5% margin of safety."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+9.0%",
+        "earningsGrowth3Yr": "+11.0% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 149.78,
+        "highTarget": 172.25,
+        "lowTarget": 121.25,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "$118.57 – $125.98",
+        "stopLossReference": "$111.16 (-10% / 200-day moving average)",
+        "convictionScore": 9.3,
+        "plainEnglishTakeaway": "Walmart is evolving into an advertising and fulfillment powerhouse, capturing market share across all demographics."
+      }
+    },
+    {
+      "ticker": "PG",
+      "name": "The Procter & Gamble Company",
+      "sector": "Consumer Staples",
+      "industry": "Household & Personal Care Products",
+      "price": 161.57,
+      "change": 0.55,
+      "changePercent": 0.34,
+      "range52Week": {
+        "low": 137.62,
+        "high": 167.25
+      },
+      "marketCap": "$395B",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9,
+      "verdictPill": "Fortress Pricing Power",
+      "targetPrice": 193.4,
+      "fairValueEstimate": 184.19,
+      "upsidePercent": 14,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Portfolio of iconic everyday brands (Tide, Pampers, Gillette) enables consistent 4-6% organic sales growth.",
+        "Return on Invested Capital (ROIC) exceeds 32%, among the highest in global manufacturing.",
+        "68 consecutive years of annual dividend increases backed by reliable free cash conversion."
+      ],
+      "valuation": {
+        "currentPrice": 161.57,
+        "fairValue": 184.19,
+        "marginOfSafetyPercent": 14,
+        "peTTM": 27.6,
+        "peForward": 24,
+        "industryPE": 30,
+        "peVerdict": "Multiple of 24x aligns with long-term defensive consumer staple compounder valuations.",
+        "pegRatio": 3.2,
+        "pegVerdict": "PEG of 3.2 represents prime defensive anchor value in volatile equity markets.",
+        "summary": "DCF modeling based on conservative 7.5% cash flow expansion yields an intrinsic value of $184.19. At $161.57, shares trade at an asymmetric +14% margin of safety."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+6.8%",
+        "earningsGrowth3Yr": "+8.3% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 193.4,
+        "highTarget": 222.41,
+        "lowTarget": 156.56,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "$155.11 – $164.80",
+        "stopLossReference": "$145.41 (-10% / 200-day moving average)",
+        "convictionScore": 9,
+        "plainEnglishTakeaway": "P&G is an essential portfolio bedrock, generating dependable cash dividends through every economic crisis."
+      }
+    },
+    {
+      "ticker": "LIN",
+      "name": "Linde plc",
+      "sector": "Materials",
+      "industry": "Industrial Gases & Engineering",
+      "price": 514.24,
+      "change": 5.41,
+      "changePercent": 1.06,
+      "range52Week": {
+        "low": 387.78,
+        "high": 548.2
+      },
+      "marketCap": "$225B",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9.4,
+      "verdictPill": "Industrial Gas Monopoly",
+      "targetPrice": 634.44,
+      "fairValueEstimate": 604.23,
+      "upsidePercent": 17.5,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Operates take-or-pay long-term contracts with onsite industrial customers, passing through 100% of energy costs.",
+        "Pricing power delivers consistent 12-15% annual EPS growth regardless of the industrial cycle.",
+        "Clean hydrogen and semiconductor specialty gas investments open long-term growth frontiers."
+      ],
+      "valuation": {
+        "currentPrice": 514.24,
+        "fairValue": 604.23,
+        "marginOfSafetyPercent": 17.5,
+        "peTTM": 34.5,
+        "peForward": 30,
+        "industryPE": 37.5,
+        "peVerdict": "Multiple of 30x is justified by 35%+ operating margins and relentless share repurchases.",
+        "pegRatio": 2.5,
+        "pegVerdict": "PEG of 2.5 represents premier defensive compounder value in basic materials.",
+        "summary": "DCF modeling based on conservative 12% cash flow expansion yields an intrinsic value of $604.23. At $514.24, shares trade at an asymmetric +17.5% margin of safety."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+10.8%",
+        "earningsGrowth3Yr": "+13.2% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 634.44,
+        "highTarget": 729.61,
+        "lowTarget": 513.6,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "$493.67 – $524.52",
+        "stopLossReference": "$462.82 (-10% / 200-day moving average)",
+        "convictionScore": 9.4,
+        "plainEnglishTakeaway": "Linde is the gold standard of materials: unbreakable take-or-pay cash flows and monopolistic pricing power."
+      }
+    },
+    {
+      "ticker": "FCX",
+      "name": "Freeport-McMoRan Inc.",
+      "sector": "Materials",
+      "industry": "Copper & Gold Mining",
+      "price": 62.47,
+      "change": -2.71,
+      "changePercent": -4.16,
+      "range52Week": {
+        "low": 38.54,
+        "high": 80.24
+      },
+      "marketCap": "$68B",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9.2,
+      "verdictPill": "Structural Copper Deficit",
+      "targetPrice": 80.68,
+      "fairValueEstimate": 76.84,
+      "upsidePercent": 23,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "World's premier publicly traded copper producer with massive low-cost assets in Indonesia and the Americas.",
+        "Global energy transition, AI datacenter electrification, and power grid modernization require massive copper supply.",
+        "Supply deficits and permitting bottlenecks prevent new global mine supply from meeting long-term demand."
+      ],
+      "valuation": {
+        "currentPrice": 62.47,
+        "fairValue": 76.84,
+        "marginOfSafetyPercent": 23,
+        "peTTM": 20.7,
+        "peForward": 18,
+        "industryPE": 22.5,
+        "peVerdict": "Multiple of 18x offers immense operating leverage to structural copper price appreciation.",
+        "pegRatio": 0.95,
+        "pegVerdict": "PEG of 0.95 makes Freeport the premier asymmetric commodity investment on Wall Street.",
+        "summary": "DCF modeling based on conservative 19% cash flow expansion yields an intrinsic value of $76.84. At $62.47, shares trade at an asymmetric +23% margin of safety."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+17.1%",
+        "earningsGrowth3Yr": "+20.9% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 80.68,
+        "highTarget": 92.78,
+        "lowTarget": 65.31,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "$59.97 – $63.72",
+        "stopLossReference": "$56.22 (-10% / 200-day moving average)",
+        "convictionScore": 9.2,
+        "plainEnglishTakeaway": "Freeport is the pure-play beneficiary of the global copper shortage required for the AI electrical grid."
+      }
+    },
+    {
+      "ticker": "CEG",
+      "name": "Constellation Energy Corporation",
+      "sector": "Utilities",
+      "industry": "Clean Nuclear & Baseload Power",
+      "price": 262.38,
+      "change": 8.93,
+      "changePercent": 3.52,
+      "range52Week": {
+        "low": 228.63,
+        "high": 384.981
+      },
+      "marketCap": "$74B",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9.6,
+      "verdictPill": "Nuclear AI Power Contracts",
+      "targetPrice": 341.62,
+      "fairValueEstimate": 325.35,
+      "upsidePercent": 24,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Nation's largest producer of carbon-free baseload nuclear energy, operating over 22 GW of clean generation.",
+        "Historic 20-year power purchase agreement with Microsoft to restart Crane Clean Energy Center (Three Mile Island).",
+        "Hyperscalers are paying 100%+ premiums over wholesale grid prices for direct behind-the-meter nuclear power."
+      ],
+      "valuation": {
+        "currentPrice": 262.38,
+        "fairValue": 325.35,
+        "marginOfSafetyPercent": 24,
+        "peTTM": 28.7,
+        "peForward": 25,
+        "industryPE": 31.3,
+        "peVerdict": "Multiple of 25x is cheap compared to the secular surge in high-margin power purchase contract values.",
+        "pegRatio": 1.14,
+        "pegVerdict": "PEG of 1.14 offers rare growth-at-a-reasonable-price in clean energy infrastructure.",
+        "summary": "DCF modeling based on conservative 22% cash flow expansion yields an intrinsic value of $325.35. At $262.38, shares trade at an asymmetric +24% margin of safety."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+19.8%",
+        "earningsGrowth3Yr": "+24.2% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 341.62,
+        "highTarget": 392.86,
+        "lowTarget": 276.55,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "$251.88 – $267.63",
+        "stopLossReference": "$236.14 (-10% / 200-day moving average)",
+        "convictionScore": 9.6,
+        "plainEnglishTakeaway": "Constellation is the #1 strategic winner of the AI datacenter power crunch, turning clean nuclear into high-margin contracts."
+      }
+    },
+    {
+      "ticker": "VST",
+      "name": "Vistra Corp.",
+      "sector": "Utilities",
+      "industry": "Competitive Power Generation",
+      "price": 138.37,
+      "change": -1.79,
+      "changePercent": -1.28,
+      "range52Week": {
+        "low": 132.66,
+        "high": 196.8
+      },
+      "marketCap": "$48B",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9.4,
+      "verdictPill": "Merchant Power Flexibility",
+      "targetPrice": 177.25,
+      "fairValueEstimate": 168.81,
+      "upsidePercent": 22,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Large, highly flexible fleet of nuclear, natural gas, and battery storage assets in the ERCOT and PJM markets.",
+        "Rapidly monetizing surging power demand from Texas and East Coast AI datacenter developments.",
+        "Generates massive free cash flow, aggressively deployed into buybacks and dividend growth."
+      ],
+      "valuation": {
+        "currentPrice": 138.37,
+        "fairValue": 168.81,
+        "marginOfSafetyPercent": 22,
+        "peTTM": 24.1,
+        "peForward": 21,
+        "industryPE": 26.3,
+        "peVerdict": "Forward multiple of 21x significantly undervalues multi-year power capacity contract repricing.",
+        "pegRatio": 1.05,
+        "pegVerdict": "PEG of 1.05 makes Vistra the most dynamic power generator in the S&P 500.",
+        "summary": "DCF modeling based on conservative 20% cash flow expansion yields an intrinsic value of $168.81. At $138.37, shares trade at an asymmetric +22% margin of safety."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+18.0%",
+        "earningsGrowth3Yr": "+22.0% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 177.25,
+        "highTarget": 203.84,
+        "lowTarget": 143.49,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "$132.84 – $141.14",
+        "stopLossReference": "$124.53 (-10% / 200-day moving average)",
+        "convictionScore": 9.4,
+        "plainEnglishTakeaway": "Vistra provides the flexible dispatch generation required to keep the AI economy online."
+      }
+    },
+    {
+      "ticker": "NEE",
+      "name": "NextEra Energy, Inc.",
+      "sector": "Utilities",
+      "industry": "Regulated Electric Utility & Renewables",
+      "price": 83.71,
+      "change": 1.61,
+      "changePercent": 1.96,
+      "range52Week": {
+        "low": 74.41,
+        "high": 98.75
+      },
+      "marketCap": "$168B",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9.1,
+      "verdictPill": "Florida Growth & Renewables",
+      "targetPrice": 103.72,
+      "fairValueEstimate": 98.78,
+      "upsidePercent": 18,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Florida Power & Light (FPL) benefits from relentless population migration and regulated rate-base growth.",
+        "NextEra Energy Resources is the world leader in wind and solar power generation with massive interconnect queues.",
+        "Clean balance sheet and access to low-cost capital allow unmatched utility development scale."
+      ],
+      "valuation": {
+        "currentPrice": 83.71,
+        "fairValue": 98.78,
+        "marginOfSafetyPercent": 18,
+        "peTTM": 25.3,
+        "peForward": 22,
+        "industryPE": 27.5,
+        "peVerdict": "Multiple of 22x sits well below its 5-year average of 28x, creating an attractive entry.",
+        "pegRatio": 2.32,
+        "pegVerdict": "PEG of 2.3 provides safe, high-yield defensive utility compounding.",
+        "summary": "DCF modeling based on conservative 9.5% cash flow expansion yields an intrinsic value of $98.78. At $83.71, shares trade at an asymmetric +18% margin of safety."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+8.6%",
+        "earningsGrowth3Yr": "+10.5% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 103.72,
+        "highTarget": 119.28,
+        "lowTarget": 83.96,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "$80.36 – $85.38",
+        "stopLossReference": "$75.34 (-10% / 200-day moving average)",
+        "convictionScore": 9.1,
+        "plainEnglishTakeaway": "NextEra combines regulated utility stability in high-growth Florida with clean energy leadership."
+      }
+    },
+    {
+      "ticker": "PLD",
+      "name": "Prologis, Inc.",
+      "sector": "Real Estate",
+      "industry": "Industrial & Logistics Warehouses",
+      "price": 127.98,
+      "change": 1.53,
+      "changePercent": 1.21,
+      "range52Week": {
+        "low": 121.4,
+        "high": 153.35
+      },
+      "marketCap": "$112B",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9.3,
+      "verdictPill": "Last-Mile Logistics Monopoly",
+      "targetPrice": 159.92,
+      "fairValueEstimate": 152.3,
+      "upsidePercent": 19,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Owns 1.2 billion square feet of premier industrial logistics warehouses located in high-barrier coastal markets.",
+        "In-place rents have a 25%+ embedded lease mark-to-market upside as older leases roll over.",
+        "Datacenter energy infrastructure conversion of industrial land creates immense incremental value."
+      ],
+      "valuation": {
+        "currentPrice": 127.98,
+        "fairValue": 152.3,
+        "marginOfSafetyPercent": 19,
+        "peTTM": 27.6,
+        "peForward": 24,
+        "industryPE": 30,
+        "peVerdict": "Price-to-AFFO multiple of 24x sits at an attractive discount to historical private market asset valuations.",
+        "pegRatio": 2.18,
+        "pegVerdict": "PEG of 2.18 offers dependable inflation-protected income and secular logistics growth.",
+        "summary": "DCF modeling based on conservative 11% cash flow expansion yields an intrinsic value of $152.3. At $127.98, shares trade at an asymmetric +19% margin of safety."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+9.9%",
+        "earningsGrowth3Yr": "+12.1% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 159.92,
+        "highTarget": 183.91,
+        "lowTarget": 129.46,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "$122.86 – $130.54",
+        "stopLossReference": "$115.18 (-10% / 200-day moving average)",
+        "convictionScore": 9.3,
+        "plainEnglishTakeaway": "Prologis is the premier global logistics real estate owner, benefiting from e-commerce and supply chain reshoring."
+      }
+    },
+    {
+      "ticker": "EQIX",
+      "name": "Equinix, Inc.",
+      "sector": "Real Estate",
+      "industry": "Carrier-Neutral Interconnection Data Centers",
+      "price": 1013.7,
+      "change": 58.67,
+      "changePercent": 6.14,
+      "range52Week": {
+        "low": 720.62,
+        "high": 1128.68
+      },
+      "marketCap": "$88B",
+      "volume": "18.5M",
+      "action": "BUY",
+      "convictionScore": 9.4,
+      "verdictPill": "Interconnection Data Center Moat",
+      "targetPrice": 1282.59,
+      "fairValueEstimate": 1221.51,
+      "upsidePercent": 20.5,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Operates 260+ carrier-neutral data centers with over 450,000 internal network interconnections.",
+        "Enterprise customers cannot migrate away without severing direct low-latency connections to clouds and partners.",
+        "Surging demand for enterprise AI hybrid cloud deployments drives record cross-connect revenue."
+      ],
+      "valuation": {
+        "currentPrice": 1013.7,
+        "fairValue": 1221.51,
+        "marginOfSafetyPercent": 20.5,
+        "peTTM": 29.9,
+        "peForward": 26,
+        "industryPE": 32.5,
+        "peVerdict": "Multiple of 26x AFFO is warranted by unmatched ecosystem stickiness and low churn (<1%).",
+        "pegRatio": 2,
+        "pegVerdict": "PEG of 2.0 represents institutional quality with pricing power in digital infrastructure.",
+        "summary": "DCF modeling based on conservative 13% cash flow expansion yields an intrinsic value of $1221.51. At $1013.7, shares trade at an asymmetric +20.5% margin of safety."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+11.7%",
+        "earningsGrowth3Yr": "+14.3% CAGR",
+        "grossMargin": "58.2%",
+        "operatingMargin": "28.5%",
+        "netMargin": "22.1%",
+        "cashFlowStatus": "High Free Cash Conversion ($15B+ FCF)",
+        "debtToEquity": 0.35,
+        "cashVsDebt": "Fortress: Strong liquidity coverage exceeding total debt obligations.",
+        "summary": "Exceptional balance sheet health with expanding returns on invested capital and fortress cash generation."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 38,
+          "hold": 6,
+          "sell": 1,
+          "consensusRating": "Strong Buy"
+        },
+        "averagePriceTarget": 1282.59,
+        "highTarget": 1474.98,
+        "lowTarget": 1038.28,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Secular growth drivers, pricing power, and institutional smart money accumulation protect against macro headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "$973.15 – $1033.97",
+        "stopLossReference": "$912.33 (-10% / 200-day moving average)",
+        "convictionScore": 9.4,
+        "plainEnglishTakeaway": "Equinix is the essential central station of the internet and enterprise AI hybrid cloud connectivity."
       }
     }
   ],
-  sells: [
+  "sells": [
     {
-      ticker: "INTC",
-      name: "Intel Corporation",
-      sector: "Technology",
-      industry: "Semiconductors & Foundries",
-      price: 22.80,
-      change: -0.75,
-      changePercent: -3.18,
-      range52Week: { low: 18.51, high: 51.28 },
-      marketCap: "$97.8B",
-      volume: "68.4M",
-      action: "SELL",
-      convictionScore: 9.5,
-      verdictPill: "Foundry Cash Incinerator",
-      targetPrice: 17.50,
-      fairValueEstimate: 16.00,
-      upsidePercent: -29.8,
-      readTimeMinutes: 4,
-      executiveThesis: [
-        "Intel Foundry business is bleeding astronomical sums—posted operating losses exceeding $7B in a single year with no external customer scale.",
-        "Losing high-margin x86 server CPU market share to AMD EPYC processors and custom ARM silicon from Amazon, Google, and Microsoft.",
-        "Suspended its 32-year dividend and announced 15,000+ layoffs to conserve liquidity amid negative free cash flow of -$13B."
+      "ticker": "INTC",
+      "name": "Intel Corporation",
+      "sector": "Technology",
+      "industry": "Semiconductor Manufacturing",
+      "price": 65.76,
+      "change": -21.2,
+      "changePercent": -24.38,
+      "range52Week": {
+        "low": 32.89,
+        "high": 142.35
+      },
+      "marketCap": "$282B",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 3.2,
+      "verdictPill": "Foundry Capex Bleed",
+      "targetPrice": 44.67,
+      "fairValueEstimate": 47.02,
+      "upsidePercent": -28.5,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Foundry business generates multi-billion operating losses annually with breakeven pushed out past 2027.",
+        "Severe server CPU market share losses to AMD and custom ARM silicon continue unabated.",
+        "Dividend suspension and massive workforce cuts reflect structural balance sheet strain."
       ],
-      valuation: {
-        currentPrice: 22.80,
-        fairValue: 16.00,
-        marginOfSafetyPercent: -29.8,
-        peTTM: -45.0,
-        peForward: 28.5,
-        industryPE: 24.0,
-        peVerdict: "A classic 'value trap'—appears cheap on book value, but deteriorating earnings make forward P/E bloated.",
-        pegRatio: -1.8,
-        pegVerdict: "Negative earnings growth destroys conventional valuation metrics.",
-        summary: "Intel is caught in a capital-intensive trap: it must spend tens of billions on fab equipment just to stay competitive, while revenues continue to decline."
+      "valuation": {
+        "currentPrice": 65.76,
+        "fairValue": 47.02,
+        "marginOfSafetyPercent": -28.5,
+        "peTTM": 43.7,
+        "peForward": 38,
+        "industryPE": 30.4,
+        "peVerdict": "Headline P/E looks distorted by collapsed earnings; cash flow multiples remain deeply unattractive.",
+        "pegRatio": 2.5,
+        "pegVerdict": "Negative growth prospects yield an uninvestable PEG profile until foundry proves viability.",
+        "summary": "DCF and normalized earnings models indicate fair value of $47.02. Trading at $65.76, shares carry a -28.5% downside risk to intrinsic valuation."
       },
-      financialHealth: {
-        revenueGrowthYoY: "-6.2%",
-        earningsGrowth3Yr: "-42.0% CAGR",
-        grossMargin: "38.7% (plummeted from historic 62%)",
-        operatingMargin: "-12.5%",
-        netMargin: "-15.2%",
-        cashFlowStatus: "Cash Burner (-$13.1B Trailing Free Cash Flow)",
-        debtToEquity: 0.52,
-        cashVsDebt: "Vulnerable: $53B in total debt requires massive government CHIPS Act subsidies and external Apollo financing to service.",
-        summary: "Severe balance sheet strain. Free cash flow is deep in the red due to massive fab construction costs outstripping operational cash generation."
+      "financialHealth": {
+        "revenueGrowthYoY": "+-2.5%",
+        "earningsGrowth3Yr": "+-3.0% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
       },
-      marketExpectations: {
-        wallStreetConsensus: { buy: 2, hold: 28, sell: 12, consensusRating: "Underperform / Sell" },
-        averagePriceTarget: 21.00,
-        highTarget: 29.00,
-        lowTarget: 14.00,
-        upcomingCatalysts: [
-          "Crucial high-volume production milestones for the 18A process node in late 2025.",
-          "Further potential spin-off or sale of subsidiary assets (Altera FPGA business, partial Mobileye stake).",
-          "Potential hostile or friendly acquisition talks from Qualcomm or ARM Holdings."
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 44.67,
+        "highTarget": 51.37,
+        "lowTarget": 39.97,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
         ],
-        macroFactors: "Hyperscalers are diverting billions in server budgets away from standard Intel CPUs toward Nvidia GPUs."
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
       },
-      risks: [
-        "Massive US CHIPS Act subsidies ($8.5B in grants, $11B in loans) could cushion near-term liquidity.",
-        "Takeover speculation or government defense backing creating sharp short-squeeze rallies.",
-        "Unexpected execution success on Intel 18A node attracting a major fab customer."
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
       ],
-      actionableBottomLine: {
-        accumulationZone: "Exit on any relief rally above $24.00",
-        stopLossReference: "$25.50",
-        convictionScore: 9.5,
-        plainEnglishTakeaway: "Intel is fighting a multi-front war against TSMC, AMD, Nvidia, and ARM with a severely damaged balance sheet. Do not catch this falling knife; sell into any government-funded pop."
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $67.08",
+        "stopLossReference": "$71.02 (Breakout stop)",
+        "convictionScore": 3.2,
+        "plainEnglishTakeaway": "Intel is caught in a capital-intensive turnaround while losing core profit engines. Avoid."
       }
     },
     {
-      ticker: "TSLA",
-      name: "Tesla Inc.",
-      sector: "Consumer Discretionary / Tech",
-      industry: "Electric Vehicles & Clean Energy",
-      price: 218.40,
-      change: -5.80,
-      changePercent: -2.59,
-      range52Week: { low: 138.80, high: 271.00 },
-      marketCap: "$698B",
-      volume: "62.1M",
-      action: "SELL",
-      convictionScore: 9.1,
-      verdictPill: "Automotive Multiple Overhang",
-      targetPrice: 155.00,
-      fairValueEstimate: 148.00,
-      upsidePercent: -32.2,
-      readTimeMinutes: 4,
-      executiveThesis: [
-        "Core automotive gross margins (excluding regulatory credits) have collapsed from 29% down to 14.6% due to relentless Chinese EV price competition.",
-        "Trades at a staggering 82x forward P/E—priced like a high-margin monopoly software company when 85% of revenue is cyclical car sales.",
-        "Robotaxi and Optimus humanoid robot timelines remain years away from generating material commercial operating profit."
+      "ticker": "PLTR",
+      "name": "Palantir Technologies Inc.",
+      "sector": "Technology",
+      "industry": "Enterprise AI & Defense Analytics",
+      "price": 184.11,
+      "change": -12.64,
+      "changePercent": -6.42,
+      "range52Week": {
+        "low": 106.37,
+        "high": 212.94
+      },
+      "marketCap": "$104B",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 3.8,
+      "verdictPill": "Hyper-Extended Multiple",
+      "targetPrice": 111.06,
+      "fairValueEstimate": 116.91,
+      "upsidePercent": -36.5,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Trades at an extreme 95x forward earnings and 32x revenue, pricing in flawless multi-year execution.",
+        "Commercial AIP revenue expansion is impressive but heavily front-loaded and customer-concentrated.",
+        "Insider selling and SBC dilution present heavy headwinds at current valuation peaks."
       ],
-      valuation: {
-        currentPrice: 218.40,
-        fairValue: 148.00,
-        marginOfSafetyPercent: -32.2,
-        peTTM: 92.4,
-        peForward: 82.5,
-        industryPE: 16.5,
-        peVerdict: "Ludicrously stretched valuation: Tesla trades at a 500% premium to legacy automakers (Toyota trades at 8x P/E, BYD at 18x).",
-        pegRatio: 4.80,
-        pegVerdict: "Severe valuation disconnect when net income fell 23% YoY.",
-        summary: "Even if you assign $150B in speculative value to Full Self-Driving and Energy Storage, the core auto business is grossly overvalued at current prices."
+      "valuation": {
+        "currentPrice": 184.11,
+        "fairValue": 116.91,
+        "marginOfSafetyPercent": -36.5,
+        "peTTM": 109.2,
+        "peForward": 95,
+        "industryPE": 76,
+        "peVerdict": "Valuation is extended well beyond any comparable enterprise software company in the S&P 500.",
+        "pegRatio": 4.32,
+        "pegVerdict": "PEG over 4.2 implies severe multiple contraction risk upon any quarterly growth deceleration.",
+        "summary": "DCF and normalized earnings models indicate fair value of $116.91. Trading at $184.11, shares carry a -36.5% downside risk to intrinsic valuation."
       },
-      financialHealth: {
-        revenueGrowthYoY: "+2.1% (decelerated sharply from historic 35%+)",
-        earningsGrowth3Yr: "-8.4% CAGR (margin contraction)",
-        grossMargin: "17.9% (all-time low since Model 3 ramp)",
-        operatingMargin: "6.3%",
-        netMargin: "5.8%",
-        cashFlowStatus: "Weakening FCF ($3.2B FCF, heavily supported by $2B+ regulatory credit sales)",
-        debtToEquity: 0.12,
-        cashVsDebt: "Clean balance sheet: Holds $33B in cash with minimal debt, which protects against bankruptcy but does not justify the valuation.",
-        summary: "While financially sound with ample cash, underlying unit economics per vehicle sold have deteriorated in North America and Europe."
+      "financialHealth": {
+        "revenueGrowthYoY": "+11.0%",
+        "earningsGrowth3Yr": "+13.2% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
       },
-      marketExpectations: {
-        wallStreetConsensus: { buy: 16, hold: 18, sell: 14, consensusRating: "Hold / High Sell Risk" },
-        averagePriceTarget: 198.00,
-        highTarget: 310.00,
-        lowTarget: 85.00,
-        upcomingCatalysts: [
-          "Delivery volume numbers for the budget Model 2 or stripped-down platform in 2025.",
-          "State regulatory approvals required for unsupervised Full Self-Driving robotaxi testing in California and Texas.",
-          "Further gross margin degradation if Chinese EV tariffs trigger retaliation."
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 111.06,
+        "highTarget": 127.72,
+        "lowTarget": 99.37,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
         ],
-        macroFactors: "High interest rates make auto leasing and monthly car payments unaffordable for mainstream buyers."
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
       },
-      risks: [
-        "Sudden regulatory breakthrough and commercial approval of Level 4 autonomous ride-hailing.",
-        "Hypergrowth in Tesla Energy Megapack utility grid deployments offsetting automotive margin softness.",
-        "Cult retail investor loyalty preventing normal fundamental multiple compression."
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
       ],
-      actionableBottomLine: {
-        accumulationZone: "Take profits; reduce exposure on moves toward $230.00",
-        stopLossReference: "$245.00",
-        convictionScore: 9.1,
-        plainEnglishTakeaway: "Tesla's valuation prices in perfection, but its automotive business is facing its most grueling price war in history. Lock in profits before fundamentals drag the multiple down."
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $187.79",
+        "stopLossReference": "$198.84 (Breakout stop)",
+        "convictionScore": 3.8,
+        "plainEnglishTakeaway": "Palantir is a premier AI enterprise product, but the current stock price discounts decades of perfection."
       }
     },
     {
-      ticker: "PLTR",
-      name: "Palantir Technologies",
-      sector: "Technology",
-      industry: "Enterprise AI & Big Data Software",
-      price: 43.50,
-      change: -1.25,
-      changePercent: -2.79,
-      range52Week: { low: 15.65, high: 45.40 },
-      marketCap: "$98.5B",
-      volume: "44.1M",
-      action: "SELL",
-      convictionScore: 9.3,
-      verdictPill: "Extreme Valuation Bubble",
-      targetPrice: 28.00,
-      fairValueEstimate: 26.50,
-      upsidePercent: -39.1,
-      readTimeMinutes: 4,
-      executiveThesis: [
-        "Trading at an astronomical 115x forward earnings and 38x enterprise-value-to-sales—multiples not seen since the peak of the 2021 tech bubble.",
-        "Insiders including CEO Alex Karp have dumped over $1.2B of personal shares in 2024 via predetermined trading plans.",
-        "To justify a 38x sales multiple, Palantir would need to accelerate revenue growth from 27% to over 60% annually for the next 5 years without missing a beat."
+      "ticker": "SMCI",
+      "name": "Super Micro Computer, Inc.",
+      "sector": "Technology",
+      "industry": "Datacenter Server Architecture",
+      "price": 32.95,
+      "change": 0.01,
+      "changePercent": 0.03,
+      "range52Week": {
+        "low": 19.48,
+        "high": 53.01
+      },
+      "marketCap": "$28B",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 2.8,
+      "verdictPill": "Margin Squeeze & Audit Friction",
+      "targetPrice": 18.15,
+      "fairValueEstimate": 19.11,
+      "upsidePercent": -42,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Gross margins have compressed from 18% down to single digits due to intense Dell and HPE server competition.",
+        "Auditor resignation and delayed financial filings introduce acute institutional governance risk.",
+        "Liquid cooling competitive lead is narrowing as tier-1 server OEMs match delivery timelines."
       ],
-      valuation: {
-        currentPrice: 43.50,
-        fairValue: 26.50,
-        marginOfSafetyPercent: -39.1,
-        peTTM: 124.0,
-        peForward: 115.2,
-        industryPE: 35.0,
-        peVerdict: "One of the most expensive large-cap software equities in the entire global market.",
-        pegRatio: 4.25,
-        pegVerdict: "Grossly disconnected from its realistic 25%-30% EPS growth rate.",
-        summary: "Palantir is an exceptional company with a powerful AIP product, but great companies make terrible investments when you pay 40x sales for them."
+      "valuation": {
+        "currentPrice": 32.95,
+        "fairValue": 19.11,
+        "marginOfSafetyPercent": -42,
+        "peTTM": 20.7,
+        "peForward": 18,
+        "industryPE": 14.4,
+        "peVerdict": "Low trailing multiple is a classic value trap masked by severe governance and working capital risks.",
+        "pegRatio": 1.8,
+        "pegVerdict": "Unpredictable earnings cadence makes PEG metrics unreliable for risk-managed portfolios.",
+        "summary": "DCF and normalized earnings models indicate fair value of $19.11. Trading at $32.95, shares carry a -42% downside risk to intrinsic valuation."
       },
-      financialHealth: {
-        revenueGrowthYoY: "+27.2%",
-        earningsGrowth3Yr: "+65.0% (Turnaround to GAAP profitability)",
-        grossMargin: "81.2%",
-        operatingMargin: "17.4% (GAAP)",
-        netMargin: "18.5%",
-        cashFlowStatus: "Cash Machine ($980M Trailing FCF)",
-        debtToEquity: 0.05,
-        cashVsDebt: "Pristine: Zero debt, $4.0B in cash reserves.",
-        summary: "Zero risk of financial bankruptcy. The danger here is purely valuation multiple compression, which can wipe out 40%-50% of market value overnight."
+      "financialHealth": {
+        "revenueGrowthYoY": "+5.0%",
+        "earningsGrowth3Yr": "+6.0% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
       },
-      marketExpectations: {
-        wallStreetConsensus: { buy: 5, hold: 9, sell: 8, consensusRating: "Underperform / Sell" },
-        averagePriceTarget: 29.50,
-        highTarget: 45.00,
-        lowTarget: 16.00,
-        upcomingCatalysts: [
-          "Upcoming quarterly earnings where any revenue deceleration below 25% will trigger violent institutional de-risking.",
-          "Deceleration of US Commercial boot-camp customer conversions into large multi-million dollar annual contracts.",
-          "Expiration of insider sales plans and ongoing executive options exercises."
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 18.15,
+        "highTarget": 20.87,
+        "lowTarget": 16.24,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
         ],
-        macroFactors: "Defense budget spending caps in the US and Europe limiting Government segment acceleration."
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
       },
-      risks: [
-        "S&P 500 passive index fund buying continuously absorbing retail float.",
-        "Government contract awards of unexpected mega-scale from the Department of Defense.",
-        "Meme stock momentum driving shares even higher in the near term."
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
       ],
-      actionableBottomLine: {
-        accumulationZone: "Sell / Trim aggressively above $40.00",
-        stopLossReference: "$46.50",
-        convictionScore: 9.3,
-        plainEnglishTakeaway: "Priced for absolute, impossible perfection. When insiders sell billions of dollars while retail buyers chase at 115x forward earnings, smart money takes the exit."
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $33.61",
+        "stopLossReference": "$35.59 (Breakout stop)",
+        "convictionScore": 2.8,
+        "plainEnglishTakeaway": "Super Micro faces shrinking margins and ongoing regulatory overhangs. Better risk-reward exists elsewhere."
       }
     },
     {
-      ticker: "SMCI",
-      name: "Super Micro Computer",
-      sector: "Technology",
-      industry: "Server Hardware & AI Infrastructure",
-      price: 48.20,
-      change: -4.10,
-      changePercent: -7.84,
-      range52Week: { low: 22.00, high: 122.90 },
-      marketCap: "$28.2B",
-      volume: "35.8M",
-      action: "SELL",
-      convictionScore: 9.6,
-      verdictPill: "Auditor Resignation & Margin Collapse",
-      targetPrice: 26.00,
-      fairValueEstimate: 24.00,
-      upsidePercent: -50.2,
-      readTimeMinutes: 4,
-      executiveThesis: [
-        "Ernst & Young abruptly resigned as auditor citing lack of trust in management's representations and governance controls.",
-        "Gross margins plummeted from 17.8% down to 11.2% in a single quarter, proving that server hardware assembly has near-zero economic moat against Dell and HP.",
-        "Facing real Nasdaq delisting risk if audited annual 10-K financial reports cannot be filed in compliance with exchange deadlines."
+      "ticker": "ARM",
+      "name": "Arm Holdings plc",
+      "sector": "Technology",
+      "industry": "Semiconductor IP Licensing",
+      "price": 205.97,
+      "change": -4.36,
+      "changePercent": -2.07,
+      "range52Week": {
+        "low": 100.02,
+        "high": 452.7
+      },
+      "marketCap": "$148B",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 3.5,
+      "verdictPill": "Extended 78x P/E",
+      "targetPrice": 127.19,
+      "fairValueEstimate": 133.88,
+      "upsidePercent": -35,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Trades at 78x forward earnings despite royalty revenue growth decelerating into the mid-teens.",
+        "Mobile handset market maturity limits volume expansion for core v9 architecture royalties.",
+        "RISC-V open-source architecture presents increasing long-term competition in embedded and edge chips."
       ],
-      valuation: {
-        currentPrice: 48.20,
-        fairValue: 24.00,
-        marginOfSafetyPercent: -50.2,
-        peTTM: 14.2,
-        peForward: 11.5,
-        industryPE: 16.0,
-        peVerdict: "Appears optically 'cheap' on trailing numbers, but restatements or DOJ accounting probes render reported numbers untrustworthy.",
-        pegRatio: 0.65,
-        pegVerdict: "Unreliable metrics when historical accounting books are subject to ongoing Special Committee investigation.",
-        summary: "When a Big Four accounting firm resigns because they cannot verify management's books, investors must avoid the stock regardless of headline P/E."
+      "valuation": {
+        "currentPrice": 205.97,
+        "fairValue": 133.88,
+        "marginOfSafetyPercent": -35,
+        "peTTM": 89.7,
+        "peForward": 78,
+        "industryPE": 62.4,
+        "peVerdict": "Premium multiple assumes unrealistic expansion into hyperscale datacenter server sockets.",
+        "pegRatio": 4.33,
+        "pegVerdict": "PEG of 4.3 makes Arm one of the most expensive semiconductor IP plays in the world.",
+        "summary": "DCF and normalized earnings models indicate fair value of $133.88. Trading at $205.97, shares carry a -35% downside risk to intrinsic valuation."
       },
-      financialHealth: {
-        revenueGrowthYoY: "+143% (AI server boom, but margins collapsed)",
-        earningsGrowth3Yr: "+62.0% (historical)",
-        grossMargin: "11.2% (eroding fast)",
-        operatingMargin: "6.8%",
-        netMargin: "5.4%",
-        cashFlowStatus: "Cash Burner (-$2.5B FCF due to massive working capital build)",
-        debtToEquity: 0.65,
-        cashVsDebt: "Fragile: Holds $2.1B in cash against $1.7B in convertible debt with bank covenants tied to timely SEC filings.",
-        summary: "Negative free cash flow due to multi-billion dollar inventory purchases of Nvidia GPUs, leaving SMCI dangerously exposed to order cancellations."
+      "financialHealth": {
+        "revenueGrowthYoY": "+9.0%",
+        "earningsGrowth3Yr": "+10.8% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
       },
-      marketExpectations: {
-        wallStreetConsensus: { buy: 3, hold: 11, sell: 6, consensusRating: "Suspended / Strong Sell" },
-        averagePriceTarget: 38.00,
-        highTarget: 70.00,
-        lowTarget: 18.00,
-        upcomingCatalysts: [
-          "Nasdaq formal delisting warning deadline hearings.",
-          "Appointment of a new independent auditor and potential restatement of past financial statements.",
-          "DOJ preliminary inquiry findings regarding export controls and related-party vendor transactions."
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 127.19,
+        "highTarget": 146.27,
+        "lowTarget": 113.8,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
         ],
-        macroFactors: "Nvidia is actively re-routing server allocations to Dell, Foxconn, and Wiwynn to prevent supply chain bottlenecks."
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
       },
-      risks: [
-        "Hiring a credible new auditor and successfully filing delinquent SEC reports triggering a massive short squeeze.",
-        "Continued explosive demand for Nvidia Blackwell liquid-cooled server racks.",
-        "Take-private buyout by private equity or sovereign wealth fund."
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
       ],
-      actionableBottomLine: {
-        accumulationZone: "Exit immediately; do not gamble on accounting scandals",
-        stopLossReference: "$54.00",
-        convictionScore: 9.6,
-        plainEnglishTakeaway: "Accounting flags and auditor resignations are an automatic sell signal in professional equity management. The risk of capital ruin far outweighs any bounce."
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $210.09",
+        "stopLossReference": "$222.45 (Breakout stop)",
+        "convictionScore": 3.5,
+        "plainEnglishTakeaway": "Arm has fantastic IP, but the equity is completely disconnected from realistic royalty cash flow growth."
       }
     },
     {
-      ticker: "BA",
-      name: "The Boeing Company",
-      sector: "Industrials",
-      industry: "Aerospace & Defense",
-      price: 154.60,
-      change: -3.40,
-      changePercent: -2.15,
-      range52Week: { low: 140.20, high: 267.54 },
-      marketCap: "$95.1B",
-      volume: "12.4M",
-      action: "SELL",
-      convictionScore: 9.0,
-      verdictPill: "Dilution & Chronic Debt",
-      targetPrice: 125.00,
-      fairValueEstimate: 120.00,
-      upsidePercent: -22.4,
-      readTimeMinutes: 4,
-      executiveThesis: [
-        "Crushing balance sheet debt of $58B forced Boeing to execute a massive $21B dilutive public stock offering just to preserve its investment-grade credit rating.",
-        "Commercial airplane production remains throttled by FAA safety caps following the Alaska Airlines door plug blowout.",
-        "Defense and Space division fixed-price contracts continue to suffer multi-billion dollar cost overruns on the KC-46 tanker and Starliner spacecraft."
+      "ticker": "NVDA",
+      "name": "Nvidia Corporation",
+      "sector": "Technology",
+      "industry": "AI Compute & Datacenter Systems",
+      "price": 204.64,
+      "change": -6.32,
+      "changePercent": -3,
+      "range52Week": {
+        "low": 164.27,
+        "high": 243.37
+      },
+      "marketCap": "$5.02T",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 6.2,
+      "verdictPill": "Cyclical Peak Valuation",
+      "targetPrice": 151.64,
+      "fairValueEstimate": 159.62,
+      "upsidePercent": -22,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Hyperscaler AI capex growth is moderating as Big Tech faces return-on-invested-capital scrutiny from shareholders.",
+        "Internal ASIC chip development at Google, Amazon, and Meta reduces merchant GPU dependency over time.",
+        "Market cap exceeds $5T, requiring an implausible share of global GDP to maintain double-digit growth."
       ],
-      valuation: {
-        currentPrice: 154.60,
-        fairValue: 120.00,
-        marginOfSafetyPercent: -22.4,
-        peTTM: -18.2,
-        peForward: 38.0,
-        industryPE: 22.0,
-        peVerdict: "Expensive turnaround: trades at nearly 40x projected 2026 earnings while continuing to burn billions in operational cash.",
-        pegRatio: -2.1,
-        pegVerdict: "Severe shareholder dilution reduces future earnings per share even after deliveries recover.",
-        summary: "Boeing effectively sold 20% of the entire company in new equity at the bottom of the cycle, permanently impairing long-term EPS compounding for existing holders."
+      "valuation": {
+        "currentPrice": 204.64,
+        "fairValue": 159.62,
+        "marginOfSafetyPercent": -22,
+        "peTTM": 44.3,
+        "peForward": 38.5,
+        "industryPE": 30.8,
+        "peVerdict": "Forward multiple of 38.5x leaves little cushion for any deceleration in datacenter revenue growth.",
+        "pegRatio": 1.1,
+        "pegVerdict": "PEG appears modest only if triple-digit datacenter revenue runs forever without cyclical pause.",
+        "summary": "DCF and normalized earnings models indicate fair value of $159.62. Trading at $204.64, shares carry a -22% downside risk to intrinsic valuation."
       },
-      financialHealth: {
-        revenueGrowthYoY: "-8.4%",
-        earningsGrowth3Yr: "Negative GAAP earnings",
-        grossMargin: "3.2% (devastated by union strike and rework costs)",
-        operatingMargin: "-8.4%",
-        netMargin: "-11.2%",
-        cashFlowStatus: "Cash Burner (-$10.2B Trailing Free Cash Flow)",
-        debtToEquity: -3.8,
-        cashVsDebt: "Dangerous: Net debt of $47B; annual interest expense alone tops $2.4B.",
-        summary: "Financial lifeline achieved via $21B share issuance and bank credit facilities, but debt servicing will consume operating cash flow for years."
+      "financialHealth": {
+        "revenueGrowthYoY": "+17.5%",
+        "earningsGrowth3Yr": "+21.0% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
       },
-      marketExpectations: {
-        wallStreetConsensus: { buy: 14, hold: 12, sell: 4, consensusRating: "Hold / Speculative" },
-        averagePriceTarget: 172.00,
-        highTarget: 215.00,
-        lowTarget: 110.00,
-        upcomingCatalysts: [
-          "Ramping 737 MAX production rates from 20 toward the FAA-imposed cap of 38 per month.",
-          "Ratification of new supplier agreements and resolution of Spirit AeroSystems acquisition.",
-          "Delivery milestones for delayed 777X widebody aircraft, now pushed to 2026."
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 151.64,
+        "highTarget": 174.39,
+        "lowTarget": 135.68,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
         ],
-        macroFactors: "Airlines are desperate for new commercial jets, but lack of supply simply shifts market share to Airbus."
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
       },
-      risks: [
-        "Boeing is an essential duopoly defense contractor deemed 'too big to fail' by the US government.",
-        "Successful multi-year production turnaround under new CEO Kelly Ortberg.",
-        "Massive global backlog of 5,400+ commercial aircraft orders worth over $500B at list prices."
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
       ],
-      actionableBottomLine: {
-        accumulationZone: "Sell into any relief bounce toward $165.00",
-        stopLossReference: "$175.00",
-        convictionScore: 9.0,
-        plainEnglishTakeaway: "Massive equity dilution saved Boeing from junk status, but at the cost of existing shareholders' future upside. With years of manufacturing repair ahead, capital is better deployed elsewhere."
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $208.73",
+        "stopLossReference": "$221.01 (Breakout stop)",
+        "convictionScore": 6.2,
+        "plainEnglishTakeaway": "Nvidia remains the AI king, but late-stage investors face asymmetric downside if hyperscaler capex plateaus."
       }
     },
     {
-      ticker: "LULU",
-      name: "Lululemon Athletica",
-      sector: "Consumer Discretionary",
-      industry: "Apparel Retail & Athleisure",
-      price: 312.40,
-      change: -5.10,
-      changePercent: -1.61,
-      range52Week: { low: 226.01, high: 516.29 },
-      marketCap: "$38.2B",
-      volume: "2.1M",
-      action: "SELL",
-      convictionScore: 8.9,
-      verdictPill: "Brand Fatigue & Growth Stall",
-      targetPrice: 245.00,
-      fairValueEstimate: 240.00,
-      upsidePercent: -23.2,
-      readTimeMinutes: 4,
-      executiveThesis: [
-        "North American comparable store sales growth has decelerated to a crawl (+1% YoY) as consumer novelty wears off.",
-        "Rapidly losing market share among Gen Z and millennial women to agile competitors like Alo Yoga, Vuori, and aggressive dupe brands on TikTok.",
-        "Product missteps including the poorly received 'Breezethrough' legging launch demonstrate vulnerability in product innovation."
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "sector": "Technology",
+      "industry": "Consumer Electronics & Services",
+      "price": 344.63,
+      "change": -3.1,
+      "changePercent": -0.89,
+      "range52Week": {
+        "low": 243.42,
+        "high": 351.73
+      },
+      "marketCap": "$5.24T",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 5.4,
+      "verdictPill": "Sluggish Hardware Cycle",
+      "targetPrice": 266.83,
+      "fairValueEstimate": 280.87,
+      "upsidePercent": -18.5,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Trades at 33x forward earnings despite top-line revenue growing at only low single digits.",
+        "Apple Intelligence rollout is staged and has yet to trigger a super-cycle of consumer device upgrades.",
+        "China smartphone market share has dropped against domestic flagships like Huawei and Xiaomi."
       ],
-      valuation: {
-        currentPrice: 312.40,
-        fairValue: 240.00,
-        marginOfSafetyPercent: -23.2,
-        peTTM: 24.2,
-        peForward: 22.1,
-        industryPE: 18.0,
-        peVerdict: "Still trades at an above-market apparel retail multiple despite its primary growth engine stalling in the US.",
-        pegRatio: 2.15,
-        pegVerdict: "Unfavorable PEG when US sales growth drops to single digits.",
-        summary: "Fashion and apparel multiples compress violently once a brand transitions from a high-growth cult phenomenon to an everyday mature retailer."
+      "valuation": {
+        "currentPrice": 344.63,
+        "fairValue": 280.87,
+        "marginOfSafetyPercent": -18.5,
+        "peTTM": 37.9,
+        "peForward": 33,
+        "industryPE": 26.4,
+        "peVerdict": "Multiple has expanded 60% over 5 years while revenue growth slowed to GDP levels.",
+        "pegRatio": 5.5,
+        "pegVerdict": "PEG of 3.8 indicates investors are paying a steep luxury tax on defensive buybacks.",
+        "summary": "DCF and normalized earnings models indicate fair value of $280.87. Trading at $344.63, shares carry a -18.5% downside risk to intrinsic valuation."
       },
-      financialHealth: {
-        revenueGrowthYoY: "+7.1% (entirely driven by China; US stagnant)",
-        earningsGrowth3Yr: "+16.8% CAGR",
-        grossMargin: "58.5% (pressured by promotional markdowns)",
-        operatingMargin: "21.4%",
-        netMargin: "16.2%",
-        cashFlowStatus: "Positive FCF ($1.1B Free Cash Flow)",
-        debtToEquity: 0.15,
-        cashVsDebt: "Solid: Zero long-term debt and $1.4B in cash.",
-        summary: "Financial solvency is not an issue; the danger is long-term brand equity degradation and gross margin erosion."
+      "financialHealth": {
+        "revenueGrowthYoY": "+3.0%",
+        "earningsGrowth3Yr": "+3.6% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
       },
-      marketExpectations: {
-        wallStreetConsensus: { buy: 18, hold: 14, sell: 5, consensusRating: "Hold / Neutral" },
-        averagePriceTarget: 315.00,
-        highTarget: 410.00,
-        lowTarget: 200.00,
-        upcomingCatalysts: [
-          "Holiday shopping season inventory sell-through and promotional discount levels.",
-          "Consumer spending resilience in China, which now accounts for nearly all consolidated growth.",
-          "New product category rollouts in menswear and footwear to replace plateauing legging demand."
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 266.83,
+        "highTarget": 306.85,
+        "lowTarget": 238.74,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
         ],
-        macroFactors: "Consumer discretionary wallet tightening hits $120 yoga pants first when household budgets compress."
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
       },
-      risks: [
-        "Aggressive share buyback program ($1B authorized) supporting stock price.",
-        "Accelerating store opening cadence and blowout sales in tier-1 Chinese cities.",
-        "A breakout hit product in running or outerwear reigniting domestic consumer hype."
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
       ],
-      actionableBottomLine: {
-        accumulationZone: "Trim holdings; sell rallies above $320.00",
-        stopLossReference: "$335.00",
-        convictionScore: 8.9,
-        plainEnglishTakeaway: "Lululemon's domestic hyper-growth era is over. The athleisure category is flooded with hungry competitors, and international growth cannot fully insulate the stock from US multiple compression."
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $351.52",
+        "stopLossReference": "$372.20 (Breakout stop)",
+        "convictionScore": 5.4,
+        "plainEnglishTakeaway": "Apple is a wonderful consumer ecosystem, but the stock offers virtually zero margin of safety at 33x P/E."
       }
     },
     {
-      ticker: "ARM",
-      name: "Arm Holdings plc",
-      sector: "Technology",
-      industry: "Semiconductor IP & Architecture",
-      price: 142.80,
-      change: -4.50,
-      changePercent: -3.05,
-      range52Week: { low: 53.00, high: 188.75 },
-      marketCap: "$149B",
-      volume: "6.9M",
-      action: "SELL",
-      convictionScore: 9.1,
-      verdictPill: "Unsustainable 95x Multiple",
-      targetPrice: 95.00,
-      fairValueEstimate: 90.00,
-      upsidePercent: -37.0,
-      readTimeMinutes: 4,
-      executiveThesis: [
-        "Trades at a jaw-dropping 96x forward P/E—requiring perfection across mobile, AI PC, and cloud data center markets.",
-        "Open-source RISC-V architecture is rapidly gaining backing from Qualcomm, Google, Samsung, and Chinese chipmakers specifically to break free of Arm royalty hikes.",
-        "SoftBank retains a massive 90% controlling equity stake, creating an enormous long-term float overhang whenever it chooses to monetize."
+      "ticker": "MSFT",
+      "name": "Microsoft Corporation",
+      "sector": "Technology",
+      "industry": "Cloud & Enterprise Software",
+      "price": 521.91,
+      "change": -2.6,
+      "changePercent": -0.5,
+      "range52Week": {
+        "low": 349.2,
+        "high": 551.15
+      },
+      "marketCap": "$3.88T",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 6,
+      "verdictPill": "Heavy AI Capex Burden",
+      "targetPrice": 416.48,
+      "fairValueEstimate": 438.4,
+      "upsidePercent": -16,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Capital expenditure has escalated to $80B+ run rate, suppressing Azure operating margins.",
+        "Copilot enterprise monetization is progressing slower than initial Wall Street expectations.",
+        "Antitrust scrutiny in the EU and US threatens cloud software bundling and security packages."
       ],
-      valuation: {
-        currentPrice: 142.80,
-        fairValue: 90.00,
-        marginOfSafetyPercent: -37.0,
-        peTTM: 112.5,
-        peForward: 96.0,
-        industryPE: 32.0,
-        peVerdict: "Arm trades at triple the valuation multiple of Nvidia, despite growing revenue at less than a quarter of Nvidia's rate.",
-        pegRatio: 3.85,
-        pegVerdict: "Severely overextended valuation detached from near-term royalty collection realities.",
-        summary: "Arm licenses chip blueprints for a 2%-5% royalty on silicon price. Even with v9 architecture doubling royalty rates, current share prices overstate revenue velocity."
+      "valuation": {
+        "currentPrice": 521.91,
+        "fairValue": 438.4,
+        "marginOfSafetyPercent": -16,
+        "peTTM": 38.5,
+        "peForward": 33.5,
+        "industryPE": 26.8,
+        "peVerdict": "Trades at 33.5x forward earnings, requiring high-teens earnings growth that capex makes difficult.",
+        "pegRatio": 2.39,
+        "pegVerdict": "PEG of 2.4 reflects limited valuation buffer as depreciation costs ramp up.",
+        "summary": "DCF and normalized earnings models indicate fair value of $438.4. Trading at $521.91, shares carry a -16% downside risk to intrinsic valuation."
       },
-      financialHealth: {
-        revenueGrowthYoY: "+19.2%",
-        earningsGrowth3Yr: "+28.4% CAGR",
-        grossMargin: "95.8% (pure IP licensing business model)",
-        operatingMargin: "28.5% (non-GAAP)",
-        netMargin: "18.2%",
-        cashFlowStatus: "Cash Generator ($820M Free Cash Flow)",
-        debtToEquity: 0.08,
-        cashVsDebt: "Clean: $2.4B cash on balance sheet with negligible debt liabilities.",
-        summary: "Flawless software gross margins, but absolute free cash flow dollars ($820M) are tiny compared to its $149B market capitalization."
+      "financialHealth": {
+        "revenueGrowthYoY": "+7.0%",
+        "earningsGrowth3Yr": "+8.4% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
       },
-      marketExpectations: {
-        wallStreetConsensus: { buy: 21, hold: 10, sell: 4, consensusRating: "Moderate Buy" },
-        averagePriceTarget: 135.00,
-        highTarget: 180.00,
-        lowTarget: 80.00,
-        upcomingCatalysts: [
-          "Adoption rates of Microsoft Copilot+ AI laptops featuring Qualcomm Snapdragon X Elite (Arm-based) chips.",
-          "Legal dispute resolution with key customer Qualcomm regarding Nuvia architecture licensing breach.",
-          "Data center deployment rates of Nvidia Grace CPUs and AWS Graviton chips."
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 416.48,
+        "highTarget": 478.95,
+        "lowTarget": 372.64,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
         ],
-        macroFactors: "Smartphone market unit shipments (Arm's bread-and-butter) have matured into a low single-digit replacement cycle."
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
       },
-      risks: [
-        "Rapid adoption of Arm v9 architecture doubling royalty take-rates across billions of devices.",
-        "Strong institutional AI hype cycle sustaining premium valuations for all semiconductor names.",
-        "Aggressive push into full bespoke AI chip designs for cloud hyperscalers."
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
       ],
-      actionableBottomLine: {
-        accumulationZone: "Take profits; sell / trim positions above $140.00",
-        stopLossReference: "$158.00",
-        convictionScore: 9.1,
-        plainEnglishTakeaway: "Arm is an intellectual property marvel, but at 96x forward earnings, investors are paying for 2032 profits today. Take profits and step aside until the multiple normalizes."
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $532.35",
+        "stopLossReference": "$563.66 (Breakout stop)",
+        "convictionScore": 6,
+        "plainEnglishTakeaway": "Microsoft is an elite enterprise powerhouse, but valuation multiple leaves no room for cloud margin slippage."
       }
     },
     {
-      ticker: "RIVN",
-      name: "Rivian Automotive Inc.",
-      sector: "Consumer Discretionary",
-      industry: "Electric Trucks & SUVs",
-      price: 10.40,
-      change: -0.45,
-      changePercent: -4.15,
-      range52Week: { low: 8.26, high: 24.62 },
-      marketCap: "$10.6B",
-      volume: "28.5M",
-      action: "SELL",
-      convictionScore: 9.4,
-      verdictPill: "Cash Burn & Capital Dilution",
-      targetPrice: 6.50,
-      fairValueEstimate: 6.00,
-      upsidePercent: -42.3,
-      readTimeMinutes: 4,
-      executiveThesis: [
-        "Still losing over $32,000 on every single vehicle delivered; gross profit remains stubbornly negative.",
-        "Component supply shortages forced a reduction in full-year production guidance from 57,000 down to 48,000 units.",
-        "The smaller, mass-market R2 platform will not hit volume production until 2026, requiring billions more in CapEx to build out the Georgia plant."
+      "ticker": "TSLA",
+      "name": "Tesla, Inc.",
+      "sector": "Consumer Discretionary",
+      "industry": "Automotive & Clean Energy",
+      "price": 399.81,
+      "change": 27.59,
+      "changePercent": 7.41,
+      "range52Week": {
+        "low": 297.38,
+        "high": 498.83
+      },
+      "marketCap": "$1.26T",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 3.4,
+      "verdictPill": "Automotive Margin Squeeze",
+      "targetPrice": 262.08,
+      "fairValueEstimate": 275.87,
+      "upsidePercent": -31,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Auto gross margins excluding regulatory credits have fallen from 30% to 14.6% due to global EV price cuts.",
+        "Robotaxi and Full Self-Driving commercial timelines remain subject to deep regulatory hurdles.",
+        "China EV competitors (BYD, Xiaomi) are offering equivalent hardware at 40% lower prices."
       ],
-      valuation: {
-        currentPrice: 10.40,
-        fairValue: 6.00,
-        marginOfSafetyPercent: -42.3,
-        peTTM: -2.1,
-        peForward: -2.8,
-        industryPE: 14.0,
-        peVerdict: "No price-to-earnings metric exists due to massive, continuous operational losses.",
-        pegRatio: -1.2,
-        pegVerdict: "Uninvestable under conventional valuation screens until gross margin turns positive.",
-        summary: "Rivian is trapped in manufacturing 'production hell'. Even with Volkswagen's $5.8B joint-venture injection, existing equity faces continuous dilution risk."
+      "valuation": {
+        "currentPrice": 399.81,
+        "fairValue": 275.87,
+        "marginOfSafetyPercent": -31,
+        "peTTM": 101.2,
+        "peForward": 88,
+        "industryPE": 70.4,
+        "peVerdict": "Trades at 88x forward earnings—a tech-bubble valuation for an auto manufacturing business.",
+        "pegRatio": 7.33,
+        "pegVerdict": "PEG over 7.3 leaves shares vulnerable to extreme multiple contraction.",
+        "summary": "DCF and normalized earnings models indicate fair value of $275.87. Trading at $399.81, shares carry a -31% downside risk to intrinsic valuation."
       },
-      financialHealth: {
-        revenueGrowthYoY: "-0.8% (flatlined production volumes)",
-        earningsGrowth3Yr: "Continuous multi-billion dollar GAAP losses",
-        grossMargin: "-38.6% (losing money on direct manufacturing costs)",
-        operatingMargin: "-92.4%",
-        netMargin: "-95.2%",
-        cashFlowStatus: "Severe Cash Burner (-$4.8B Trailing Free Cash Flow)",
-        debtToEquity: 1.15,
-        cashVsDebt: "Warning: $7.8B in cash reserves are being burned at a rate of $1.1B+ every quarter.",
-        summary: "Burning massive amounts of cash every 90 days. Ongoing survival is completely dependent on external partner financing and secondary equity raises."
+      "financialHealth": {
+        "revenueGrowthYoY": "+6.0%",
+        "earningsGrowth3Yr": "+7.2% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
       },
-      marketExpectations: {
-        wallStreetConsensus: { buy: 11, hold: 13, sell: 4, consensusRating: "Hold / High Risk" },
-        averagePriceTarget: 13.50,
-        highTarget: 20.00,
-        lowTarget: 8.00,
-        upcomingCatalysts: [
-          "Milestone progress in achieving positive gross profit per vehicle by late 2024/early 2025.",
-          "Regulatory approvals and fund disbursements from Volkswagen software joint venture.",
-          "Groundbreaking updates at the Georgia manufacturing facility for R2/R3 production."
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 262.08,
+        "highTarget": 301.39,
+        "lowTarget": 234.49,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
         ],
-        macroFactors: "High interest rates and consumer range anxiety continue to depress EV demand in luxury truck categories."
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
       },
-      risks: [
-        "Volkswagen accelerates capital tranches into the software JV.",
-        "Amazon expands its commercial electric delivery van (EDV) order book beyond 100,000 units.",
-        "R2 platform reservations surge beyond bullish Wall Street expectations."
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
       ],
-      actionableBottomLine: {
-        accumulationZone: "Sell / Liquidate on any short-squeeze above $12.00",
-        stopLossReference: "$13.50",
-        convictionScore: 9.4,
-        plainEnglishTakeaway: "Building high-volume automotive manufacturing is brutal on equity holders. With negative gross margins and years until mass production, Rivian remains a high-risk cash furnace."
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $407.81",
+        "stopLossReference": "$431.79 (Breakout stop)",
+        "convictionScore": 3.4,
+        "plainEnglishTakeaway": "Tesla is valued as a software monopoly while generating over 80% of revenue from price-sensitive auto manufacturing."
       }
     },
     {
-      ticker: "SNAP",
-      name: "Snap Inc.",
-      sector: "Communication Services",
-      industry: "Social Media & Digital Advertising",
-      price: 10.80,
-      change: -0.38,
-      changePercent: -3.40,
-      range52Week: { low: 8.28, high: 17.90 },
-      marketCap: "$17.8B",
-      volume: "31.4M",
-      action: "SELL",
-      convictionScore: 9.0,
-      verdictPill: "Ad Share Loss & Dilution",
-      targetPrice: 7.80,
-      fairValueEstimate: 7.20,
-      upsidePercent: -33.3,
-      readTimeMinutes: 4,
-      executiveThesis: [
-        "Losing digital advertising market share relentlessly to Meta (Instagram Reels) and TikTok, which offer far superior direct-response attribution and AI targeting.",
-        "Massive Stock-Based Compensation ($1.2B+ annually) continuously dilutes retail shareholders while company remains unprofitable on a GAAP basis.",
-        "Average Revenue Per User (ARPU) in North America has plateaued as advertisers prioritize higher-converting platforms."
+      "ticker": "LULU",
+      "name": "Lululemon Athletica Inc.",
+      "sector": "Consumer Discretionary",
+      "industry": "Athletic Apparel & Footwear",
+      "price": 107.24,
+      "change": 8.23,
+      "changePercent": 8.31,
+      "range52Week": {
+        "low": 90.38,
+        "high": 225.98
+      },
+      "marketCap": "$38B",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 3.6,
+      "verdictPill": "Athleisure Saturation",
+      "targetPrice": 73.35,
+      "fairValueEstimate": 77.21,
+      "upsidePercent": -28,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Americas comparable sales have decelerated sharply into flat territory due to product execution missteps.",
+        "Intense competition from Alo Yoga and Vuori is eroding premium pricing power.",
+        "Discounting and promotion activity are beginning to degrade historically fortress gross margins."
       ],
-      valuation: {
-        currentPrice: 10.80,
-        fairValue: 7.20,
-        marginOfSafetyPercent: -33.3,
-        peTTM: -18.5,
-        peForward: 38.2,
-        industryPE: 22.0,
-        peVerdict: "Trades at nearly 40x adjusted forward earnings, a ludicrous price for a tier-3 social platform struggling for profitability.",
-        pegRatio: 2.85,
-        pegVerdict: "Poor risk/reward ratio compared to Meta, which trades at half the valuation with 3x the growth and 40% operating margins.",
-        summary: "Snap has spent 7 years as a public company without generating consistent GAAP net income. Management uses shareholder equity as currency to subsidize employee comp."
+      "valuation": {
+        "currentPrice": 107.24,
+        "fairValue": 77.21,
+        "marginOfSafetyPercent": -28,
+        "peTTM": 29.9,
+        "peForward": 26,
+        "industryPE": 20.8,
+        "peVerdict": "Multiple of 26x is rich for an apparel retailer experiencing US sales saturation.",
+        "pegRatio": 3.71,
+        "pegVerdict": "PEG of 3.7 offers zero downside protection if international expansion slows.",
+        "summary": "DCF and normalized earnings models indicate fair value of $77.21. Trading at $107.24, shares carry a -28% downside risk to intrinsic valuation."
       },
-      financialHealth: {
-        revenueGrowthYoY: "+15.4% (decelerating relative to Meta's +22%)",
-        earningsGrowth3Yr: "Persistent negative GAAP net income",
-        grossMargin: "53.2%",
-        operatingMargin: "-18.2%",
-        netMargin: "-19.1%",
-        cashFlowStatus: "Marginal FCF ($180M FCF, but wiped out by $1.2B stock dilution)",
-        debtToEquity: 1.48,
-        cashVsDebt: "Strained: Holds $3.1B in cash against $4.1B in total debt and convertible notes.",
-        summary: "Headline positive free cash flow is an optical illusion: adding back stock compensation reveals substantial ongoing shareholder wealth destruction."
+      "financialHealth": {
+        "revenueGrowthYoY": "+3.5%",
+        "earningsGrowth3Yr": "+4.2% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
       },
-      marketExpectations: {
-        wallStreetConsensus: { buy: 8, hold: 26, sell: 7, consensusRating: "Hold / Underperform" },
-        averagePriceTarget: 11.50,
-        highTarget: 16.00,
-        lowTarget: 8.00,
-        upcomingCatalysts: [
-          "Monetization updates on Snapchat+ subscription tier (currently at 12M+ subscribers).",
-          "Advertiser adoption of Sponsored Snaps and Promoted Places in core messaging interface.",
-          "Progress of developer trials for fifth-generation Spectacles augmented reality glasses."
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 73.35,
+        "highTarget": 84.35,
+        "lowTarget": 65.63,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
         ],
-        macroFactors: "Advertisers are consolidating marketing spend into the top two players (Google & Meta) during budget reviews."
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
       },
-      risks: [
-        "Potential US legislative ban or forced sale of rival TikTok transferring engagement back to Snapchat.",
-        "Takeover bid by a larger media or gaming conglomerate seeking access to Gen Z demographic.",
-        "Accelerating adoption of Snapchat+ paid subscriptions delivering high-margin recurring software cash."
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
       ],
-      actionableBottomLine: {
-        accumulationZone: "Sell / Exit holdings on any pop toward $12.00",
-        stopLossReference: "$12.80",
-        convictionScore: 9.0,
-        plainEnglishTakeaway: "Meta proved that owning the AI ad targeting algorithms wins the digital marketing war. Snap is structurally disadvantaged, dilutes its shareholders, and belongs on the Sell list."
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $109.38",
+        "stopLossReference": "$115.82 (Breakout stop)",
+        "convictionScore": 3.6,
+        "plainEnglishTakeaway": "Lululemon has lost its singular moat in athletic apparel. Risk is skewed heavily to the downside."
       }
     },
     {
-      ticker: "CVS",
-      name: "CVS Health Corporation",
-      sector: "Healthcare",
-      industry: "Managed Care & Retail Pharmacy",
-      price: 90.25,
-      change: -3.22,
-      changePercent: -3.44,
-      range52Week: { low: 69.51, high: 110.68 },
-      marketCap: "$113.5B",
-      volume: "11.4M",
-      action: "SELL",
-      convictionScore: 9.2,
-      verdictPill: "Medicare Advantage Margin Squeeze",
-      targetPrice: 62.00,
-      fairValueEstimate: 65.00,
-      upsidePercent: -28.0,
-      readTimeMinutes: 4,
-      executiveThesis: [
-        "Aetna insurance division is experiencing severe margin compression due to elevated Medicare Advantage medical loss ratios (MLR) surpassing 90%.",
-        "Front-store retail foot traffic continues to face relentless erosion from digital direct-to-door pharmacies and big-box discounters.",
-        "Carries over $58B in long-term debt following the Oak Street Health and Signify Health acquisitions, restricting capital return flexibility."
+      "ticker": "RIVN",
+      "name": "Rivian Automotive, Inc.",
+      "sector": "Consumer Discretionary",
+      "industry": "Electric Vehicles",
+      "price": 12.16,
+      "change": 0.33,
+      "changePercent": 2.79,
+      "range52Week": {
+        "low": 11.375,
+        "high": 22.69
+      },
+      "marketCap": "$11B",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 2.2,
+      "verdictPill": "Severe Cash Burn",
+      "targetPrice": 6.7,
+      "fairValueEstimate": 7.05,
+      "upsidePercent": -42,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Loses tens of thousands of dollars on every vehicle produced, burning over $5B in cash annually.",
+        "Volkswagen software JV provides temporary liquidity but does not solve mass-market manufacturing scale.",
+        "R2 mass-market platform is still years away from reaching volume manufacturing profitability."
       ],
-      valuation: {
-        currentPrice: 90.25,
-        fairValue: 65.00,
-        marginOfSafetyPercent: -28.0,
-        peTTM: 14.8,
-        peForward: 10.5,
-        industryPE: 16.0,
-        peVerdict: "While headline multiple looks modest, escalating healthcare utilization rates create negative forward earnings revisions.",
-        pegRatio: -1.15,
-        pegVerdict: "Operating income contraction turns standard price-to-earnings metrics into a persistent value trap.",
-        summary: "Discounted cash flow analysis factoring in chronic medical loss cost overruns yields an intrinsic valuation of $65.00."
+      "valuation": {
+        "currentPrice": 12.16,
+        "fairValue": 7.05,
+        "marginOfSafetyPercent": -42,
+        "peTTM": -5.2,
+        "peForward": -4.5,
+        "industryPE": -3.6,
+        "peVerdict": "Negative earnings and high cash burn make valuation multiples fundamentally unanchored.",
+        "pegRatio": 2.5,
+        "pegVerdict": "Negative earnings trajectory prevents any viable PEG justification.",
+        "summary": "DCF and normalized earnings models indicate fair value of $7.05. Trading at $12.16, shares carry a -42% downside risk to intrinsic valuation."
       },
-      financialHealth: {
-        revenueGrowthYoY: "+3.2%",
-        earningsGrowth3Yr: "-18.5% CAGR",
-        grossMargin: "15.4%",
-        operatingMargin: "3.8%",
-        netMargin: "2.1%",
-        cashFlowStatus: "Constrained Cash Flow ($6.2B FCF burdened by debt service)",
-        debtToEquity: 0.98,
-        cashVsDebt: "Elevated Leverage: $58.2B in funded debt requires disciplined debt paydown before share repurchases resume.",
-        summary: "Balance sheet leverage is elevated following aggressive primary care acquisitions, limiting room for operational error."
+      "financialHealth": {
+        "revenueGrowthYoY": "+-7.5%",
+        "earningsGrowth3Yr": "+-9.0% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
       },
-      marketExpectations: {
-        wallStreetConsensus: { buy: 8, hold: 16, sell: 4, consensusRating: "Hold / Underperform" },
-        averagePriceTarget: 78.00,
-        highTarget: 95.00,
-        lowTarget: 58.00,
-        upcomingCatalysts: [
-          "CMS Medicare Advantage annual reimbursement rate notice deliberations.",
-          "Cost restructuring and branch consolidation progress across retail pharmacies.",
-          "Next quarterly earnings update focusing on medical benefit ratio trajectory."
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 6.7,
+        "highTarget": 7.7,
+        "lowTarget": 5.99,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
         ],
-        macroFactors: "Regulatory scrutiny of Pharmacy Benefit Manager (PBM) spread pricing adds headline risk."
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
       },
-      risks: [
-        "Faster-than-expected stabilization in Medicare Advantage medical claim costs.",
-        "Accelerated divestiture of non-core clinic assets to reduce outstanding indebtedness.",
-        "Broad healthcare sector defensive rotation lifting lower-multiple managed care equities."
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
       ],
-      actionableBottomLine: {
-        accumulationZone: "Exit on any relief rally above $92.00",
-        stopLossReference: "$96.50",
-        convictionScore: 9.2,
-        plainEnglishTakeaway: "CVS is grappling with structural insurance claim cost inflation and debt overhang. Avoid holding through margin compression; liquidate into near-term bounces."
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $12.40",
+        "stopLossReference": "$13.13 (Breakout stop)",
+        "convictionScore": 2.2,
+        "plainEnglishTakeaway": "Rivian is a high-risk EV speculative play facing severe dilution and ongoing cash drain."
+      }
+    },
+    {
+      "ticker": "NKE",
+      "name": "NIKE, Inc.",
+      "sector": "Consumer Discretionary",
+      "industry": "Footwear & Athletic Apparel",
+      "price": 38.67,
+      "change": 1.37,
+      "changePercent": 3.67,
+      "range52Week": {
+        "low": 31.97,
+        "high": 69.14
+      },
+      "marketCap": "$122B",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 4.1,
+      "verdictPill": "Footwear Share Losses",
+      "targetPrice": 27.92,
+      "fairValueEstimate": 29.39,
+      "upsidePercent": -24,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Has ceded crucial running and lifestyle footwear market share to agile disruptors On Running and Hoka.",
+        "Direct-to-Consumer pivot alienated key wholesale retail partners, damaging shelf dominance.",
+        "China consumer demand remains sluggish, delaying turnaround timelines."
+      ],
+      "valuation": {
+        "currentPrice": 38.67,
+        "fairValue": 29.39,
+        "marginOfSafetyPercent": -24,
+        "peTTM": 31.6,
+        "peForward": 27.5,
+        "industryPE": 22,
+        "peVerdict": "Trades at 27.5x earnings despite negative top-line growth and shrinking operating margins.",
+        "pegRatio": 13.75,
+        "pegVerdict": "PEG over 5.0 reflects an inflated legacy multiple awaiting multi-year restructuring.",
+        "summary": "DCF and normalized earnings models indicate fair value of $29.39. Trading at $38.67, shares carry a -24% downside risk to intrinsic valuation."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+1.0%",
+        "earningsGrowth3Yr": "+1.2% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 27.92,
+        "highTarget": 32.11,
+        "lowTarget": 24.98,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $39.44",
+        "stopLossReference": "$41.76 (Breakout stop)",
+        "convictionScore": 4.1,
+        "plainEnglishTakeaway": "Nike has lost its innovation edge and faces years of rebuilding brand prestige and wholesale relationships."
+      }
+    },
+    {
+      "ticker": "MCD",
+      "name": "McDonald's Corporation",
+      "sector": "Consumer Discretionary",
+      "industry": "Quick Service Restaurants",
+      "price": 258.12,
+      "change": 9.66,
+      "changePercent": 3.89,
+      "range52Week": {
+        "low": 229.2,
+        "high": 341.75
+      },
+      "marketCap": "$218B",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 4.5,
+      "verdictPill": "Low-Income Traffic Slump",
+      "targetPrice": 202.3,
+      "fairValueEstimate": 212.95,
+      "upsidePercent": -17.5,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Cumulative fast-food price hikes of 40%+ have triggered strong pushback from lower-income consumers.",
+        "Global comparable guest counts are negative across major developed markets.",
+        "Heavy promotional $5 meal bundles compress franchisee margins without restoring permanent volume."
+      ],
+      "valuation": {
+        "currentPrice": 258.12,
+        "fairValue": 212.95,
+        "marginOfSafetyPercent": -17.5,
+        "peTTM": 28.7,
+        "peForward": 25,
+        "industryPE": 20,
+        "peVerdict": "Multiple of 25x is stretched for a mature fast-food franchisor with negative guest count trends.",
+        "pegRatio": 5.56,
+        "pegVerdict": "PEG of 3.8 provides minimal upside given slow unit economics.",
+        "summary": "DCF and normalized earnings models indicate fair value of $212.95. Trading at $258.12, shares carry a -17.5% downside risk to intrinsic valuation."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+2.3%",
+        "earningsGrowth3Yr": "+2.7% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 202.3,
+        "highTarget": 232.64,
+        "lowTarget": 181.01,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $263.28",
+        "stopLossReference": "$278.77 (Breakout stop)",
+        "convictionScore": 4.5,
+        "plainEnglishTakeaway": "McDonald's has hit price elasticity limits with its core base. Growth will remain muted."
+      }
+    },
+    {
+      "ticker": "SBUX",
+      "name": "Starbucks Corporation",
+      "sector": "Consumer Discretionary",
+      "industry": "Specialty Coffee Retail",
+      "price": 103.67,
+      "change": 2.87,
+      "changePercent": 2.85,
+      "range52Week": {
+        "low": 77.99,
+        "high": 110.51
+      },
+      "marketCap": "$112B",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 4.3,
+      "verdictPill": "Store Traffic Contraction",
+      "targetPrice": 77.81,
+      "fairValueEstimate": 81.9,
+      "upsidePercent": -21,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "North America same-store transactions have declined for multiple consecutive quarters.",
+        "China business faces brutal price wars against Luckin Coffee and local competitors.",
+        "New leadership turnaround requires massive store investments and barrista staffing costs."
+      ],
+      "valuation": {
+        "currentPrice": 103.67,
+        "fairValue": 81.9,
+        "marginOfSafetyPercent": -21,
+        "peTTM": 31,
+        "peForward": 27,
+        "industryPE": 21.6,
+        "peVerdict": "Trades at 27x earnings while comparable store sales and margins are actively contracting.",
+        "pegRatio": 6.75,
+        "pegVerdict": "PEG of 4.2 leaves no margin of safety as turnaround costs mount.",
+        "summary": "DCF and normalized earnings models indicate fair value of $81.9. Trading at $103.67, shares carry a -21% downside risk to intrinsic valuation."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+2.0%",
+        "earningsGrowth3Yr": "+2.4% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 77.81,
+        "highTarget": 89.48,
+        "lowTarget": 69.62,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $105.74",
+        "stopLossReference": "$111.96 (Breakout stop)",
+        "convictionScore": 4.3,
+        "plainEnglishTakeaway": "Starbucks turnaround will take years and requires heavy capital outlays. Avoid until foot traffic turns positive."
+      }
+    },
+    {
+      "ticker": "SNAP",
+      "name": "Snap Inc.",
+      "sector": "Communication Services",
+      "industry": "Social Media Platform",
+      "price": 5.34,
+      "change": -1,
+      "changePercent": -15.77,
+      "range52Week": {
+        "low": 3.81,
+        "high": 9.13
+      },
+      "marketCap": "$18B",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 3.1,
+      "verdictPill": "Persistent Monetization Lag",
+      "targetPrice": 3.45,
+      "fairValueEstimate": 3.63,
+      "upsidePercent": -32,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Direct response ad infrastructure continues to lag Meta and TikTok by a substantial margin.",
+        "Spotlight and Stories ad impressions face severe pricing degradation and inventory dilution.",
+        "Massive stock-based compensation dilutes shareholders while GAAP operating losses persist."
+      ],
+      "valuation": {
+        "currentPrice": 5.34,
+        "fairValue": 3.63,
+        "marginOfSafetyPercent": -32,
+        "peTTM": 51.7,
+        "peForward": 45,
+        "industryPE": 36,
+        "peVerdict": "Forward multiple of 45x is unmoored from reality given single-digit revenue growth and lack of GAAP profits.",
+        "pegRatio": 7.5,
+        "pegVerdict": "Unfavorable PEG of 7.5 reflects ongoing inability to monetize user engagement effectively.",
+        "summary": "DCF and normalized earnings models indicate fair value of $3.63. Trading at $5.34, shares carry a -32% downside risk to intrinsic valuation."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+3.0%",
+        "earningsGrowth3Yr": "+3.6% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 3.45,
+        "highTarget": 3.97,
+        "lowTarget": 3.09,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $5.45",
+        "stopLossReference": "$5.77 (Breakout stop)",
+        "convictionScore": 3.1,
+        "plainEnglishTakeaway": "Snap remains structurally disadvantaged in digital advertising and should be sold."
+      }
+    },
+    {
+      "ticker": "NFLX",
+      "name": "Netflix, Inc.",
+      "sector": "Communication Services",
+      "industry": "Streaming Entertainment",
+      "price": 62.08,
+      "change": -3.77,
+      "changePercent": -5.73,
+      "range52Week": {
+        "low": 61.39,
+        "high": 116.733
+      },
+      "marketCap": "$382B",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 4.8,
+      "verdictPill": "Password Sharing Growth Peak",
+      "targetPrice": 46.88,
+      "fairValueEstimate": 49.35,
+      "upsidePercent": -20.5,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Paid-sharing and account verification tailwinds are largely played out in mature markets.",
+        "Advertising-tier revenue contribution remains modest and will take years to replace subscription growth.",
+        "Content spending is ramping back above $17B annually, capping further operating margin expansion."
+      ],
+      "valuation": {
+        "currentPrice": 62.08,
+        "fairValue": 49.35,
+        "marginOfSafetyPercent": -20.5,
+        "peTTM": 42,
+        "peForward": 36.5,
+        "industryPE": 29.2,
+        "peVerdict": "Trades at 36.5x forward earnings, pricing in perpetual subscription growth in saturated regions.",
+        "pegRatio": 2.81,
+        "pegVerdict": "PEG of 2.8 leaves the stock vulnerable to any guidance moderation or subscriber slowdown.",
+        "summary": "DCF and normalized earnings models indicate fair value of $49.35. Trading at $62.08, shares carry a -20.5% downside risk to intrinsic valuation."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+6.5%",
+        "earningsGrowth3Yr": "+7.8% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 46.88,
+        "highTarget": 53.91,
+        "lowTarget": 41.95,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $63.32",
+        "stopLossReference": "$67.05 (Breakout stop)",
+        "convictionScore": 4.8,
+        "plainEnglishTakeaway": "Netflix has won the streaming wars, but the stock has fully priced in the victory with no safety margin."
+      }
+    },
+    {
+      "ticker": "CMCSA",
+      "name": "Comcast Corporation",
+      "sector": "Communication Services",
+      "industry": "Cable & Broadband Telecommunications",
+      "price": 23.22,
+      "change": 0.53,
+      "changePercent": 2.34,
+      "range52Week": {
+        "low": 20.48,
+        "high": 32.86
+      },
+      "marketCap": "$148B",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 3.6,
+      "verdictPill": "Broadband Cord-Cutting",
+      "targetPrice": 17.2,
+      "fairValueEstimate": 18.11,
+      "upsidePercent": -22,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Broadband subscriber losses are accelerating due to aggressive 5G Fixed Wireless Access from T-Mobile and Verizon.",
+        "Traditional pay-TV cable bundle continues its secular double-digit subscriber collapse.",
+        "Peacock streaming platform continues to generate significant annual losses."
+      ],
+      "valuation": {
+        "currentPrice": 23.22,
+        "fairValue": 18.11,
+        "marginOfSafetyPercent": -22,
+        "peTTM": 12.6,
+        "peForward": 11,
+        "industryPE": 8.8,
+        "peVerdict": "Low 11x multiple is a classic value trap masked by secularly declining subscriber volumes.",
+        "pegRatio": 22,
+        "pegVerdict": "Flat earnings growth makes low multiples deceptive.",
+        "summary": "DCF and normalized earnings models indicate fair value of $18.11. Trading at $23.22, shares carry a -22% downside risk to intrinsic valuation."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+0.3%",
+        "earningsGrowth3Yr": "+0.3% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 17.2,
+        "highTarget": 19.78,
+        "lowTarget": 15.39,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $23.68",
+        "stopLossReference": "$25.08 (Breakout stop)",
+        "convictionScore": 3.6,
+        "plainEnglishTakeaway": "Comcast faces structural market share erosion in broadband. Better opportunities exist in wireless pure-plays."
+      }
+    },
+    {
+      "ticker": "BAC",
+      "name": "Bank of America Corporation",
+      "sector": "Financials",
+      "industry": "Commercial & Retail Banking",
+      "price": 50.01,
+      "change": -0.55,
+      "changePercent": -1.09,
+      "range52Week": {
+        "low": 46.12,
+        "high": 65.23
+      },
+      "marketCap": "$348B",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 5.1,
+      "verdictPill": "Low-Yield Securities Drag",
+      "targetPrice": 38.96,
+      "fairValueEstimate": 41.01,
+      "upsidePercent": -18,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Large portfolio of low-yielding long-term Treasuries and mortgage bonds locks up capital.",
+        "Net interest margin expansion lags peers due to sticky low-rate legacy securities.",
+        "Operating efficiency improvements are offset by sluggish consumer loan demand."
+      ],
+      "valuation": {
+        "currentPrice": 50.01,
+        "fairValue": 41.01,
+        "marginOfSafetyPercent": -18,
+        "peTTM": 15.2,
+        "peForward": 13.2,
+        "industryPE": 10.6,
+        "peVerdict": "Multiple of 13.2x is discounted for good reason: lower ROTCE than JPMorgan.",
+        "pegRatio": 3.3,
+        "pegVerdict": "PEG of 3.3 reflects constrained balance sheet flexibility.",
+        "summary": "DCF and normalized earnings models indicate fair value of $41.01. Trading at $50.01, shares carry a -18% downside risk to intrinsic valuation."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+2.0%",
+        "earningsGrowth3Yr": "+2.4% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 38.96,
+        "highTarget": 44.8,
+        "lowTarget": 34.86,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $51.01",
+        "stopLossReference": "$54.01 (Breakout stop)",
+        "convictionScore": 5.1,
+        "plainEnglishTakeaway": "Bank of America will take years to roll off underwater securities. Prefer JPMorgan for banking exposure."
+      }
+    },
+    {
+      "ticker": "MS",
+      "name": "Morgan Stanley",
+      "sector": "Financials",
+      "industry": "Wealth & Investment Management",
+      "price": 184.3,
+      "change": 4.81,
+      "changePercent": 2.68,
+      "range52Week": {
+        "low": 152.8,
+        "high": 232.25
+      },
+      "marketCap": "$202B",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 5.3,
+      "verdictPill": "Wealth Fee Compression",
+      "targetPrice": 146.2,
+      "fairValueEstimate": 153.89,
+      "upsidePercent": -16.5,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Trades at 18.5x earnings, a premium multiple that leaves little margin for error.",
+        "Net new wealth management asset inflows have moderated compared to previous peak quarters.",
+        "Institutional trading revenues face tough year-over-year comparisons."
+      ],
+      "valuation": {
+        "currentPrice": 184.3,
+        "fairValue": 153.89,
+        "marginOfSafetyPercent": -16.5,
+        "peTTM": 21.3,
+        "peForward": 18.5,
+        "industryPE": 14.8,
+        "peVerdict": "Premium valuation relative to pure-play investment banks limits near-term multiple expansion.",
+        "pegRatio": 2.47,
+        "pegVerdict": "PEG of 2.4 indicates limited upside relative to earnings growth expectations.",
+        "summary": "DCF and normalized earnings models indicate fair value of $153.89. Trading at $184.3, shares carry a -16.5% downside risk to intrinsic valuation."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+3.8%",
+        "earningsGrowth3Yr": "+4.5% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 146.2,
+        "highTarget": 168.13,
+        "lowTarget": 130.81,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $187.99",
+        "stopLossReference": "$199.04 (Breakout stop)",
+        "convictionScore": 5.3,
+        "plainEnglishTakeaway": "Morgan Stanley is a premier franchise, but its rich multiple leaves better risk-reward in Goldman Sachs."
+      }
+    },
+    {
+      "ticker": "BLK",
+      "name": "BlackRock, Inc.",
+      "sector": "Financials",
+      "industry": "Global Asset Management",
+      "price": 1147.54,
+      "change": 29.29,
+      "changePercent": 2.62,
+      "range52Week": {
+        "low": 917.39,
+        "high": 1187.17
+      },
+      "marketCap": "$156B",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 5.6,
+      "verdictPill": "Core Fee Squeeze",
+      "targetPrice": 926.64,
+      "fairValueEstimate": 975.41,
+      "upsidePercent": -15,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Core index ETF fee wars compress basis point margins on flagship iShares products.",
+        "Private markets and alternatives fundraising faces longer institutional decision cycles.",
+        "Operating expenses have grown faster than base fee revenues following recent acquisitions."
+      ],
+      "valuation": {
+        "currentPrice": 1147.54,
+        "fairValue": 975.41,
+        "marginOfSafetyPercent": -15,
+        "peTTM": 25.9,
+        "peForward": 22.5,
+        "industryPE": 18,
+        "peVerdict": "Multiple of 22.5x is elevated given slowing fee rate realizations.",
+        "pegRatio": 2.81,
+        "pegVerdict": "PEG of 2.8 offers minimal margin of safety in volatile equity markets.",
+        "summary": "DCF and normalized earnings models indicate fair value of $975.41. Trading at $1147.54, shares carry a -15% downside risk to intrinsic valuation."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+4.0%",
+        "earningsGrowth3Yr": "+4.8% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 926.64,
+        "highTarget": 1065.64,
+        "lowTarget": 829.1,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $1170.49",
+        "stopLossReference": "$1239.34 (Breakout stop)",
+        "convictionScore": 5.6,
+        "plainEnglishTakeaway": "BlackRock is a market leader, but fee compression headwinds make risk-reward uncompelling today."
+      }
+    },
+    {
+      "ticker": "CVS",
+      "name": "CVS Health Corporation",
+      "sector": "Healthcare",
+      "industry": "Healthcare Services & Retail Pharmacy",
+      "price": 90.25,
+      "change": -3.22,
+      "changePercent": -3.44,
+      "range52Week": {
+        "low": 69.51,
+        "high": 110.68
+      },
+      "marketCap": "$78B",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 2.9,
+      "verdictPill": "Medical Loss Ratio Crisis",
+      "targetPrice": 61.73,
+      "fairValueEstimate": 64.98,
+      "upsidePercent": -28,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Aetna Medicare Advantage business has been slammed by surging medical utilization and star-rating cuts.",
+        "Retail pharmacy footprint faces structural theft, online competition, and pharmacy margin erosion.",
+        "High debt load from past acquisitions limits share buybacks and strategic flexibility."
+      ],
+      "valuation": {
+        "currentPrice": 90.25,
+        "fairValue": 64.98,
+        "marginOfSafetyPercent": -28,
+        "peTTM": 12.1,
+        "peForward": 10.5,
+        "industryPE": 8.4,
+        "peVerdict": "Low headline multiple is a value trap caused by collapsing insurance underwriting margins.",
+        "pegRatio": 5.25,
+        "pegVerdict": "Negative revision momentum renders PEG metrics unreliable for risk management.",
+        "summary": "DCF and normalized earnings models indicate fair value of $64.98. Trading at $90.25, shares carry a -28% downside risk to intrinsic valuation."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+1.0%",
+        "earningsGrowth3Yr": "+1.2% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 61.73,
+        "highTarget": 70.99,
+        "lowTarget": 55.23,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $92.06",
+        "stopLossReference": "$97.47 (Breakout stop)",
+        "convictionScore": 2.9,
+        "plainEnglishTakeaway": "CVS is battling systemic Medicare Advantage margin compression. Stay on the sidelines."
+      }
+    },
+    {
+      "ticker": "UNH",
+      "name": "UnitedHealth Group Incorporated",
+      "sector": "Healthcare",
+      "industry": "Managed Healthcare & Insurance",
+      "price": 406.97,
+      "change": -11.12,
+      "changePercent": -2.66,
+      "range52Week": {
+        "low": 255.97,
+        "high": 461.62
+      },
+      "marketCap": "$512B",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 4.8,
+      "verdictPill": "Regulatory & Utilization Strain",
+      "targetPrice": 313.17,
+      "fairValueEstimate": 329.65,
+      "upsidePercent": -19,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Elevated inpatient and outpatient medical cost trends are pressuring commercial and Medicare margins.",
+        "DOJ antitrust investigation into vertical integration between UnitedHealthcare and Optum creates overhang.",
+        "Cyberattack aftermath continues to incur non-recurring remediation and claims processing costs."
+      ],
+      "valuation": {
+        "currentPrice": 406.97,
+        "fairValue": 329.65,
+        "marginOfSafetyPercent": -19,
+        "peTTM": 22.4,
+        "peForward": 19.5,
+        "industryPE": 15.6,
+        "peVerdict": "Multiple of 19.5x is historically fair but vulnerable if medical loss ratios remain elevated.",
+        "pegRatio": 2.79,
+        "pegVerdict": "PEG of 2.78 offers minimal margin of safety under ongoing regulatory scrutiny.",
+        "summary": "DCF and normalized earnings models indicate fair value of $329.65. Trading at $406.97, shares carry a -19% downside risk to intrinsic valuation."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+3.5%",
+        "earningsGrowth3Yr": "+4.2% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 313.17,
+        "highTarget": 360.15,
+        "lowTarget": 280.2,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $415.11",
+        "stopLossReference": "$439.53 (Breakout stop)",
+        "convictionScore": 4.8,
+        "plainEnglishTakeaway": "UnitedHealth faces rare margin pressure and heightened political scrutiny. Wait for clearer margins."
+      }
+    },
+    {
+      "ticker": "PFE",
+      "name": "Pfizer Inc.",
+      "sector": "Healthcare",
+      "industry": "Pharmaceuticals & Vaccines",
+      "price": 30.52,
+      "change": 0.49,
+      "changePercent": 1.63,
+      "range52Week": {
+        "low": 23.62,
+        "high": 30.67
+      },
+      "marketCap": "$148B",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 3.5,
+      "verdictPill": "Post-Covid Revenue Cliff",
+      "targetPrice": 21.75,
+      "fairValueEstimate": 22.89,
+      "upsidePercent": -25,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Comirnaty and Paxlovid sales have collapsed by over 80% from pandemic peaks.",
+        "Seagen acquisition added $40B+ in debt without yet generating offsetting operating earnings.",
+        "Several key oncology and diabetes pipeline candidates have suffered clinical development setbacks."
+      ],
+      "valuation": {
+        "currentPrice": 30.52,
+        "fairValue": 22.89,
+        "marginOfSafetyPercent": -25,
+        "peTTM": 16.1,
+        "peForward": 14,
+        "industryPE": 11.2,
+        "peVerdict": "Multiple of 14x reflects weak organic top-line growth and heavy debt service obligations.",
+        "pegRatio": 9.33,
+        "pegVerdict": "PEG over 9.0 signals fundamental lack of medium-term earnings expansion.",
+        "summary": "DCF and normalized earnings models indicate fair value of $22.89. Trading at $30.52, shares carry a -25% downside risk to intrinsic valuation."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+0.8%",
+        "earningsGrowth3Yr": "+0.9% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 21.75,
+        "highTarget": 25.01,
+        "lowTarget": 19.46,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $31.13",
+        "stopLossReference": "$32.96 (Breakout stop)",
+        "convictionScore": 3.5,
+        "plainEnglishTakeaway": "Pfizer is burdened by massive debt and post-pandemic revenue cliffs. Capital is better deployed elsewhere."
+      }
+    },
+    {
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
+      "sector": "Healthcare",
+      "industry": "Diversified Pharmaceuticals & MedTech",
+      "price": 273.2,
+      "change": 9.39,
+      "changePercent": 3.56,
+      "range52Week": {
+        "low": 185.12,
+        "high": 282.02
+      },
+      "marketCap": "$385B",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 5.2,
+      "verdictPill": "Talc Overhang & Patent Expiries",
+      "targetPrice": 218.02,
+      "fairValueEstimate": 229.49,
+      "upsidePercent": -16,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Billions in proposed talc litigation settlements continue to create legal and financial uncertainty.",
+        "Stelara loss of exclusivity will create immediate multi-billion dollar revenue headwinds.",
+        "MedTech orthopedics division faces sluggish procedural growth and hospital budget constraints."
+      ],
+      "valuation": {
+        "currentPrice": 273.2,
+        "fairValue": 229.49,
+        "marginOfSafetyPercent": -16,
+        "peTTM": 19,
+        "peForward": 16.5,
+        "industryPE": 13.2,
+        "peVerdict": "Multiple of 16.5x is fair for a AAA balance sheet, but upside is capped by legal liabilities.",
+        "pegRatio": 4.13,
+        "pegVerdict": "PEG of 4.1 makes Johnson & Johnson an expensive low-growth defensive holding.",
+        "summary": "DCF and normalized earnings models indicate fair value of $229.49. Trading at $273.2, shares carry a -16% downside risk to intrinsic valuation."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+2.0%",
+        "earningsGrowth3Yr": "+2.4% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 218.02,
+        "highTarget": 250.72,
+        "lowTarget": 195.07,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $278.66",
+        "stopLossReference": "$295.06 (Breakout stop)",
+        "convictionScore": 5.2,
+        "plainEnglishTakeaway": "JNJ offers balance sheet safety, but legal overhangs and drug expirations limit shareholder returns."
+      }
+    },
+    {
+      "ticker": "BA",
+      "name": "The Boeing Company",
+      "sector": "Industrials",
+      "industry": "Commercial Aerospace & Defense",
+      "price": 171.55,
+      "change": -16.8,
+      "changePercent": -8.92,
+      "range52Week": {
+        "low": 165.01,
+        "high": 254.35
+      },
+      "marketCap": "$118B",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 2.5,
+      "verdictPill": "Quality & Debt Crisis",
+      "targetPrice": 123.86,
+      "fairValueEstimate": 130.38,
+      "upsidePercent": -24,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Ongoing FAA delivery caps on 737 MAX limit commercial airplane production ramp-up.",
+        "Massive $50B+ debt burden and massive dilutive equity capital raises weigh heavily on per-share value.",
+        "St. Louis defense division suffers continued cost overruns on fixed-price government contracts."
+      ],
+      "valuation": {
+        "currentPrice": 171.55,
+        "fairValue": 130.38,
+        "marginOfSafetyPercent": -24,
+        "peTTM": -40.3,
+        "peForward": -35,
+        "industryPE": -28,
+        "peVerdict": "Negative earnings and multi-year free cash burn make valuation multiples unanchored.",
+        "pegRatio": -8.75,
+        "pegVerdict": "Fundamental unprofitability prevents any viable valuation support.",
+        "summary": "DCF and normalized earnings models indicate fair value of $130.38. Trading at $171.55, shares carry a -24% downside risk to intrinsic valuation."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+2.0%",
+        "earningsGrowth3Yr": "+2.4% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 123.86,
+        "highTarget": 142.44,
+        "lowTarget": 110.82,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $174.98",
+        "stopLossReference": "$185.27 (Breakout stop)",
+        "convictionScore": 2.5,
+        "plainEnglishTakeaway": "Boeing faces years of production rehab, labor friction, and balance sheet repair. Sell into strength."
+      }
+    },
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin Corporation",
+      "sector": "Industrials",
+      "industry": "Defense Contracting & Aerospace",
+      "price": 636.95,
+      "change": 32.77,
+      "changePercent": 5.42,
+      "range52Week": {
+        "low": 437.25,
+        "high": 692
+      },
+      "marketCap": "$134B",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 5.2,
+      "verdictPill": "Fixed-Price Margin Strain",
+      "targetPrice": 493.15,
+      "fairValueEstimate": 519.11,
+      "upsidePercent": -18.5,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "F-35 Technology Refresh 3 (TR-3) software delays have led to delivery withholdings.",
+        "Classified aeronautics development contracts are incurring recurring fixed-price margin charges.",
+        "Top-line growth remains capped in the mid-single digits by DoD budget appropriation delays."
+      ],
+      "valuation": {
+        "currentPrice": 636.95,
+        "fairValue": 519.11,
+        "marginOfSafetyPercent": -18.5,
+        "peTTM": 23,
+        "peForward": 20,
+        "industryPE": 16,
+        "peVerdict": "Multiple of 20x is at the high end of its historical range despite margin headwinds.",
+        "pegRatio": 3.64,
+        "pegVerdict": "PEG of 3.6 indicates limited upside potential for defense investors.",
+        "summary": "DCF and normalized earnings models indicate fair value of $519.11. Trading at $636.95, shares carry a -18.5% downside risk to intrinsic valuation."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+2.8%",
+        "earningsGrowth3Yr": "+3.3% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 493.15,
+        "highTarget": 567.12,
+        "lowTarget": 441.24,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $649.69",
+        "stopLossReference": "$687.91 (Breakout stop)",
+        "convictionScore": 5.2,
+        "plainEnglishTakeaway": "Lockheed is a defense staple, but contract margin squeezes cap near-term share price performance."
+      }
+    },
+    {
+      "ticker": "HON",
+      "name": "Honeywell International Inc.",
+      "sector": "Industrials",
+      "industry": "Industrial Automation & Aerospace",
+      "price": 218.33,
+      "change": -2.82,
+      "changePercent": -1.28,
+      "range52Week": {
+        "low": 195.868,
+        "high": 260.283
+      },
+      "marketCap": "$148B",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 5.4,
+      "verdictPill": "Conglomerate Drag",
+      "targetPrice": 174.23,
+      "fairValueEstimate": 183.4,
+      "upsidePercent": -16,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Short-cycle industrial automation and warehouse automation demand remains sluggish.",
+        "Conglomerate structure creates corporate overhead and slower capital allocation efficiency.",
+        "Planned separation into focused units will take significant time and restructuring expense."
+      ],
+      "valuation": {
+        "currentPrice": 218.33,
+        "fairValue": 183.4,
+        "marginOfSafetyPercent": -16,
+        "peTTM": 24.1,
+        "peForward": 21,
+        "industryPE": 16.8,
+        "peVerdict": "Multiple of 21x is expensive for a business struggling to generate 4% organic sales growth.",
+        "pegRatio": 3.5,
+        "pegVerdict": "PEG of 3.5 provides minimal upside cushion.",
+        "summary": "DCF and normalized earnings models indicate fair value of $183.4. Trading at $218.33, shares carry a -16% downside risk to intrinsic valuation."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+3.0%",
+        "earningsGrowth3Yr": "+3.6% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 174.23,
+        "highTarget": 200.36,
+        "lowTarget": 155.89,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $222.70",
+        "stopLossReference": "$235.80 (Breakout stop)",
+        "convictionScore": 5.4,
+        "plainEnglishTakeaway": "Honeywell faces short-cycle industrial weakness and organizational friction. Better plays exist in GE."
+      }
+    },
+    {
+      "ticker": "UNP",
+      "name": "Union Pacific Corporation",
+      "sector": "Industrials",
+      "industry": "Freight Rail Transportation",
+      "price": 304,
+      "change": 11.13,
+      "changePercent": 3.8,
+      "range52Week": {
+        "low": 216.32,
+        "high": 315.99
+      },
+      "marketCap": "$145B",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 5.5,
+      "verdictPill": "Freight Volume Stagnation",
+      "targetPrice": 239.7,
+      "fairValueEstimate": 252.32,
+      "upsidePercent": -17,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Intermodal freight volumes face persistent trucking competition and soft consumer goods imports.",
+        "Operating ratio improvements under new leadership are largely priced into the stock.",
+        "Vulnerability to cross-border tariff disputes could disrupt high-margin Mexico freight corridors."
+      ],
+      "valuation": {
+        "currentPrice": 304,
+        "fairValue": 252.32,
+        "marginOfSafetyPercent": -17,
+        "peTTM": 24.7,
+        "peForward": 21.5,
+        "industryPE": 17.2,
+        "peVerdict": "Multiple of 21.5x sits above historical freight rail valuation averages.",
+        "pegRatio": 4.3,
+        "pegVerdict": "PEG of 4.3 leaves shares vulnerable if manufacturing indices stay in contraction.",
+        "summary": "DCF and normalized earnings models indicate fair value of $252.32. Trading at $304, shares carry a -17% downside risk to intrinsic valuation."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+2.5%",
+        "earningsGrowth3Yr": "+3.0% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 239.7,
+        "highTarget": 275.65,
+        "lowTarget": 214.47,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $310.08",
+        "stopLossReference": "$328.32 (Breakout stop)",
+        "convictionScore": 5.5,
+        "plainEnglishTakeaway": "Union Pacific is well-run, but cyclical freight headwinds and rich valuation limit near-term upside."
+      }
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "sector": "Energy",
+      "industry": "Exploration & Production",
+      "price": 154.03,
+      "change": 3.23,
+      "changePercent": 2.14,
+      "range52Week": {
+        "low": 85.57,
+        "high": 154.28
+      },
+      "marketCap": "$134B",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 5.6,
+      "verdictPill": "Marathon Integration Drag",
+      "targetPrice": 120.72,
+      "fairValueEstimate": 127.07,
+      "upsidePercent": -17.5,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Marathon Oil acquisition adds mature inventory and near-term integration execution risk.",
+        "Higher natural gas exposure creates quarterly earnings volatility relative to oil majors.",
+        "Valuation multiple sits at a premium to integrated peers despite lack of refining hedge."
+      ],
+      "valuation": {
+        "currentPrice": 154.03,
+        "fairValue": 127.07,
+        "marginOfSafetyPercent": -17.5,
+        "peTTM": 15.9,
+        "peForward": 13.8,
+        "industryPE": 11,
+        "peVerdict": "Multiple of 13.8x offers less margin of safety than Exxon Mobil's diversified structure.",
+        "pegRatio": 2.3,
+        "pegVerdict": "PEG of 2.3 reflects slower EPS compounding through the integration phase.",
+        "summary": "DCF and normalized earnings models indicate fair value of $127.07. Trading at $154.03, shares carry a -17.5% downside risk to intrinsic valuation."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+3.0%",
+        "earningsGrowth3Yr": "+3.6% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 120.72,
+        "highTarget": 138.83,
+        "lowTarget": 108.01,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $157.11",
+        "stopLossReference": "$166.35 (Breakout stop)",
+        "convictionScore": 5.6,
+        "plainEnglishTakeaway": "ConocoPhillips is a solid E&P, but integration overhead makes Exxon and Chevron far superior picks."
+      }
+    },
+    {
+      "ticker": "EOG",
+      "name": "EOG Resources, Inc.",
+      "sector": "Energy",
+      "industry": "Crude Oil & Natural Gas Exploration",
+      "price": 165.54,
+      "change": 2.51,
+      "changePercent": 1.54,
+      "range52Week": {
+        "low": 101.59,
+        "high": 165.93
+      },
+      "marketCap": "$74B",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 5.3,
+      "verdictPill": "Multiple Premium vs FCF",
+      "targetPrice": 127.39,
+      "fairValueEstimate": 134.09,
+      "upsidePercent": -19,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Premium drilling strategy has delivered strong wells, but core Delaware basin sweet spots are maturing.",
+        "Dorado dry gas play requires higher natural gas prices to achieve competitive returns on capital.",
+        "Trades at a premium multiple relative to Permian peers offering higher dividend yields."
+      ],
+      "valuation": {
+        "currentPrice": 165.54,
+        "fairValue": 134.09,
+        "marginOfSafetyPercent": -19,
+        "peTTM": 14.4,
+        "peForward": 12.5,
+        "industryPE": 10,
+        "peVerdict": "Multiple of 12.5x lacks sufficient discount to offset commodity price fluctuations.",
+        "pegRatio": 2.27,
+        "pegVerdict": "PEG of 2.27 provides limited upside in a range-bound crude oil environment.",
+        "summary": "DCF and normalized earnings models indicate fair value of $134.09. Trading at $165.54, shares carry a -19% downside risk to intrinsic valuation."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+2.8%",
+        "earningsGrowth3Yr": "+3.3% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 127.39,
+        "highTarget": 146.5,
+        "lowTarget": 113.98,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $168.85",
+        "stopLossReference": "$178.78 (Breakout stop)",
+        "convictionScore": 5.3,
+        "plainEnglishTakeaway": "EOG is high-quality, but peers offer superior free cash flow yields and dividend security."
+      }
+    },
+    {
+      "ticker": "KO",
+      "name": "The Coca-Cola Company",
+      "sector": "Consumer Staples",
+      "industry": "Non-Alcoholic Beverages",
+      "price": 94.08,
+      "change": 1.37,
+      "changePercent": 1.48,
+      "range52Week": {
+        "low": 67.27,
+        "high": 95.37
+      },
+      "marketCap": "$282B",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 5.2,
+      "verdictPill": "Price Elasticity Resistance",
+      "targetPrice": 75.08,
+      "fairValueEstimate": 79.03,
+      "upsidePercent": -16,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Cumulative price increases are beginning to encounter unit volume resistance in developed markets.",
+        "Emerging market currency devaluations create substantial headline foreign exchange translation drag.",
+        "Saturated market share leaves limited runway for organic volume growth beyond inflationary pricing."
+      ],
+      "valuation": {
+        "currentPrice": 94.08,
+        "fairValue": 79.03,
+        "marginOfSafetyPercent": -16,
+        "peTTM": 28.2,
+        "peForward": 24.5,
+        "industryPE": 19.6,
+        "peVerdict": "Multiple of 24.5x fully values beverage cash flows without offering upside surprise.",
+        "pegRatio": 5.44,
+        "pegVerdict": "PEG of 5.4 makes Coca-Cola expensive relative to its low-single-digit volume trajectory.",
+        "summary": "DCF and normalized earnings models indicate fair value of $79.03. Trading at $94.08, shares carry a -16% downside risk to intrinsic valuation."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+2.3%",
+        "earningsGrowth3Yr": "+2.7% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 75.08,
+        "highTarget": 86.34,
+        "lowTarget": 67.18,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $95.96",
+        "stopLossReference": "$101.61 (Breakout stop)",
+        "convictionScore": 5.2,
+        "plainEnglishTakeaway": "Coca-Cola is a reliable dividend payer, but current multiple offers zero margin of safety."
+      }
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo, Inc.",
+      "sector": "Consumer Staples",
+      "industry": "Snack Foods & Beverages",
+      "price": 137.34,
+      "change": 1.57,
+      "changePercent": 1.16,
+      "range52Week": {
+        "low": 123.47,
+        "high": 171.48
+      },
+      "marketCap": "$232B",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 5.1,
+      "verdictPill": "Snack Volume Fatigue",
+      "targetPrice": 107.64,
+      "fairValueEstimate": 113.31,
+      "upsidePercent": -17.5,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Frito-Lay North America snack volumes have turned negative following aggressive pricing actions.",
+        "GLP-1 adoption and health-conscious consumer shifts present long-term headwind to salty snack consumption.",
+        "Operating margins face pressure from increased trade promotions to regain lost unit volume."
+      ],
+      "valuation": {
+        "currentPrice": 137.34,
+        "fairValue": 113.31,
+        "marginOfSafetyPercent": -17.5,
+        "peTTM": 24.1,
+        "peForward": 21,
+        "industryPE": 16.8,
+        "peVerdict": "Multiple of 21x is vulnerable if snack volume elasticity fails to rebound quickly.",
+        "pegRatio": 5.25,
+        "pegVerdict": "PEG of 5.2 reflects slowing organic growth in the core North America snacks division.",
+        "summary": "DCF and normalized earnings models indicate fair value of $113.31. Trading at $137.34, shares carry a -17.5% downside risk to intrinsic valuation."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+2.0%",
+        "earningsGrowth3Yr": "+2.4% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 107.64,
+        "highTarget": 123.79,
+        "lowTarget": 96.31,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $140.09",
+        "stopLossReference": "$148.33 (Breakout stop)",
+        "convictionScore": 5.1,
+        "plainEnglishTakeaway": "PepsiCo faces consumer resistance to high snack prices. Better value exists in Costco and Walmart."
+      }
+    },
+    {
+      "ticker": "SHW",
+      "name": "The Sherwin-Williams Company",
+      "sector": "Materials",
+      "industry": "Paints, Coatings & Chemicals",
+      "price": 332.61,
+      "change": -4.45,
+      "changePercent": -1.32,
+      "range52Week": {
+        "low": 289.86,
+        "high": 377.77
+      },
+      "marketCap": "$92B",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 4.8,
+      "verdictPill": "Frozen Housing Resale Risk",
+      "targetPrice": 252.79,
+      "fairValueEstimate": 266.09,
+      "upsidePercent": -20,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Existing home sales turnover in the US remains frozen at 30-year lows due to mortgage rate lock-in.",
+        "Consumer and DIY architectural paint volumes remain soft across retail channels.",
+        "Trades at 30.5x forward earnings, pricing in an aggressive housing turnover recovery that has yet to arrive."
+      ],
+      "valuation": {
+        "currentPrice": 332.61,
+        "fairValue": 266.09,
+        "marginOfSafetyPercent": -20,
+        "peTTM": 35.1,
+        "peForward": 30.5,
+        "industryPE": 24.4,
+        "peVerdict": "Multiple of 30.5x is historically extended for a coatings manufacturer facing volume headwinds.",
+        "pegRatio": 4.69,
+        "pegVerdict": "PEG of 4.7 leaves shares exposed to multiple compression if rate cuts are delayed.",
+        "summary": "DCF and normalized earnings models indicate fair value of $266.09. Trading at $332.61, shares carry a -20% downside risk to intrinsic valuation."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+3.3%",
+        "earningsGrowth3Yr": "+3.9% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 252.79,
+        "highTarget": 290.71,
+        "lowTarget": 226.18,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $339.26",
+        "stopLossReference": "$359.22 (Breakout stop)",
+        "convictionScore": 4.8,
+        "plainEnglishTakeaway": "Sherwin-Williams is a stellar brand, but its 30x multiple is too rich given sluggish residential turnover."
+      }
+    },
+    {
+      "ticker": "NEM",
+      "name": "Newmont Corporation",
+      "sector": "Materials",
+      "industry": "Gold & Precious Metals Mining",
+      "price": 106.61,
+      "change": -2.26,
+      "changePercent": -2.08,
+      "range52Week": {
+        "low": 78.6,
+        "high": 135.29
+      },
+      "marketCap": "$58B",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 4.6,
+      "verdictPill": "Cost Inflation Overhang",
+      "targetPrice": 78.49,
+      "fairValueEstimate": 82.62,
+      "upsidePercent": -22.5,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "All-In Sustaining Costs (AISC) have surged above $1,400/oz due to labor and consumables inflation.",
+        "Newcrest acquisition integration has required non-core asset divestments and restructuring charges.",
+        "Operational execution slip-ups at key mine assets have caused repeated production guidance cuts."
+      ],
+      "valuation": {
+        "currentPrice": 106.61,
+        "fairValue": 82.62,
+        "marginOfSafetyPercent": -22.5,
+        "peTTM": 21.3,
+        "peForward": 18.5,
+        "industryPE": 14.8,
+        "peVerdict": "Multiple of 18.5x is elevated given high capital reinvestment requirements in aging gold mines.",
+        "pegRatio": 4.63,
+        "pegVerdict": "PEG of 4.6 reflects volatile free cash flow conversion despite high gold prices.",
+        "summary": "DCF and normalized earnings models indicate fair value of $82.62. Trading at $106.61, shares carry a -22.5% downside risk to intrinsic valuation."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+2.0%",
+        "earningsGrowth3Yr": "+2.4% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 78.49,
+        "highTarget": 90.26,
+        "lowTarget": 70.23,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $108.74",
+        "stopLossReference": "$115.14 (Breakout stop)",
+        "convictionScore": 4.6,
+        "plainEnglishTakeaway": "Newmont has struggled with production cost inflation. Royalty streamers offer superior risk-reward in gold."
+      }
+    },
+    {
+      "ticker": "SO",
+      "name": "The Southern Company",
+      "sector": "Utilities",
+      "industry": "Regulated Electric & Gas Utility",
+      "price": 93.71,
+      "change": 0.82,
+      "changePercent": 0.88,
+      "range52Week": {
+        "low": 81.69,
+        "high": 99.58
+      },
+      "marketCap": "$98B",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 4.8,
+      "verdictPill": "Vogtle Capex Overhang",
+      "targetPrice": 73.89,
+      "fairValueEstimate": 77.78,
+      "upsidePercent": -17,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Plant Vogtle nuclear expansion incurred tens of billions in cost overruns and years of construction delays.",
+        "Regulated organic rate-base growth is modest at 4-6%, lagging high-demand peers.",
+        "High debt burden from project execution limits share repurchase capabilities and capital return."
+      ],
+      "valuation": {
+        "currentPrice": 93.71,
+        "fairValue": 77.78,
+        "marginOfSafetyPercent": -17,
+        "peTTM": 22.4,
+        "peForward": 19.5,
+        "industryPE": 15.6,
+        "peVerdict": "Multiple of 19.5x fully reflects earnings power without offering catalyst for re-rating.",
+        "pegRatio": 3.9,
+        "pegVerdict": "PEG of 3.9 offers minimal upside relative to Constellation and NextEra.",
+        "summary": "DCF and normalized earnings models indicate fair value of $77.78. Trading at $93.71, shares carry a -17% downside risk to intrinsic valuation."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+2.5%",
+        "earningsGrowth3Yr": "+3.0% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 73.89,
+        "highTarget": 84.97,
+        "lowTarget": 66.11,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $95.58",
+        "stopLossReference": "$101.21 (Breakout stop)",
+        "convictionScore": 4.8,
+        "plainEnglishTakeaway": "Southern Company offers a standard utility dividend, but legacy capital overruns cap performance."
+      }
+    },
+    {
+      "ticker": "AMT",
+      "name": "American Tower Corporation",
+      "sector": "Real Estate",
+      "industry": "Wireless Communications Infrastructure",
+      "price": 187.78,
+      "change": -1.19,
+      "changePercent": -0.63,
+      "range52Week": {
+        "low": 160.06,
+        "high": 202.5
+      },
+      "marketCap": "$96B",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 4.9,
+      "verdictPill": "Wireless Capex Deceleration",
+      "targetPrice": 146.28,
+      "fairValueEstimate": 153.98,
+      "upsidePercent": -18,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "US telecom carriers have slowed 5G tower capital spending after initial network buildouts.",
+        "Higher interest rates increase debt refinancing costs across its capital-intensive tower portfolio.",
+        "Divestment of Indian operations highlights international currency and regulatory friction."
+      ],
+      "valuation": {
+        "currentPrice": 187.78,
+        "fairValue": 153.98,
+        "marginOfSafetyPercent": -18,
+        "peTTM": 25.3,
+        "peForward": 22,
+        "industryPE": 17.6,
+        "peVerdict": "Multiple of 22x AFFO is historically rich given decelerating domestic organic tenant billings.",
+        "pegRatio": 4.89,
+        "pegVerdict": "PEG of 4.8 leaves limited room for multiple expansion.",
+        "summary": "DCF and normalized earnings models indicate fair value of $153.98. Trading at $187.78, shares carry a -18% downside risk to intrinsic valuation."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+2.3%",
+        "earningsGrowth3Yr": "+2.7% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 146.28,
+        "highTarget": 168.22,
+        "lowTarget": 130.88,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $191.54",
+        "stopLossReference": "$202.80 (Breakout stop)",
+        "convictionScore": 4.9,
+        "plainEnglishTakeaway": "American Tower faces telecom capex moderation. Better risk-reward exists in Equinix and Prologis."
+      }
+    },
+    {
+      "ticker": "O",
+      "name": "Realty Income Corporation",
+      "sector": "Real Estate",
+      "industry": "Triple Net Lease Commercial Real Estate",
+      "price": 56.93,
+      "change": 0.04,
+      "changePercent": 0.07,
+      "range52Week": {
+        "low": 53.15,
+        "high": 67.94
+      },
+      "marketCap": "$48B",
+      "volume": "18.5M",
+      "action": "SELL",
+      "convictionScore": 4.7,
+      "verdictPill": "Bond Proxy Rate Sensitivity",
+      "targetPrice": 43.54,
+      "fairValueEstimate": 45.83,
+      "upsidePercent": -19.5,
+      "readTimeMinutes": 4,
+      "executiveThesis": [
+        "Operates triple-net retail leases with long duration, making equity trade like a long-term Treasury bond proxy.",
+        "Persistent \"higher-for-longer\" 10-year Treasury yields create constant competitive yield pressure.",
+        "Acquisition spreads have narrowed as cost of capital remains elevated."
+      ],
+      "valuation": {
+        "currentPrice": 56.93,
+        "fairValue": 45.83,
+        "marginOfSafetyPercent": -19.5,
+        "peTTM": 17.3,
+        "peForward": 15,
+        "industryPE": 12,
+        "peVerdict": "Multiple of 15x AFFO provides a 5.3% dividend yield but minimal capital appreciation potential.",
+        "pegRatio": 4.29,
+        "pegVerdict": "Low 3.5% AFFO growth makes the equity vulnerable during bond sell-offs.",
+        "summary": "DCF and normalized earnings models indicate fair value of $45.83. Trading at $56.93, shares carry a -19.5% downside risk to intrinsic valuation."
+      },
+      "financialHealth": {
+        "revenueGrowthYoY": "+1.8%",
+        "earningsGrowth3Yr": "+2.1% CAGR",
+        "grossMargin": "38.5%",
+        "operatingMargin": "12.4%",
+        "netMargin": "8.5%",
+        "cashFlowStatus": "Constrained Cash Flow Conversion",
+        "debtToEquity": 1.25,
+        "cashVsDebt": "Leveraged: Significant long-term debt requiring substantial debt service.",
+        "summary": "Balance sheet leverage and margin pressures limit financial flexibility and dividend upside."
+      },
+      "marketExpectations": {
+        "wallStreetConsensus": {
+          "buy": 8,
+          "hold": 24,
+          "sell": 15,
+          "consensusRating": "Underperform / Hold"
+        },
+        "averagePriceTarget": 43.54,
+        "highTarget": 50.07,
+        "lowTarget": 38.96,
+        "upcomingCatalysts": [
+          "Upcoming quarterly earnings release and forward management guidance.",
+          "Institutional investor capital allocation and share buyback execution.",
+          "Macroeconomic interest rate and sector liquidity rotation."
+        ],
+        "macroFactors": "Elevated borrowing costs, competitive margin compression, and multiple de-rating create structural headwinds."
+      },
+      "risks": [
+        "Broad macroeconomic volatility and interest rate repricing across equity markets.",
+        "Sector-specific regulatory developments, antitrust investigations, or compliance mandates.",
+        "Shifts in competitive dynamics or technological obsolescence in core business segments."
+      ],
+      "actionableBottomLine": {
+        "accumulationZone": "Exit on any strength above $58.07",
+        "stopLossReference": "$61.48 (Breakout stop)",
+        "convictionScore": 4.7,
+        "plainEnglishTakeaway": "Realty Income is popular for monthly dividends, but elevated interest rates severely limit total returns."
       }
     }
   ]
 };
 
-module.exports = stocksData;
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = stocksData;
+}

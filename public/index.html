@@ -92,7 +92,7 @@
         <button class="segment-btn sector-segment" id="sectorTabBtn" data-tab="sectors">
           <span class="segment-dot" style="background-color: #10B981;"></span>
           <span class="segment-text">🏢 SECTOR STOCKS &amp; VALUATION</span>
-          <span class="segment-count" id="sectorStocksCount">20 STOCKS</span>
+          <span class="segment-count" id="sectorStocksCount">76 STOCKS</span>
         </button>
       </div>
     </section>
@@ -117,9 +117,9 @@
 
         <!-- Valuation Mode Filter Pills -->
         <div class="valuation-toggle-pills" id="valuationTogglePills">
-          <button class="val-pill active" data-val="all">All Stocks (20)</button>
-          <button class="val-pill val-buy-pill" data-val="undervalued">🟢 Undervalued / Buys (10)</button>
-          <button class="val-pill val-sell-pill" data-val="overvalued">🔴 Overvalued / Sells (10)</button>
+          <button class="val-pill active" data-val="all" id="valPillAll">All Stocks (76)</button>
+          <button class="val-pill val-buy-pill" data-val="undervalued" id="valPillBuy">🟢 Undervalued / Buys (40)</button>
+          <button class="val-pill val-sell-pill" data-val="overvalued" id="valPillSell">🔴 Overvalued / Sells (36)</button>
         </div>
 
         <div class="view-sort">
@@ -136,14 +136,18 @@
       <!-- Sector Filter Navigation Pills -->
       <div class="sector-pills-row" style="margin-bottom: 20px;">
         <div class="sector-pills" id="sectorPills">
-          <button class="sector-pill active" data-sector="all">All Sectors (7)</button>
+          <button class="sector-pill active" data-sector="all">All Sectors (11)</button>
           <button class="sector-pill" data-sector="Technology">💻 Tech (XLK)</button>
           <button class="sector-pill" data-sector="Consumer Discretionary">🛍️ Consumer Disc (XLY)</button>
           <button class="sector-pill" data-sector="Communication Services">📱 Comm Services (XLC)</button>
-          <button class="sector-pill" data-sector="Healthcare">🏥 Healthcare (XLV)</button>
           <button class="sector-pill" data-sector="Financials">🏦 Financials (XLF)</button>
+          <button class="sector-pill" data-sector="Healthcare">🏥 Healthcare (XLV)</button>
           <button class="sector-pill" data-sector="Industrials">🏭 Industrials (XLI)</button>
+          <button class="sector-pill" data-sector="Energy">⚡ Energy (XLE)</button>
           <button class="sector-pill" data-sector="Consumer Staples">🛒 Staples (XLP)</button>
+          <button class="sector-pill" data-sector="Materials">⛏️ Materials (XLB)</button>
+          <button class="sector-pill" data-sector="Utilities">💡 Utilities (XLU)</button>
+          <button class="sector-pill" data-sector="Real Estate">🏢 Real Estate (XLRE)</button>
         </div>
       </div>
 

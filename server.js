@@ -26,7 +26,7 @@ stocksSync.syncLiveStockPrices().catch(err => {
 
 // Utility to normalize tickers
 function cleanTicker(t) {
-  return t ? t.trim().toUpperCase().replace(/[^A-Z]/g, '') : '';
+  return t ? t.trim().toUpperCase().replace(/[^A-Z0-9-]/g, '') : '';
 }
 
 // GET /api/macro - Full Macro, Money Flow, Cycle, Asset/Sector Rotation & News Dashboard
@@ -136,7 +136,7 @@ if (require.main === module) {
     console.log(`=================================================`);
     console.log(`⚡ INVESTMENT APP — Smart Money & Stock Intelligence is LIVE!`);
     console.log(`📡 URL: http://localhost:${PORT}`);
-    console.log(`🕒 Mode: Daily Macro Cycle, Money Flow & Live 20-Stock Screener`);
+    console.log(`🕒 Mode: Daily Macro Cycle, Money Flow & Live 76-Stock Screener across 11 Sectors`);
     console.log(`=================================================`);
   });
 }

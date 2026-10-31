@@ -6,10 +6,10 @@ const SECTOR_METADATA = {
     name: 'Technology',
     etf: 'XLK',
     icon: '💻',
-    stance: 'Selective • High-Multiple Divergence',
+    stance: 'Selective • Multiple Divergence',
     stanceTone: 'caution', // 'bull' | 'caution' | 'bear'
     peForward: '31.2x',
-    summary: 'Avoid speculative 80x sales hype and capital-bleeding foundries; buy monopoly cybersecurity platforms and semiconductor toolmakers with fortress cash flow.'
+    summary: 'Avoid speculative 80x+ sales hardware and foundry capex traps; accumulate monopoly semiconductor lithography, custom silicon ASICs, and enterprise cybersecurity.'
   },
   'Consumer Discretionary': {
     name: 'Consumer Discretionary',
@@ -18,7 +18,7 @@ const SECTOR_METADATA = {
     stance: 'Caution • Margin Compression Risk',
     stanceTone: 'bear',
     peForward: '28.4x',
-    summary: 'Elevated interest rates squeeze discretionary retail and EV margins; concentrate strictly in scale leaders with dominant cloud and logistics moats.'
+    summary: 'High borrowing costs and EV price wars compress auto and retail margins; focus strictly on scale leaders with dominant cloud, logistics, and global travel moats.'
   },
   'Communication Services': {
     name: 'Communication Services',
@@ -27,7 +27,16 @@ const SECTOR_METADATA = {
     stance: 'Attractive • Mega-Cap Cash Engines',
     stanceTone: 'bull',
     peForward: '21.4x',
-    summary: 'Mega-cap digital ad monopolies trade at rare 30% discounts to broader tech, while speculative social platforms face engagement bleed and ad dilution.'
+    summary: 'Digital ad duopolies and telecom 5G cash generators trade at reasonable forward multiples, while speculative social platforms face ad dilution and legacy cable bleeds subscribers.'
+  },
+  'Financials': {
+    name: 'Financials',
+    etf: 'XLF',
+    icon: '🏦',
+    stance: 'Overweight • Yield Curve Un-Inversion',
+    stanceTone: 'bull',
+    peForward: '16.2x',
+    summary: 'Steepening yield curve expands net interest margins for tier-1 money center banks, while global payment rail tolls compound with zero balance sheet credit risk.'
   },
   'Healthcare': {
     name: 'Healthcare & Life Sciences',
@@ -36,55 +45,80 @@ const SECTOR_METADATA = {
     stance: 'Leading • Secular GLP-1 Expansion',
     stanceTone: 'bull',
     peForward: '18.6x',
-    summary: 'High-barrier pharmaceutical monopolies provide inflation pricing power and recession defense, while brick-and-mortar retail pharmacies struggle.'
-  },
-  'Financials': {
-    name: 'Financials',
-    etf: 'XLF',
-    icon: '🏦',
-    stance: 'Overweight • Yield Curve Un-Inversion (+9.6% 6M)',
-    stanceTone: 'bull',
-    peForward: '16.2x',
-    summary: 'Steepening 10Y-2Y yield curve drives bank net interest margins, while dominant payment rail tolls compound with zero balance sheet credit risk.'
+    summary: 'High-barrier GLP-1 obesity duopolies and oncology leaders offer strong pricing power and recession defense, while Medicare Advantage providers battle surging medical loss ratios.'
   },
   'Industrials': {
     name: 'Industrials & Machinery',
     etf: 'XLI',
     icon: '🏭',
-    stance: 'Improving • Real Economy Infrastructure',
+    stance: 'Improving • Re-Shoring & Infrastructure',
     stanceTone: 'caution',
     peForward: '20.8x',
-    summary: 'Agricultural autonomy and factory modernization create multi-year order backlogs, while legacy aerospace carries deep debt and execution drag.'
+    summary: 'Defense backlogs, aerospace engine shop visits, and autonomous machinery benefit from multi-year capex cycles, while legacy planemakers struggle with execution debt.'
+  },
+  'Energy': {
+    name: 'Energy',
+    etf: 'XLE',
+    icon: '⚡',
+    stance: 'Value • Low-Cost Cash Generation',
+    stanceTone: 'bull',
+    peForward: '12.8x',
+    summary: 'Consolidated Permian basin operators with breakevens below $35/bbl provide double-digit free cash flow yields and dividend protection against oil price volatility.'
   },
   'Consumer Staples': {
     name: 'Consumer Staples',
     etf: 'XLP',
     icon: '🛒',
-    stance: 'Leading • Fortress Pricing Power',
+    stance: 'Defensive Anchor • Pricing Power',
     stanceTone: 'bull',
-    peForward: '24.1x',
-    summary: 'Essential retail monopolies with 90%+ membership renewal rates provide unbreakable cash flows and safe portfolio anchors during late-cycle volatility.'
+    peForward: '22.5x',
+    summary: 'Essential retail membership giants and household brand monopolies offer unbreakable recurring cash flows, protecting capital against late-cycle economic slowdowns.'
+  },
+  'Materials': {
+    name: 'Materials & Chemicals',
+    etf: 'XLB',
+    icon: '⛏️',
+    stance: 'Cyclical • Electrification & Infrastructure',
+    stanceTone: 'caution',
+    peForward: '19.4x',
+    summary: 'Long-term contracts in industrial gases and structural copper deficits provide strong secular tailwinds, though housing-sensitive coatings face near-term volume drag.'
+  },
+  'Utilities': {
+    name: 'Utilities & Power Infrastructure',
+    etf: 'XLU',
+    icon: '💡',
+    stance: 'Leading • AI Datacenter Baseload Demand',
+    stanceTone: 'bull',
+    peForward: '18.1x',
+    summary: 'Massive electricity demand from hyperscale AI datacenters is transforming regulated utilities and nuclear baseload generators into secular growth powerhouses.'
+  },
+  'Real Estate': {
+    name: 'Real Estate & Infrastructure',
+    etf: 'XLRE',
+    icon: '🏢',
+    stance: 'Selective • Digital & Logistics REITs',
+    stanceTone: 'caution',
+    peForward: '17.5x',
+    summary: 'AI datacenter interconnection facilities and industrial supply chain hubs outperform, while interest-rate sensitive triple-net retail and office struggle.'
   }
 };
 
 function getStockSectorKey(stock) {
+  if (stock.sector && SECTOR_METADATA[stock.sector]) {
+    return stock.sector;
+  }
   const s = ((stock.sector || '') + ' ' + (stock.industry || '')).toLowerCase();
-  if (stock.ticker === 'GOOGL' || stock.ticker === 'SNAP') return 'Communication Services';
-  if (stock.ticker === 'AMZN' || stock.ticker === 'TSLA' || stock.ticker === 'LULU' || stock.ticker === 'RIVN') return 'Consumer Discretionary';
-  if (stock.ticker === 'V') return 'Financials';
-  if (stock.ticker === 'NVO' || stock.ticker === 'WBA' || stock.ticker === 'CVS') return 'Healthcare';
-  if (stock.ticker === 'DE' || stock.ticker === 'BA') return 'Industrials';
-  if (stock.ticker === 'COST') return 'Consumer Staples';
-  if (stock.ticker === 'UBER' || stock.ticker === 'CRWD' || stock.ticker === 'ASML' || stock.ticker === 'PANW' ||
-      stock.ticker === 'INTC' || stock.ticker === 'PLTR' || stock.ticker === 'SMCI' || stock.ticker === 'ARM') return 'Technology';
-
-  if (s.includes('tech')) return 'Technology';
-  if (s.includes('consumer disc') || s.includes('retail') || s.includes('auto')) return 'Consumer Discretionary';
-  if (s.includes('comm')) return 'Communication Services';
-  if (s.includes('health') || s.includes('pharma')) return 'Healthcare';
-  if (s.includes('finan') || s.includes('bank') || s.includes('payment')) return 'Financials';
-  if (s.includes('indust') || s.includes('aerospace') || s.includes('machin')) return 'Industrials';
-  if (s.includes('staple')) return 'Consumer Staples';
+  if (s.includes('tech') || s.includes('semi') || s.includes('software')) return 'Technology';
+  if (s.includes('discretionary') || s.includes('retail') || s.includes('auto') || s.includes('apparel')) return 'Consumer Discretionary';
+  if (s.includes('comm') || s.includes('media') || s.includes('telecom') || s.includes('entertainment')) return 'Communication Services';
+  if (s.includes('finan') || s.includes('bank') || s.includes('payment') || s.includes('insurance')) return 'Financials';
+  if (s.includes('health') || s.includes('pharma') || s.includes('biotech')) return 'Healthcare';
+  if (s.includes('indust') || s.includes('aerospace') || s.includes('machin') || s.includes('mobility')) return 'Industrials';
+  if (s.includes('energy') || s.includes('oil') || s.includes('gas') || s.includes('petroleum')) return 'Energy';
+  if (s.includes('staple') || s.includes('beverage') || s.includes('food')) return 'Consumer Staples';
+  if (s.includes('material') || s.includes('chemical') || s.includes('mining') || s.includes('copper')) return 'Materials';
+  if (s.includes('utilit') || s.includes('power') || s.includes('nuclear') || s.includes('electric')) return 'Utilities';
+  if (s.includes('real estate') || s.includes('reit') || s.includes('property')) return 'Real Estate';
   return 'Technology';
 }
 
@@ -125,6 +159,9 @@ const App = {
     this.macroDashboardSection = document.getElementById('macroDashboardSection');
     this.stocksViewWrapper = document.getElementById('stocksViewWrapper');
     this.valuationTogglePills = document.getElementById('valuationTogglePills');
+    this.valPillAll = document.getElementById('valPillAll');
+    this.valPillBuy = document.getElementById('valPillBuy');
+    this.valPillSell = document.getElementById('valPillSell');
     this.searchInput = document.getElementById('searchInput');
     this.clearSearchBtn = document.getElementById('clearSearchBtn');
     this.sectorPills = document.getElementById('sectorPills');
@@ -306,6 +343,15 @@ const App = {
         if (this.sectorStocksCount) {
           this.sectorStocksCount.textContent = `${totalCount} STOCKS`;
         }
+        if (this.valPillAll) {
+          this.valPillAll.textContent = `All Stocks (${totalCount})`;
+        }
+        if (this.valPillBuy) {
+          this.valPillBuy.textContent = `🟢 Undervalued / Buys (${this.stocksData.buys.length})`;
+        }
+        if (this.valPillSell) {
+          this.valPillSell.textContent = `🔴 Overvalued / Sells (${this.stocksData.sells.length})`;
+        }
 
         // Compute average metrics for header
         if (this.avgBuyUpside && this.stocksData.buys.length) {
@@ -424,10 +470,14 @@ const App = {
       'Technology',
       'Consumer Discretionary',
       'Communication Services',
-      'Healthcare',
       'Financials',
+      'Healthcare',
       'Industrials',
-      'Consumer Staples'
+      'Energy',
+      'Consumer Staples',
+      'Materials',
+      'Utilities',
+      'Real Estate'
     ];
 
     const grouped = {};
@@ -739,11 +789,14 @@ const App = {
 
   playGlobalBriefing() {
     const macroSpeech = window.MacroDashboard ? window.MacroDashboard.getSpokenSummary() : '';
-    const text = macroSpeech ? `${macroSpeech} Additionally, in our Sector Valuation radar, we screen 20 top stocks across 7 major sectors, identifying 10 undervalued bargains led by Alphabet, Amazon, and Uber, and 10 overvalued bubble risks to avoid led by Intel, Tesla, and Palantir.` : `
+    const totalCount = (this.stocksData.buys.length || 40) + (this.stocksData.sells.length || 36);
+    const buyCount = this.stocksData.buys.length || 40;
+    const sellCount = this.stocksData.sells.length || 36;
+    const text = macroSpeech ? `${macroSpeech} Additionally, in our Sector Valuation radar, we screen all ${totalCount} top sector leaders across 11 S&P sectors, identifying ${buyCount} undervalued bargains led by ASML, Alphabet, Amazon, and Uber, alongside ${sellCount} overvalued bubble risks to avoid led by Intel, Tesla, and Palantir.` : `
       Welcome to today's Investment App briefing for ${this.editionDate ? this.editionDate.textContent : 'today'}.
-      Today's market regime: ${this.marketEdgeText ? this.marketEdgeText.textContent : 'Selective Quality'}.
-      Our quant models identify 10 high-conviction undervalued buys with an average fair value upside of 18 percent, led by Alphabet, Amazon, and Uber.
-      Meanwhile, 10 stocks are flagged as overvalued risks with significant downside, led by Intel, Tesla, and Palantir.
+      Today's market regime: ${this.marketEdgeText ? this.marketEdgeText.textContent : 'Institutional Quality Rotation'}.
+      Our quant models identify ${buyCount} high-conviction undervalued buys with an average fair value upside of 18 percent, led by ASML, Alphabet, Amazon, and Uber.
+      Meanwhile, ${sellCount} stocks are flagged as overvalued risks with significant downside, led by Intel, Tesla, and Palantir.
     `;
     window.SpeechEngine.speak(text, "Investment App Daily Briefing");
   },
