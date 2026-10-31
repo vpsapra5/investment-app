@@ -17,7 +17,7 @@ const DATA_DIR = path.join(__dirname, '..', 'data');
 const CACHE_FILE = path.join(DATA_DIR, 'macro-cache.json');
 const HISTORY_FILE = path.join(DATA_DIR, 'macro-history.json');
 const UA = { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) InvestmentApp/1.0' };
-const REFRESH_HOUR_ET = 6;
+const REFRESH_HOUR_ET = 20; // 8:00 PM ET daily rollover (after market and after-hours close)
 
 // ---------------------------------------------------------------------------
 // Universe
@@ -175,7 +175,7 @@ function fmtET(date) {
   }).format(date) + ' ET';
 }
 
-// The "edition" rolls over at 6:00 AM ET. Before 6 AM we are still on yesterday's edition.
+// The "edition" rolls over at 8:00 PM ET. Before 8:00 PM we are still on the previous edition.
 function editionKey(date = new Date()) {
   return etParts(new Date(date.getTime() - REFRESH_HOUR_ET * 3600e3)).date;
 }
@@ -1359,7 +1359,7 @@ async function buildSnapshot() {
     edition,
     generatedAt: now.toISOString(),
     generatedAtET: fmtET(now),
-    refreshSchedule: 'Daily at 6:00 AM ET',
+    refreshSchedule: 'Daily at 8:00 PM ET',
     buildMs: Date.now() - t0,
     regime: { score: overall, label: regimeLabel, tone: regimeTone, summary },
     phase,
@@ -1452,11 +1452,11 @@ async function getSnapshot() {
 function startScheduler() {
   loadCache();
   if (isStale(state.snapshot)) refresh('startup').catch(() => {});
-  // Check every 10 minutes; refresh once per edition (rolls over at 6:00 AM ET).
+  // Check every 10 minutes; refresh once per edition (rolls over at 8:00 PM ET).
   // Retries at most every 30 minutes after a failure.
   setInterval(() => {
     if (isStale(state.snapshot) && !state.refreshing && Date.now() - state.lastAttempt > 30 * 60 * 1000) {
-      refresh('scheduled-6am-ET').catch(() => {});
+      refresh('scheduled-8pm-ET').catch(() => {});
     }
   }, 10 * 60 * 1000);
 }

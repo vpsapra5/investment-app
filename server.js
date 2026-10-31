@@ -16,7 +16,7 @@ app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Start daily 6:00 AM ET scheduler for macro & money flow data
+// Start daily 8:00 PM ET scheduler for macro & money flow data
 macroEngine.startScheduler();
 
 // Immediately sync live stock prices from Yahoo Finance on startup
@@ -82,10 +82,10 @@ app.get('/api/stocks/:ticker', (req, res) => {
   });
 });
 
-// GET /api/cron - Automated Cloud Cron (Vercel Cron triggers GET at 6:00 AM ET)
+// GET /api/cron - Automated Cloud Cron (Vercel Cron triggers GET at 8:00 PM ET)
 app.get('/api/cron', async (req, res) => {
   try {
-    console.log('[cron] Automated 6:00 AM ET cloud refresh triggered');
+    console.log('[cron] Automated 8:00 PM ET cloud refresh triggered');
     const [macroSnapshot, active] = await Promise.all([
       macroEngine.refresh('vercel-daily-cron'),
       stocksSync.syncLiveStockPrices(true)
@@ -93,7 +93,7 @@ app.get('/api/cron', async (req, res) => {
 
     res.json({
       success: true,
-      message: "Daily 6:00 AM ET cloud refresh completed successfully.",
+      message: "Daily 8:00 PM ET cloud refresh completed successfully.",
       edition: macroSnapshot.edition,
       lastUpdated: active.lastUpdated
     });

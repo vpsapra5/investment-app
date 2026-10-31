@@ -5,7 +5,7 @@
 ---
 
 ## 🎯 Overview
-**Investment App** combines a live **Macro & Smart Money Flow Dashboard (Home Page)** with a **Daily 10 Buy / 10 Sell Stock Intelligence Engine**. It pulls live data daily at **6:00 AM ET** (and on-demand via the Refresh button) from the **Federal Reserve (FRED)**, **Yahoo Finance**, and **Google News RSS** to show:
+**Investment App** combines a live **Macro & Smart Money Flow Dashboard (Home Page)** with a **Daily Sector Valuation Radar (76 Top Sector Leaders)**. It pulls live data daily at **8:00 PM ET** (and on-demand via the Refresh button) from the **Federal Reserve (FRED)**, **Yahoo Finance**, and **Google News RSS** to show:
 1. **Direction of Money Across Asset Classes & Stock Sectors**
 2. **Fed Money Printing, Net Liquidity & Interest Rate Cycle**
 3. **Where We Are in the Market Cycle (4-Phase Investment Clock)**
